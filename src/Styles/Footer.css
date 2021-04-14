@@ -6,7 +6,8 @@
   color: #737373;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: center;
+  flex-direction: column;
 }
 .site-footer h6 {
   color: #fff;
@@ -20,16 +21,32 @@
 .footer-social-link,
 .footer-quick-links {
   padding: 1em 2em;
+  width: 80%;
+  text-align: center;
 }
 
-.footer-about {
-  width: 35%;
-}
+@media (min-width: 600px) {
+  .site-footer {
+    flex-direction: row;
+    background-color: #282828;
+    font-size: 15px;
+    line-height: 24px;
+    color: #737373;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: row;
+  }
+  .footer-about {
+    width: 35%;
+  }
 
-.footer-social-link {
-  width: 20%;
-}
+  .footer-social-link {
+    width: 20%;
+    text-align: left;
+  }
 
-.footer-quick-links {
-  width: 20%;
+  .footer-quick-links {
+    width: 20%;
+  }
 }

@@ -8,6 +8,7 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+  font-family: 'Quicksand', sans-serif;
 }
 
 a.href-footer {
@@ -16,12 +17,12 @@ a.href-footer {
 }
 
 .site-footer h6 {
-  color: #fff;
+  color: var(--red);
   font-size: 16px;
   text-transform: uppercase;
   margin-top: 5px;
   letter-spacing: 2px;
-  font-family: 'Quicksand', sans-serif;
+  font-weight: 700;
 }
 
 .footer-about,
@@ -30,6 +31,8 @@ a.href-footer {
   padding: 1em 2em;
   width: 90%;
   text-align: center;
+  font-weight: 300;
+  font-size: 0, 7em;
 }
 
 @media (min-width: 650px) {

@@ -1,0 +1,14 @@
+.navigation nav {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation h1 {
+  margin: 1rem;
+}
+.navigation ul {
+  display: flex;
+  justify-content: space-between;
+}
+.navigation ul li {
+  margin: 1rem;
+}

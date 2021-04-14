@@ -14,7 +14,7 @@ const QuestResp = () => (
           <h3>Réponse2</h3>
         </div>
         <div>
-          <h3>réponse3</h3>
+          <h3>Réponse3</h3>
         </div>
       </div>
     </div>

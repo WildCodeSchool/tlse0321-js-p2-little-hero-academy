@@ -1,0 +1,35 @@
+.site-footer {
+  background-color: #282828;
+  padding: 1em 2em 1em 2em;
+  font-size: 15px;
+  line-height: 24px;
+  color: #737373;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.site-footer h6 {
+  color: #fff;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.footer-about,
+.footer-social-link,
+.footer-quick-links {
+  padding: 1em 2em;
+}
+
+.footer-about {
+  width: 35%;
+}
+
+.footer-social-link {
+  width: 20%;
+}
+
+.footer-quick-links {
+  width: 20%;
+}

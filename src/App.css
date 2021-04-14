@@ -1,1 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap');
+
+:root {
+  --darkgrey: #282828;
+  --lightgrey: #dadada;
+  --blue: #1678a2;
+  --red: #e43825;
+  --yellow: #ffd700;
+  --fontlight: 300, 'Quicksand', sans-serif;
+  --fontregular: 400, 'Quicksand', sans-serif;
+  --fontbold: 700, 'Quicksand', sans-serif;
+}

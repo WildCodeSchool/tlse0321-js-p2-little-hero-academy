@@ -8,9 +8,18 @@ const header = () => {
   const handleToggle = () => {
     setNavbarOpen(!navbarOpen);
   };
+
   const closeMenu = () => {
     setNavbarOpen(false);
   };
+
+  const redimensionnement = () => {
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      setNavbarOpen(false);
+    }
+  };
+  window.addEventListener('resize', redimensionnement);
+
   return (
     <div className="navigation">
       <img className="logo" src={logo} alt="logo-little-hero-academy" />

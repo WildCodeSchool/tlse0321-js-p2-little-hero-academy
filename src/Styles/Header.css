@@ -56,22 +56,22 @@
   display: block;
 }
 @media (min-width: 768px) {
-   .navigation nav {
+  .navigation nav {
     margin: 0.5rem;
     margin-right: 37rem;
   }
-  
-  .menuNav {
-    overflow:visible;
-    padding-top: 0.5rem;
-    display:block;
-    height: 2rem;
 
+  .menuNav {
+    padding-bottom: 0rem;
+    overflow: visible;
+    padding-top: 0.5rem;
+    display: block;
+    height: 2rem;
   }
   .navigation ul {
     flex-direction: row;
   }
-  .navigation ul li{
+  .navigation ul li {
     display: inline-block;
     margin-left: 1rem;
   }
@@ -88,5 +88,5 @@
   }
   .navigation .humberger-btn {
     display: none;
-  } 
+  }
 }

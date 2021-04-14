@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/Footer.css';
+import '../App.css';
 
 const Footer = () => (
   <div className="site-footer">

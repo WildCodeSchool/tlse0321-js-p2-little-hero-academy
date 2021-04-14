@@ -21,6 +21,7 @@ a.href-footer {
   text-transform: uppercase;
   margin-top: 5px;
   letter-spacing: 2px;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .footer-about,

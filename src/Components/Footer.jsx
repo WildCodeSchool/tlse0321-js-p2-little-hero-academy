@@ -5,7 +5,7 @@ import '../App.css';
 const Footer = () => (
   <div className="site-footer">
     <div className="footer-container">
-      <div className="footer-about">
+      <div className="footer-credits">
         <h6>Crédits</h6>
         <ul>
           <li>
@@ -21,7 +21,7 @@ const Footer = () => (
               href="https://www.freepik.com/vectors/background"
               className="href-footer"
             >
-              www.freepik.com
+              Freepik
             </a>
           </li>
           <li>
@@ -35,7 +35,7 @@ const Footer = () => (
             </a>
           </li>
           <li>
-            Avatar cartoon fait sur{' '}
+            Avatar cartoon{' '}
             <a
               href="https://superherotar.framiq.com/fr/"
               className="href-footer"
@@ -60,7 +60,7 @@ const Footer = () => (
           </li>
           <li>
             <a href="wwww.instragram.com" className="href-footer">
-              Instragral
+              Instragram
             </a>
           </li>
         </ul>

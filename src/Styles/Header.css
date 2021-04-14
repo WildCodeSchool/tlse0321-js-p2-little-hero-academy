@@ -1,54 +1,67 @@
-.navigation  {
+.navigation {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 4rem;
   background-color: rgb(125, 125, 165);
 }
-.navigation .logo{
-  width: 3rem;
+.navigation .logo {
+  width: 3.7rem;
+  height: 3.7rem;
   margin-left: 2rem;
 }
+.nav-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .navigation ul {
-  margin-right: 2rem;
   display: flex;
   justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(125, 125, 165);
 }
-.navigation ul li  {
-  border: 1px solid;
-  border-radius: 9999px;
-  padding: 0.4rem;
-  margin: 0.5rem;
-  display: none;
+.navigation ul li {
+  display: block;
+  padding-bottom: 2rem;
+  padding-top: 1rem;
+  text-align: center;
 }
-.navigation ul li a{
-  
+.navigation ul li a {
+  padding: 2rem;
   text-decoration: none;
 }
-.humberger-btn{
+.humberger-btn {
+  padding-left: 3rem;
   background: none;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
 }
-.humberger-btn .humberger{
+.humberger-btn .humberger {
   width: 3rem;
 }
-.navigation .humberger{
+.navigation .humberger {
   display: block;
 }
 @media (min-width: 768px) {
-  .navigation nav{
+  .navigation nav {
     margin: 0.5rem;
+  }
+  .navigation ul {
+    flex-direction: row;
   }
   .navigation ul li {
     display: block;
+    border: 1px solid;
+    border-radius: 9999px;
+    padding: 0.4rem;
+    margin: 0.5rem;
   }
-  .navigation .humberger-btn{
+  .navigation .humberger-btn {
     display: none;
   }
- 
 }

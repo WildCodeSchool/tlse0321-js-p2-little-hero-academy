@@ -56,20 +56,37 @@
   display: block;
 }
 @media (min-width: 768px) {
-  .navigation nav {
+   .navigation nav {
     margin: 0.5rem;
+    margin-right: 37rem;
+  }
+  
+  .menuNav {
+    overflow:visible;
+    padding-top: 0.5rem;
+    display:block;
+    height: 2rem;
+
   }
   .navigation ul {
     flex-direction: row;
   }
-  .navigation ul li {
+  .navigation ul li{
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  .menuNav li a {
+    width: 100%;
+    margin-left: 2rem;
     display: block;
     border: 1px solid;
     border-radius: 9999px;
-    padding: 0.4rem;
-    margin: 0.5rem;
+  }
+  .navigation ul li a {
+    padding: 0.2rem;
+    text-decoration: none;
   }
   .navigation .humberger-btn {
     display: none;
-  }
+  } 
 }

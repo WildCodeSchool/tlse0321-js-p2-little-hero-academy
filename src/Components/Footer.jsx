@@ -15,9 +15,21 @@ const Footer = () => (
     <div className="footer-social-link">
       <h6>Suivez-nous</h6>
       <ul>
-        <li>Facebook</li>
-        <li>Twitter</li>
-        <li>Instagram</li>
+        <li>
+          <a href="www.facebook.com" className="href-footer">
+            Facebook
+          </a>
+        </li>
+        <li>
+          <a href="wwww.twitter.com" className="href-footer">
+            Twitter
+          </a>
+        </li>
+        <li>
+          <a href="wwww.instragram.com" className="href-footer">
+            Instragral
+          </a>
+        </li>
       </ul>
     </div>
     <div className="footer-quick-links">
@@ -26,6 +38,7 @@ const Footer = () => (
         <li>Notre histoire</li>
         <li>Livre d&apos;Or</li>
         <li>Nous contacter</li>
+        <li>Plan du site</li>
       </ul>
     </div>
   </div>

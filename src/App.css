@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+@font-face {
+  font-family: 'RG-bold';
+  src: url('roguehero-bold-webfont.woff2') format('woff2'),
+    url('roguehero-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RG-italic';
+  src: url('roguehero-italic-webfont.woff2') format('woff2'),
+    url('roguehero-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RG-regular';
+  src: url('roguehero-regular-webfont.woff2') format('woff2'),
+    url('roguehero-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --greydark: #282828;
+  --greylight: #f5f5f5;
+  --red: #e43825;
+  --blue: #1678a2;
+  --yellow: #ffd700;
+  --fontlight: 'Quicksand', sans-serif 300;
+  --fontregular: 'Quicksand', sans-serif 500;
+  --fontbold: 'Quicksand', sans-serif 700;
+  --title: 'RG-regular', sans-serif;
+  --titlebold: 'RG-bold', sans-serif;
+  --titleitalic: 'RG-italic', sans-serif;
+}

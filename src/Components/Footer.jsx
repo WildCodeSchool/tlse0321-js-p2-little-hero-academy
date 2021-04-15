@@ -80,7 +80,7 @@ const Footer = () => (
       <div className="copyrights">
         <p>
           LITTLE HERO ACADEMY. Site crée par les élèves de la Wild Code School
-          de Toulouse session mars 2021. Aucun droits réservés.
+          de Toulouse session mars 2021. Tous droits réservés.
         </p>
       </div>
     </div>

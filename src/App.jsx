@@ -2,14 +2,14 @@ import './App.css';
 import './Styles/reset.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Quiz from './Components/Game';
+import Game from './Components/Game';
 
 function App() {
   return (
     <div className="App">
       <Header />
       <p>Hello Team</p>
-      <Quiz />
+      <Game />
       <Footer />
     </div>
   );

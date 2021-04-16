@@ -1,8 +1,9 @@
 import React from 'react';
-import Checkbox from './Checkbox';
+import ResponseCheckbox from './ResponseCheckbox';
 import '../Styles/Quiz.css';
+import QuestionTitle from './QuestionTitle';
 
-const QuestResp = () => {
+const Question = () => {
   const responseItems = [
     {
       id: '',
@@ -22,15 +23,16 @@ const QuestResp = () => {
   ];
   return (
     <div className="quiz-container">
-      <div className="quiz-question">
-        <h1>Question</h1>
-      </div>
-      <div className="quiz-reponses">
+      <QuestionTitle title="Je suis le titre" />
+      <div className="quiz-responses">
         {responseItems.map((responseItem) => (
-          <Checkbox responseItems={responseItem} key={responseItem.label} />
+          <ResponseCheckbox
+            responseItems={responseItem}
+            key={responseItem.label}
+          />
         ))}
       </div>
     </div>
   );
 };
-export default QuestResp;
+export default Question;

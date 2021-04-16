@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Checkbox = ({ responseItems }) => (
+const ResponseCheckbox = ({ responseItems }) => (
   <div className="quiz-reponse">
     <label htmlFor={responseItems.name}>
       <input
@@ -13,4 +13,4 @@ const Checkbox = ({ responseItems }) => (
     </label>
   </div>
 );
-export default Checkbox;
+export default ResponseCheckbox;

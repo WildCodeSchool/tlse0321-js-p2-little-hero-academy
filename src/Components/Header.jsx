@@ -1,10 +1,8 @@
 import React, { useState } from 'react';
 import '../Styles/Header.css';
-import hamberger from '../img/hamberger-menu.png';
+import hamburger from '../img/hamburger-menu.png';
 import logo from '../img/logo.png';
-import LinkJeux from './headerLink/LinkJeux';
-import LinkApropos from './headerLink/LinkApropos';
-import LinkContact from './headerLink/LinkContact';
+import Link from './headerLink/Link';
 
 const header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -25,18 +23,18 @@ const header = () => {
     <div className="header">
       <img className="logo" src={logo} alt="logo-little-hero-academy" />
       <div className="nav-container">
-        <button type="button" className="hamberger-btn" onClick={handleToggle}>
+        <button type="button" className="hamburger-btn" onClick={handleToggle}>
           <img
-            className="hamberger"
-            src={hamberger}
-            alt="hamberger-menu-logo"
+            className="hamburger"
+            src={hamburger}
+            alt="hamburger-menu-logo"
           />
         </button>
         <nav>
           <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
-            <LinkJeux closeMenu={closeMenu} />
-            <LinkApropos closeMenu={closeMenu} />
-            <LinkContact closeMenu={closeMenu} />
+            <Link closeMenu={closeMenu} label="jeux" href="#jeux" />
+            <Link closeMenu={closeMenu} label="A" href="#about" />
+            <Link closeMenu={closeMenu} label="contact" href="#contact" />
           </ul>
         </nav>
       </div>

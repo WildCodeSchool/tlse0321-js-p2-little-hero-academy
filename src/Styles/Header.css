@@ -38,7 +38,7 @@
   padding: 2rem;
   text-decoration: none;
 }
-.hamberger-btn {
+.hamburger-btn {
   position: relative;
   margin-top: 0.3rem;
   background: none;
@@ -49,10 +49,10 @@
   cursor: pointer;
   outline: inherit;
 }
-.hamberger-btn .hamberger {
+.hamburger-btn .hamburger {
   width: 3rem;
 }
-.header .hamberger {
+.header .hamburger {
   display: block;
 }
 @media (min-width: 768px) {
@@ -86,7 +86,7 @@
     padding: 0.2rem;
     text-decoration: none;
   }
-  .header .hamberger-btn {
+  .header .hamburger-btn {
     display: none;
   }
 }

@@ -13,43 +13,4 @@ const Checkbox = ({ responseItems }) => (
     </label>
   </div>
 );
-//   <div>
-//     <div className="quiz-reponse">
-//       <label htmlFor="reponse">
-//         <input
-//           type="radio"
-//           id="proposition1"
-//           name="réponse"
-//           value="proposition1"
-//         />
-//         Réponse1
-//       </label>
-//     </div>
-
-//     <div className="quiz-reponse">
-//       <label htmlFor="reponse">
-//         <input
-//           type="radio"
-//           id="proposition2"
-//           name="réponse"
-//           value="proposition2"
-//         />
-//         Réponse2
-//       </label>
-//     </div>
-
-//     <div className="quiz-reponse">
-//       <label htmlFor="reponse">
-//         <input
-//           type="radio"
-//           id="proposition2"
-//           name="réponse"
-//           value="proposition2"
-//         />
-//         Réponse3
-//       </label>
-//     </div>
-//   </div>
-// );
-
 export default Checkbox;

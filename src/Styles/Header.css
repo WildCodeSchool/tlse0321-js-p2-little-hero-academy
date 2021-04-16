@@ -1,0 +1,92 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 4rem;
+  background-color: rgb(125, 125, 165);
+}
+.header .logo {
+  width: 3.7rem;
+  height: 3.7rem;
+  margin-left: 2rem;
+}
+.nav-container {
+  width: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header ul {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: rgb(125, 125, 165);
+}
+.menuNav {
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  text-align: center;
+  display: block;
+  height: 7rem;
+  width: 0;
+  overflow: hidden;
+}
+.menuNav.showMenu {
+  width: 100%;
+}
+.header ul li a {
+  padding: 2rem;
+  text-decoration: none;
+}
+.hamburger-btn {
+  position: relative;
+  margin-top: 0.3rem;
+  background: none;
+  color: inherit;
+  border: none;
+  padding: 0;
+  font: inherit;
+  cursor: pointer;
+  outline: inherit;
+}
+.hamburger-btn .hamburger {
+  width: 3rem;
+}
+.header .hamburger {
+  display: block;
+}
+@media (min-width: 768px) {
+  .header nav {
+    margin: 0.5rem;
+    margin-right: 37rem;
+  }
+
+  .menuNav {
+    padding-bottom: 0rem;
+    overflow: visible;
+    padding-top: 0.5rem;
+    display: block;
+    height: 2rem;
+  }
+  .header ul {
+    flex-direction: row;
+  }
+  .header ul li {
+    display: inline-block;
+    margin-left: 1rem;
+  }
+  .menuNav li a {
+    width: 100%;
+    margin-left: 2rem;
+    display: block;
+    border: 1px solid;
+    border-radius: 9999px;
+  }
+  .header ul li a {
+    padding: 0.2rem;
+    text-decoration: none;
+  }
+  .header .hamburger-btn {
+    display: none;
+  }
+}

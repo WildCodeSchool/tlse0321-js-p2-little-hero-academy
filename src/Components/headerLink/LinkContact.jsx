@@ -6,7 +6,7 @@ const LinkContact = ({ closeMenu }) => (
       <a
         href="#Contact"
         activeClassName="active-link"
-        onClick={() => closeMenu()}
+        onClick={closeMenu}
         exact
       >
         Contact

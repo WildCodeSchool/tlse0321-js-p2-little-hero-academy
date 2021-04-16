@@ -13,8 +13,17 @@ const Gamepage = () => (
             className="rules-heropicture"
           />
         </div>
-        <div className="rules-text">
-          Did someone say <em>chimichangas?</em>
+        <div className="rules-container">
+          <p className="bubble speech">
+            Attention, héro, dans ce jeu du quizz, il faut bien répondre au
+            maximum de question !
+            <ul>
+              <li>Il y a 10 questions, toutes surun seul hero</li>
+              <li>
+                Si tu as au moins 5 bonnes réponses, tu remporte une carte !
+              </li>
+            </ul>
+          </p>
         </div>
       </div>
     </div>

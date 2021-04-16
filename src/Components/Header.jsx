@@ -33,7 +33,7 @@ const header = () => {
         <nav>
           <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
             <Link closeMenu={closeMenu} label="jeux" href="#jeux" />
-            <Link closeMenu={closeMenu} label="A" href="#about" />
+            <Link closeMenu={closeMenu} label="À props" href="#apropos" />
             <Link closeMenu={closeMenu} label="contact" href="#contact" />
           </ul>
         </nav>

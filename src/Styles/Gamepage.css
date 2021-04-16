@@ -15,6 +15,8 @@
 h2.gamepage-title {
   font-size: 1.3em;
   text-align: center;
+  color: white;
+  margin-bottom: 10px;
 }
 .game-rules {
   display: flex;
@@ -23,10 +25,12 @@ h2.gamepage-title {
   width: 100%;
 }
 
-.text-rules {
+.rules-text {
+  padding: 15px;
   width: 50%;
+  height: 100px;
   text-align: center;
-  background-color: honeydew;
+  background-color: thistle;
 }
 
 .rules-heropicture {
@@ -37,4 +41,8 @@ h2.gamepage-title {
   width: 100%;
   background-color: indigo;
   height: 300px;
+}
+
+body {
+  background: #368dda;
 }

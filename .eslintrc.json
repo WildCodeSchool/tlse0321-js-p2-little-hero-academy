@@ -19,7 +19,6 @@
     "react/jsx-props-no-spreading": "off",
     "react/react-in-jsx-scope": "off",
     "react/prop-types": 1,
-    "react/jsx-one-expression-per-line": [0],
-    "import/no-extraneous-dependencies": ["error", { "devDependencies": true }]
+    "react/jsx-one-expression-per-line": [0]
   }
 }

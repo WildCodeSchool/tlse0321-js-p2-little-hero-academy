@@ -1,11 +1,11 @@
-.navigation {
+.header {
   display: flex;
   justify-content: space-between;
   width: 100%;
   height: 4rem;
   background-color: rgb(125, 125, 165);
 }
-.navigation .logo {
+.header .logo {
   width: 3.7rem;
   height: 3.7rem;
   margin-left: 2rem;
@@ -16,7 +16,7 @@
   flex-direction: column;
   align-items: center;
 }
-.navigation ul {
+.header ul {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -34,11 +34,11 @@
 .menuNav.showMenu {
   width: 100%;
 }
-.navigation ul li a {
+.header ul li a {
   padding: 2rem;
   text-decoration: none;
 }
-.humberger-btn {
+.hamberger-btn {
   position: relative;
   margin-top: 0.3rem;
   background: none;
@@ -49,14 +49,14 @@
   cursor: pointer;
   outline: inherit;
 }
-.humberger-btn .humberger {
+.hamberger-btn .hamberger {
   width: 3rem;
 }
-.navigation .humberger {
+.header .hamberger {
   display: block;
 }
 @media (min-width: 768px) {
-  .navigation nav {
+  .header nav {
     margin: 0.5rem;
     margin-right: 37rem;
   }
@@ -68,10 +68,10 @@
     display: block;
     height: 2rem;
   }
-  .navigation ul {
+  .header ul {
     flex-direction: row;
   }
-  .navigation ul li {
+  .header ul li {
     display: inline-block;
     margin-left: 1rem;
   }
@@ -82,11 +82,11 @@
     border: 1px solid;
     border-radius: 9999px;
   }
-  .navigation ul li a {
+  .header ul li a {
     padding: 0.2rem;
     text-decoration: none;
   }
-  .navigation .humberger-btn {
+  .header .hamberger-btn {
     display: none;
   }
 }

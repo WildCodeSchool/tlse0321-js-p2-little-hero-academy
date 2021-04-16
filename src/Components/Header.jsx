@@ -1,18 +1,19 @@
 import React, { useState } from 'react';
 import '../Styles/Header.css';
-import humberger from '../img/humberger-menu.png';
+import hamberger from '../img/hamberger-menu.png';
 import logo from '../img/logo.png';
+import LinkJeux from './headerLink/LinkJeux';
+import LinkApropos from './headerLink/LinkApropos';
+import LinkContact from './headerLink/LinkContact';
 
 const header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
   const handleToggle = () => {
     setNavbarOpen(!navbarOpen);
   };
-
   const closeMenu = () => {
     setNavbarOpen(false);
   };
-
   const redimensionnement = () => {
     if (window.matchMedia('(min-width: 768px)').matches) {
       setNavbarOpen(false);
@@ -21,48 +22,21 @@ const header = () => {
   window.addEventListener('resize', redimensionnement);
 
   return (
-    <div className="navigation">
+    <div className="header">
       <img className="logo" src={logo} alt="logo-little-hero-academy" />
       <div className="nav-container">
-        <button type="button" className="humberger-btn" onClick={handleToggle}>
+        <button type="button" className="hamberger-btn" onClick={handleToggle}>
           <img
-            className="humberger"
-            src={humberger}
-            alt="humberger-menu-logo"
+            className="hamberger"
+            src={hamberger}
+            alt="hamberger-menu-logo"
           />
         </button>
         <nav>
           <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
-            <li>
-              <a
-                href="#Jeux"
-                activeClassName="active-link"
-                onClick={() => closeMenu()}
-                exact
-              >
-                Jeux
-              </a>
-            </li>
-            <li>
-              <a
-                href="#Apropos"
-                activeClassName="active-link"
-                onClick={() => closeMenu()}
-                exact
-              >
-                À propos
-              </a>
-            </li>
-            <li>
-              <a
-                href="#Contact"
-                activeClassName="active-link"
-                onClick={() => closeMenu()}
-                exact
-              >
-                Contact
-              </a>
-            </li>
+            <LinkJeux closeMenu={closeMenu} />
+            <LinkApropos closeMenu={closeMenu} />
+            <LinkContact closeMenu={closeMenu} />
           </ul>
         </nav>
       </div>

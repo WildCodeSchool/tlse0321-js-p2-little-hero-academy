@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import '../Styles/Header.css';
-import hamburger from '../img/hamburger-menu.png';
+import hamburger from '../img/menu.svg';
 import logo from '../img/logo.png';
 import Link from './headerLink/Links';
 
@@ -21,8 +21,14 @@ const header = () => {
 
   return (
     <div className="header">
-      <img className="logo" src={logo} alt="logo-little-hero-academy" />
-      <div className="nav-container">
+      <nav>
+        <img className="logo" src={logo} alt="logo-little-hero-academy" />
+        <ul className={`liste-nav ${navbarOpen ? ' showMenu' : ''}`}>
+          <Link closeMenu={closeMenu} to="/jeux" label="Jeux" href="jeux" />
+          <Link closeMenu={closeMenu} to="/quiz" label="Quiz" href="quiz" />
+          <Link closeMenu={closeMenu} label="À propos" href="apropos" />
+          <Link closeMenu={closeMenu} label="Contact" href="contact" />
+        </ul>
         <button type="button" className="hamburger-btn" onClick={handleToggle}>
           <img
             className="hamburger"
@@ -30,15 +36,7 @@ const header = () => {
             alt="hamburger-menu-logo"
           />
         </button>
-        <nav>
-          <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
-            <Link closeMenu={closeMenu} to="/jeux" label="Jeux" href="jeux" />
-            <Link closeMenu={closeMenu} to="/quiz" label="Quiz" href="quiz" />
-            <Link closeMenu={closeMenu} label="À propos" href="apropos" />
-            <Link closeMenu={closeMenu} label="Contact" href="contact" />
-          </ul>
-        </nav>
-      </div>
+      </nav>
     </div>
   );
 };

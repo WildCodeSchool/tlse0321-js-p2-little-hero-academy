@@ -2,24 +2,24 @@
 
 @font-face {
   font-family: 'RG-bold';
-  src: url('roguehero-bold-webfont.woff2') format('woff2'),
-    url('roguehero-bold-webfont.woff') format('woff');
+  src: url('./fonts/roguehero-bold-webfont.woff2') format('woff2'),
+    url('./fonts/roguehero-bold-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'RG-italic';
-  src: url('roguehero-italic-webfont.woff2') format('woff2'),
-    url('roguehero-italic-webfont.woff') format('woff');
+  src: url('./fonts/roguehero-italic-webfont.woff2') format('woff2'),
+    url('./fonts/roguehero-italic-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'RG-regular';
-  src: url('roguehero-regular-webfont.woff2') format('woff2'),
-    url('roguehero-regular-webfont.woff') format('woff');
+  src: url('./fonts/roguehero-regular-webfont.woff2') format('woff2'),
+    url('./fonts/roguehero-regular-webfont.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }

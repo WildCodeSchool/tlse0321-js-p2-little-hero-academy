@@ -3,7 +3,7 @@
   justify-content: space-between;
   width: 100%;
   height: 4rem;
-  background-color: rgb(125, 125, 165);
+  background-color: var(--greydark);
 }
 .header .logo {
   width: 3.7rem;
@@ -21,7 +21,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  background-color: rgb(125, 125, 165);
+  background-color: var(--greydark);
 }
 .menuNav {
   padding-bottom: 2rem;
@@ -38,6 +38,7 @@
 .header ul li a {
   padding: 2rem;
   text-decoration: none;
+  color: aliceblue;
 }
 .hamburger-btn {
   position: relative;

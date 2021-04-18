@@ -1,5 +1,6 @@
 import React from 'react';
 import '../Styles/Gamepage.css';
+import Game from './Game';
 
 const Gamepage = () => (
   <div className="gamepage">
@@ -18,7 +19,9 @@ const Gamepage = () => (
         </div>
       </div>
     </div>
-    <div className="game-window">FENETRE DU JEU</div>
+    <div className="game-window">
+      <Game />
+    </div>
   </div>
 );
 

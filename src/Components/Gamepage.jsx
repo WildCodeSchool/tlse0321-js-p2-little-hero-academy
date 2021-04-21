@@ -4,6 +4,7 @@ import Game from './Game';
 
 const Gamepage = () => (
   <section className="gamepage">
+
     <div className="gamepage-container">
       <h2 className="gamepage-title">Bienvenue sur le jeu du ##### !</h2>
       <div className="game-rules">

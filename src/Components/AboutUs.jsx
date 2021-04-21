@@ -12,10 +12,10 @@ const AboutUs = () => (
     </div>
     <div className="aboutus-cardbloc">
       <div className="aboutus-card" href="recettespages/recette-page.html">
-        <div className="imgcontainer">
+        <div className="aboutus-img-container">
           <img
-            className="img-recette"
-            src="https://i.ibb.co/ncr6TNx/imgrecette.png"
+            className="abouts-img"
+            src="https://thumbs.dreamstime.com/b/superhero-kid-against-blue-sky-background-girl-power-concept-31740105.jpg"
             alt="recette des cookies chocolat"
           />
         </div>
@@ -31,25 +31,29 @@ const AboutUs = () => (
           n&apos;est pas du tout du matin ! Il est super, c&apos;est un héro,
           c&apos;est un super hero !!
         </div>
-        <table className="stats-post">
+        <table className="aboutus-stats">
           <tr>
             <td>
               <i className="fas fa-stopwatch" />
-              &ensp;20 min
+              &ensp;37 Force
             </td>
             <td className="stats-separator">
               <i className="fas fa-square" />
             </td>
             <td>
               <i className="fas fa-utensils" />
-              &ensp;Facile
+              &ensp;67 inteligence
             </td>
             <td className="stats-separator">
               <i className="fas fa-square" />
             </td>
             <td>
               <i className="fas fa-coins" />
-              &ensp;Bon marché
+              &ensp;66 rapiditié
+            </td>
+            <td>
+              <i className="fas fa-coins" />
+              &ensp;84 flemme
             </td>
           </tr>
         </table>

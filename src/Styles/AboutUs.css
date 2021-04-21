@@ -1,5 +1,6 @@
 .aboutus {
   width: 100%;
+  background-color: white;
 }
 .aboutus-intro {
   background-color: white;
@@ -8,8 +9,8 @@
 }
 .aboutus-title {
   font-family: 'RG-regular';
-  color: rgb(85, 85, 185);
-  font-size: 1.5em;
+  color: rgb(233, 152, 3);
+  font-size: 1.8em;
   padding: 1em;
 }
 .aboutus-intro p {
@@ -35,11 +36,9 @@
   text-align: center;
   width: 80%;
   background-color: white;
-  width: 100%;
   margin: auto;
 }
-
-.imgcontainer {
+.aboutus-img-container {
   height: 200px;
   overflow: hidden;
   display: flex;
@@ -47,6 +46,11 @@
   align-items: center; /* align vertical */
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
+}
+
+.aboutus-img {
+  width: 100%;
+  height: 100%;
 }
 
 .aboutus-card {
@@ -61,11 +65,8 @@
   margin: 10px;
 }
 
-.img-recette {
-  width: 100%;
-}
-
 .aboutus-card-title {
+  font-size: 1.4em;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -88,21 +89,25 @@
   font-size: 1.2em;
 }
 
-.stats-post {
+.aboutus-stats {
   width: 100%;
   padding: 5px;
-  font-size: 0.8em;
+  font-size: 1em;
   text-align: center;
   position: absolute;
   bottom: 5px;
+  font-family: 'RG-regular';
 }
 
-.stats-post td {
+.aboutus-stats td {
   font-weight: 500;
   color: var(--colorgrey);
 }
 
-.stats-separator i {
-  color: #d2dad3;
-  font-size: 0.6em;
+@media (min-width: 800px) {
+  .aboutus {
+    width: 80%;
+    background-color: white;
+    margin: auto;
+  }
 }

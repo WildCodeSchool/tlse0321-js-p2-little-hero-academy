@@ -1,0 +1,68 @@
+.aboutus {
+  margin: 2em;
+}
+.aboutus-intro {
+  background-color: white;
+  text-align: center;
+  padding: 1.5em;
+}
+.aboutus-title {
+  font-family: 'RG-regular';
+  color: rgb(85, 85, 185);
+  font-size: 1.5em;
+  padding: 1em;
+}
+.aboutus-intro p {
+  font-family: 'Quicksand';
+  font-weight: 500;
+}
+
+.aboutus-grid-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.aboutus-grid-img,
+.aboutus-grid-text {
+  height: 250px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+.aboutus-grid-text {
+  background-color: #282828;
+  color: #f5f5f5;
+  line-height: 1.5em;
+  font-family: 'Quicksand';
+  font-weight: 300;
+}
+
+.aboutus-grid-img {
+  background-position: center;
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  background-image: url('https://i.ibb.co/kXYqXmr/Pin-Clipart-com-gemini-clipart-3889488.png');
+}
+
+/* For presentation only, no need to copy the code below */
+.aboutus-grid-container * {
+  border: 1px solid red;
+}
+
+@media (min-width: 640px) {
+  .aboutus {
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .aboutus-grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    text-align: center;
+  }
+}

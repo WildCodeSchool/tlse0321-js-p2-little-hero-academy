@@ -26,7 +26,12 @@ const header = () => {
         <ul className={`liste-nav ${navbarOpen ? ' showMenu' : ''}`}>
           <Link closeMenu={closeMenu} to="/jeux" label="Jeux" href="jeux" />
           <Link closeMenu={closeMenu} to="/quiz" label="Quiz" href="quiz" />
-          <Link closeMenu={closeMenu} label="À propos" href="apropos" />
+          <Link
+            closeMenu={closeMenu}
+            to="/aboutus"
+            label="À propos"
+            href="apropos"
+          />
           <Link closeMenu={closeMenu} label="Contact" href="contact" />
         </ul>
         <button type="button" className="hamburger-btn" onClick={handleToggle}>

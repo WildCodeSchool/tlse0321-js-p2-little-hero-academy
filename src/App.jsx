@@ -5,9 +5,6 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Gamepage from './Components/Gamepage';
 import Carousel from './Components/Carousel';
-import Game from './Components/Game';
-import Gamepage from './Components/Gamepage';
-
 
 function App() {
   return (

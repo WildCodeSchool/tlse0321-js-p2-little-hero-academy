@@ -3,7 +3,7 @@ import '../Styles/Gamepage.css';
 import Game from './Game';
 
 const Gamepage = () => (
-  <div className="gamepage">
+  <section className="gamepage">
     <div className="gamepage-container">
       <h2 className="gamepage-title">Bienvenue sur le jeu du ##### !</h2>
       <div className="game-rules">
@@ -22,7 +22,7 @@ const Gamepage = () => (
     <div className="game-window">
       <Game />
     </div>
-  </div>
+  </section>
 );
 
 export default Gamepage;

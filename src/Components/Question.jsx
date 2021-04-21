@@ -95,6 +95,7 @@ const Question = () => {
     },
   ];
 
+  const [showAnswer, setShowAnswer] = useState(0);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
@@ -104,13 +105,25 @@ const Question = () => {
       setScore(score + 1);
     }
 
-    const nextQuestion = currentQuestion + 1;
-    if (nextQuestion < questions.length) {
-      setCurrentQuestion(nextQuestion);
-    } else {
-      setShowScore(true);
-    }
+    setShowAnswer(true);
+    setTimeout(() => {
+      const nextQuestion = currentQuestion + 1;
+      if (nextQuestion < questions.length) {
+        setCurrentQuestion(nextQuestion);
+        setShowAnswer(false);
+      } else {
+        setShowScore(true);
+      }
+    }, 2000);
   };
+
+  const toggleAnswerClass = (isCorrect) => {
+    if (showAnswer) {
+      return isCorrect ? 'correct' : 'incorrect';
+    }
+    return '';
+  };
+
   return (
     <div className="question">
       {showScore ? (
@@ -131,6 +144,7 @@ const Question = () => {
             {questions[currentQuestion].answerOptions.map((answerOption) => (
               <button
                 onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
+                className={toggleAnswerClass(answerOption.isCorrect)}
                 type="button"
               >
                 {answerOption.answerText}

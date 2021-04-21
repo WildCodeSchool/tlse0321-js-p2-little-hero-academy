@@ -1,0 +1,48 @@
+.gamepage {
+  width: 100%;
+  margin: auto;
+}
+
+.gamepage-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: grey;
+  padding: 1em;
+}
+
+h2.gamepage-title {
+  font-size: 1.3em;
+  text-align: center;
+  color: white;
+  margin-bottom: 10px;
+}
+.game-rules {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.rules-text {
+  padding: 15px;
+  width: 50%;
+  height: 100px;
+  text-align: center;
+  background-color: thistle;
+}
+
+.rules-heropicture {
+  width: 150px;
+}
+
+.game-window {
+  width: 100%;
+  background-color: indigo;
+  height: 300px;
+}
+
+body {
+  background: #368dda;
+}

@@ -3,7 +3,7 @@ import '../Styles/ContactForm.css';
 
 const ContactForm = () => (
   <div className="contact-form-container">
-    <form id="contact" action="mailto:contact@yourdomain.com" method="post">
+    <form id="contact" method="post">
       <h3>Nous contacter</h3>
       <h4>Un retour, une suggestion ou un commentaire ?</h4>
       <fieldset>
@@ -17,11 +17,9 @@ const ContactForm = () => (
       </fieldset>
       <fieldset>
         <button
-          onClick="submittedForm()"
           name="submit"
           type="submit"
           data-submit="...Sending"
-          href="#"
           className="hvr-sweep-to-bottom"
         >
           Envoyer
@@ -41,5 +39,4 @@ const ContactForm = () => (
     </form>
   </div>
 );
-
 export default ContactForm;

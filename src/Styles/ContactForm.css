@@ -35,10 +35,12 @@
 }
 
 #contact h3 {
+  font-family: 'RG-regular';
   display: block;
   font-size: 30px;
   font-weight: 300;
   margin-bottom: 10px;
+  color: var();
 }
 
 #contact h4 {
@@ -66,12 +68,14 @@ fieldset {
   background: #fff;
   margin: 0 0 5px;
   padding: 10px;
+  font-size: 14px;
 }
 
 #contact textarea {
   height: 100px;
   max-width: 100%;
   resize: none;
+  font-family: 'Quicksand';
 }
 
 .copyright {

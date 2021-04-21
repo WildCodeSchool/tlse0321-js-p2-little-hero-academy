@@ -10,18 +10,50 @@ const AboutUs = () => (
         cette appli, ce que lon a aimé pas aimé ..
       </p>
     </div>
-    <div className="aboutus-grid-container">
-      <div className="aboutus-grid-img" />
-      <div className="aboutus-grid-text">
-        An About Us page helps your company make a good first impression, and is
-        critical for building customer trust and loyalty. An About Us page
-        should make sure to cover basic information about the store and its
-        founders, explain the company
+    <div className="aboutus-cardbloc">
+      <div className="aboutus-card" href="recettespages/recette-page.html">
+        <div className="imgcontainer">
+          <img
+            className="img-recette"
+            src="https://i.ibb.co/ncr6TNx/imgrecette.png"
+            alt="recette des cookies chocolat"
+          />
+        </div>
+        <div className="aboutus-card-title">
+          <h2>
+            Jerome,
+            <br /> super dormeur
+          </h2>
+        </div>
+        <div className="aboutus-card-text">
+          Son pouvoir est immense ! Il a la capacité de dormir plus de 10h
+          d&apos;affilées à moins qu&apos;on ne le reveille. Et en plus, il
+          n&apos;est pas du tout du matin ! Il est super, c&apos;est un héro,
+          c&apos;est un super hero !!
+        </div>
+        <table className="stats-post">
+          <tr>
+            <td>
+              <i className="fas fa-stopwatch" />
+              &ensp;20 min
+            </td>
+            <td className="stats-separator">
+              <i className="fas fa-square" />
+            </td>
+            <td>
+              <i className="fas fa-utensils" />
+              &ensp;Facile
+            </td>
+            <td className="stats-separator">
+              <i className="fas fa-square" />
+            </td>
+            <td>
+              <i className="fas fa-coins" />
+              &ensp;Bon marché
+            </td>
+          </tr>
+        </table>
       </div>
-      <div className="aboutus-grid-img">image</div>
-      <div className="aboutus-grid-text">texte</div>
-      <div className="aboutus-grid-img">image</div>
-      <div className="aboutus-grid-text">texte</div>
     </div>
   </div>
 );

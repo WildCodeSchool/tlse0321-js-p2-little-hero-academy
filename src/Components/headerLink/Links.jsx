@@ -6,9 +6,9 @@ const Links = ({
 }) => (
   <div>
     <Link to={to}>
-      <li>
+      <li className="item-nav">
         <a href={href} activeClassName="active-link" onClick={closeMenu} exact>
-          {label}
+          <span>{label}</span>
         </a>
       </li>
     </Link>

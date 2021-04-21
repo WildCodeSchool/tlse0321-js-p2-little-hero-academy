@@ -1,37 +1,144 @@
-import React from 'react';
-import ResponseCheckbox from './ResponseCheckbox';
-import '../Styles/Quiz.css';
-import QuestionTitle from './QuestionTitle';
+import React, { useState } from 'react';
+import '../Styles/Question.css';
 
 const Question = () => {
-  const responseItems = [
+  const questions = [
     {
-      id: '',
-      value: '',
-      label: 'Réponse1',
+      questionText: 'What is the capital of France?',
+      answerOptions: [
+        { answerText: 'New York', isCorrect: false },
+        { answerText: 'London', isCorrect: false },
+        { answerText: 'Paris', isCorrect: true },
+        { answerText: 'Dublin', isCorrect: false },
+      ],
     },
     {
-      id: '',
-      value: '',
-      label: 'Réponse2',
+      questionText: 'Who is CEO of Tesla?',
+      answerOptions: [
+        { answerText: 'Jeff Bezos', isCorrect: false },
+        { answerText: 'Elon Musk', isCorrect: true },
+        { answerText: 'Bill Gates', isCorrect: false },
+        { answerText: 'Tony Stark', isCorrect: false },
+      ],
     },
     {
-      id: '',
-      value: '',
-      label: 'Réponse3',
+      questionText: 'The iPhone was created by which company?',
+      answerOptions: [
+        { answerText: 'Apple', isCorrect: true },
+        { answerText: 'Intel', isCorrect: false },
+        { answerText: 'Amazon', isCorrect: false },
+        { answerText: 'Microsoft', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'How many Harry Potter books are there?',
+      answerOptions: [
+        { answerText: '1', isCorrect: false },
+        { answerText: '4', isCorrect: false },
+        { answerText: '6', isCorrect: false },
+        { answerText: '7', isCorrect: true },
+      ],
+    },
+    {
+      questionText: 'The iPhone was created by which company?',
+      answerOptions: [
+        { answerText: 'Apple', isCorrect: true },
+        { answerText: 'Intel', isCorrect: false },
+        { answerText: 'Amazon', isCorrect: false },
+        { answerText: 'Microsoft', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'The iPhone was created by which company?',
+      answerOptions: [
+        { answerText: 'Apple', isCorrect: true },
+        { answerText: 'Intel', isCorrect: false },
+        { answerText: 'Amazon', isCorrect: false },
+        { answerText: 'Microsoft', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'The iPhone was created by which company?',
+      answerOptions: [
+        { answerText: 'Apple', isCorrect: true },
+        { answerText: 'Intel', isCorrect: false },
+        { answerText: 'Amazon', isCorrect: false },
+        { answerText: 'Microsoft', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'The iPhone was created by which company?',
+      answerOptions: [
+        { answerText: 'Apple', isCorrect: true },
+        { answerText: 'Intel', isCorrect: false },
+        { answerText: 'Amazon', isCorrect: false },
+        { answerText: 'Microsoft', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'The iPhone was created by which company?',
+      answerOptions: [
+        { answerText: 'Apple', isCorrect: true },
+        { answerText: 'Intel', isCorrect: false },
+        { answerText: 'Amazon', isCorrect: false },
+        { answerText: 'Microsoft', isCorrect: false },
+      ],
+    },
+    {
+      questionText: 'The iPhone was created by which company?',
+      answerOptions: [
+        { answerText: 'Apple', isCorrect: true },
+        { answerText: 'Intel', isCorrect: false },
+        { answerText: 'Amazon', isCorrect: false },
+        { answerText: 'Microsoft', isCorrect: false },
+      ],
     },
   ];
+
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showScore, setShowScore] = useState(false);
+  const [score, setScore] = useState(0);
+
+  const handleAnswerOptionClick = (isCorrect) => {
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+
+    const nextQuestion = currentQuestion + 1;
+    if (nextQuestion < questions.length) {
+      setCurrentQuestion(nextQuestion);
+    } else {
+      setShowScore(true);
+    }
+  };
   return (
-    <div className="quiz-container">
-      <QuestionTitle title="Je suis le titre" />
-      <div className="quiz-responses">
-        {responseItems.map((responseItem) => (
-          <ResponseCheckbox
-            responseItems={responseItem}
-            key={responseItem.label}
-          />
-        ))}
-      </div>
+    <div className="question">
+      {showScore ? (
+        <div className="score-section">
+          You scored {score} out of {questions.length}
+        </div>
+      ) : (
+        <div className="container">
+          <div className="question-section">
+            <div className="question-count">
+              <span>Question {currentQuestion + 1}</span>/{questions.length}
+            </div>
+            <div className="question-text">
+              {questions[currentQuestion].questionText}
+            </div>
+          </div>
+          <div className="answer-section">
+            {questions[currentQuestion].answerOptions.map((answerOption) => (
+              <button
+                onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
+                type="button"
+              >
+                {answerOption.answerText}
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 };

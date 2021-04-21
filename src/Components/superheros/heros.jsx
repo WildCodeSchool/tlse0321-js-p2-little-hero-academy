@@ -1,9 +1,9 @@
-import { useState } from 'react';
-import React from 'react';
+import React, { useState } from 'react';
+
 import axios from 'axios';
 import DisplayHeros from './DisplayHeros';
 
-//Fonction Super-Héros
+// Fonction Super-Héros
 const heros = [
   38,
   69,
@@ -39,8 +39,7 @@ function SuperHeros() {
 
   const randomIdHero = getRandomHero(22);
   const randomHero = heros[randomIdHero];
-  const urlHero =
-    'https://www.superheroapi.com/api.php/10226046072486283/' + randomHero + '';
+  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${randomHero}`;
   console.log(heros[randomHero]);
 
   const getHero = () => {
@@ -52,9 +51,9 @@ function SuperHeros() {
       });
   };
   return (
-    <div className='App'>
+    <div className="App">
       <DisplayHeros hero={hero} />
-      <button type='button' onClick={getHero}>
+      <button type="button" onClick={getHero}>
         New Hero
       </button>
     </div>

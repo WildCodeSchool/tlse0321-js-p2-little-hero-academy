@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import '../Styles/Header.css';
 import hamburger from '../img/hamburger-menu.png';
 import logo from '../img/logo.png';
-import Link from './headerLink/Link';
+import Link from './headerLink/Links';
 
 const header = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
@@ -32,9 +32,10 @@ const header = () => {
         </button>
         <nav>
           <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
-            <Link closeMenu={closeMenu} label="Jeux" href="#jeux" />
-            <Link closeMenu={closeMenu} label="À propos" href="#apropos" />
-            <Link closeMenu={closeMenu} label="Contact" href="#contact" />
+            <Link closeMenu={closeMenu} to="/jeux" label="Jeux" href="jeux" />
+            <Link closeMenu={closeMenu} to="/quiz" label="Quiz" href="quiz" />
+            <Link closeMenu={closeMenu} label="À propos" href="apropos" />
+            <Link closeMenu={closeMenu} label="Contact" href="contact" />
           </ul>
         </nav>
       </div>

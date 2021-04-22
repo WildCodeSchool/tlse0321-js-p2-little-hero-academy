@@ -17,11 +17,11 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #E0E0E0;
+  color: #e0e0e0;
 }
 
 .question {
-  background-color: #067BC2;
+  background-color: #067bc2;
   width: 850px;
   border-radius: 15px;
   padding: 20px;
@@ -37,7 +37,6 @@
   font-size: 24px;
   align-items: center;
 }
-
 
 .container {
   display: flex;
@@ -62,7 +61,6 @@
   font-size: 40px;
 }
 
-
 .answer-section {
   width: 100%;
   display: grid;
@@ -80,7 +78,7 @@ button {
   padding: 35px;
   justify-content: center;
   align-items: center;
-  border: 5px solid #EC6A32;
+  border: 5px solid #ec6a32;
   cursor: pointer;
   height: 50px;
   margin-top: 40px;
@@ -95,5 +93,16 @@ button {
 }
 
 button:hover {
-  border: 5px solid #067BC2;
+  border: 5px solid #067bc2;
+}
+
+.bulleBravo {
+  height: 230px;
+  margin-bottom: 345px;
+  position: absolute;
+  margin-left: 170px;
+}
+
+.score {
+  font-size: 27px;
 }

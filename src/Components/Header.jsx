@@ -26,6 +26,7 @@ const header = () => {
         <ul className={`liste-nav ${navbarOpen ? ' showMenu' : ''}`}>
           <Link closeMenu={closeMenu} to="/jeux" label="Jeux" href="jeux" />
           <Link closeMenu={closeMenu} to="/quiz" label="Quiz" href="quiz" />
+          <Link closeMenu={closeMenu} to="/pendu" label="Pendu" href="Pendu" />
           <Link closeMenu={closeMenu} label="À propos" href="apropos" />
           <Link closeMenu={closeMenu} label="Contact" href="contact" />
         </ul>

@@ -3,10 +3,9 @@
   background-color: white;
 }
 .aboutus-intro {
-  background-color: white;
   text-align: center;
   background-color: #e0e0e0;
-  padding: 1em;
+  padding: 1.5em;
 }
 .aboutus-title {
   font-family: 'RG-regular';
@@ -14,10 +13,12 @@
   font-size: 1.8em;
   margin-bottom: 0.5em;
 }
-.aboutus-intro p {
+.aboutus-description p {
   font-family: 'Quicksand';
   font-weight: 500;
   color: #333;
+  padding: 0.5em;
+  text-align: justify;
 }
 
 .aboutus-cardbloc {
@@ -55,7 +56,8 @@
 }
 
 .aboutus-card-title {
-  font-size: 1.4em;
+  font-size: 1.5em;
+  letter-spacing: 0.1em;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -67,8 +69,8 @@
 }
 
 .aboutus-card-text {
-  padding: 10px 25px 10px 25px;
-  font-size: 0.9em;
+  padding: 1.5em;
+  font-size: 1em;
   font-weight: 300;
   text-align: justify;
   color: var(--colorgrey);
@@ -96,7 +98,7 @@
 }
 
 .aboutus-stats td {
-  font-weight: 500;
+  font-size: 1.3em;
   color: #333;
   border-left: 3px solid #067bc2;
   padding: 3px;
@@ -108,5 +110,13 @@
     background-color: white;
     margin: 2em auto 2em auto;
     padding: 0 0 2em 0;
+  }
+
+  .aboutus-description {
+    display: flex;
+    flex-direction: row;
+  }
+  .aboutus-intro p {
+    flex: 1 1;
   }
 }

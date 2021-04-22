@@ -5,10 +5,18 @@ const AboutUs = () => (
   <div className="aboutus">
     <div className="aboutus-intro">
       <h1 className="aboutus-title">A propos de nous</h1>
-      <p>
-        Texte explicatif et sympathique sur la raison pour laquelle on a fait
-        cette appli, ce que lon a aimé pas aimé ..
-      </p>
+      <div className="aboutus-description">
+        <p>
+          Notre mission, que l&apos;on a du accepter malgré nous, était de créer
+          une appli en partant d&apos;une base de données API. Nous avons fait
+          le choix de l&apos;API des SUPER HERO, tous confondu : marvel, DC,
+          star wars..
+        </p>
+        <p>
+          Après réflexion, nous avons pris la direction d&apos;une appli de jeu
+          pour enfants dans le thème des héros.
+        </p>
+      </div>
     </div>
     <div className="aboutus-cardbloc">
       <div className="aboutus-card" href="recettespages/recette-page.html">

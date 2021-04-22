@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import '../Styles/Question.css';
+import wonderwoman from '../img/avatarwonderwoman.png';
+import bulleBravo from '../img/bulleBravo.png';
+import bulleDommage from '../img/bulleDommage.png';
 
 const Question = () => {
   const questions = [
@@ -109,7 +112,15 @@ const Question = () => {
     <div className="question">
       {showScore ? (
         <div className="score-section">
-          You scored {score} out of {questions.length}
+          <div className="score">
+            You scored {score} out of {questions.length}
+          </div>
+          <img
+            className="bulleBravo"
+            src={score > 5 ? bulleBravo : bulleDommage}
+            alt="bulle"
+          />
+          <img className="ImgWonder" src={wonderwoman} alt="wonderwoman" />
         </div>
       ) : (
         <div className="container">

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Keyboard from './pendu-components/Keyboard';
+import Letter from './pendu-components/Letter';
 
 const pendu = () => {
   const word = 'superman';
@@ -187,8 +188,27 @@ const pendu = () => {
     setAlphabet(newAlphabet);
   }
 
+  const letters = word.split('');
+
+  const notFoundLetter = letters.map((letter) => letter.replace(letter, '_'));
+
+  // const findObject = alphabet.filter(
+  //   (letter) => letter.show && letters.includes(letter.value)
+  // );
+
+  // const findLetter = findObject.map((e) => e.value);
+  const showLetter = notFoundLetter;
+  // for (let i = 0; i < letters.length; i + 1) {
+  //   for (let j = 0; j < findLetter.length; j + 1) {
+  //     if (letters[i] === findLetter[j]) {
+  //       showLetter[i] = findLetter[j];
+  //     }
+  //   }
+  // }
+
   return (
     <div>
+      <Letter showLetter={showLetter} />
       <Keyboard
         alphabet={alphabet}
         setAlphabet={setAlphabet}

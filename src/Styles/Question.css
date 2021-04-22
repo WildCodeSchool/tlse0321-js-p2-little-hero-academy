@@ -10,9 +10,9 @@
   }
 }
 .game {
-  background-color: grey;
+  background-color: white;
   margin: auto;
-  height: 30rem;
+  height: 600px;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -28,6 +28,8 @@
   box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
   display: flex;
   justify-content: space-evenly;
+  margin-top: 5rem;
+  height: 400px;
 }
 
 .score-section {
@@ -57,7 +59,7 @@
 
 .question-text {
   margin-bottom: 12px;
-  font-size: 30px;
+  font-size: 40px;
 }
 
 /* ANSWERS/RIGHT SECTION */
@@ -75,12 +77,13 @@ button {
   background-color: rgb(245, 245, 245);
   border-radius: 15px;
   display: flex;
-  padding: 5px;
+  padding: 35px;
   justify-content: center;
   align-items: center;
   border: 5px solid yellow;
   cursor: pointer;
   height: 50px;
+  margin-top: 40px;
 }
 
 .correct {
@@ -92,5 +95,5 @@ button {
 }
 
 button:hover {
-  border: 5px solid #555e7d;
+  border: 5px solid #4a6deb;
 }

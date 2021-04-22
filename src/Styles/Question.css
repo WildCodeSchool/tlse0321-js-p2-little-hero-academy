@@ -17,19 +17,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #ffffff;
+  color: #E0E0E0;
 }
 
 .question {
-  background-color: blue;
+  background-color: #067BC2;
   width: 850px;
   border-radius: 15px;
   padding: 20px;
-  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 10px 10px 42px 0px #333333;
   display: flex;
   justify-content: space-evenly;
   margin-top: 5rem;
-  height: 400px;
+  height: 420px;
 }
 
 .score-section {
@@ -38,7 +38,7 @@
   align-items: center;
 }
 
-/* QUESTION/TIMER/LEFT SECTION */
+
 .container {
   display: flex;
   flex-direction: column;
@@ -62,7 +62,7 @@
   font-size: 40px;
 }
 
-/* ANSWERS/RIGHT SECTION */
+
 .answer-section {
   width: 100%;
   display: grid;
@@ -80,7 +80,7 @@ button {
   padding: 35px;
   justify-content: center;
   align-items: center;
-  border: 5px solid yellow;
+  border: 5px solid #EC6A32;
   cursor: pointer;
   height: 50px;
   margin-top: 40px;
@@ -95,5 +95,5 @@ button {
 }
 
 button:hover {
-  border: 5px solid #4a6deb;
+  border: 5px solid #067BC2;
 }

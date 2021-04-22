@@ -1,3 +1,5 @@
+import './style/NewGame.css';
+
 const NewGame = ({ findLetterInWord }) => (
   <section className="new-game-container">
     <button

@@ -1,3 +1,5 @@
+import './style/Keyboard.css';
+
 const Keyboard = (props) => {
   const { alphabet, handleClick } = props;
 

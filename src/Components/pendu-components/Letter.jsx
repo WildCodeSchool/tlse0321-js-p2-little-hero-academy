@@ -1,3 +1,5 @@
+import './style/Letter.css';
+
 const Letter = ({ showLetter }) => (
   <section className="find-word">
     {showLetter.map((letter) => (

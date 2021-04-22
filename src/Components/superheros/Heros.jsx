@@ -40,7 +40,6 @@ function SuperHeros() {
   const randomIdHero = getRandomHero(22);
   const randomHero = heros[randomIdHero];
   const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${randomHero}`;
-  console.log(heros[randomHero]);
 
   const getHero = () => {
     axios

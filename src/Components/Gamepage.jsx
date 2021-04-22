@@ -1,6 +1,7 @@
 import React from 'react';
 import '../Styles/Gamepage.css';
 import Game from './Game';
+import VocalRules from './VocalRules';
 
 const Gamepage = () => (
   <section className="gamepage">
@@ -17,6 +18,9 @@ const Gamepage = () => (
         </div>
         <div className="rules-text">
           Did someone say <em>chimichangas?</em>
+        </div>
+        <div className="vocal-rules">
+          <VocalRules rules="Bienvenue dans le Quiz! Dans ce jeu tu dois répondre à une serie de 10 questions. Mieux tu réponds aux questions, plus ta note finale sera élevée. Bonne chance! " />
         </div>
       </div>
     </div>

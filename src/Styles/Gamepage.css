@@ -40,9 +40,8 @@ h2.gamepage-title {
 .game-window {
   width: 100%;
   background-color: indigo;
-  height: 300px;
 }
 
 body {
-  background: #368dda;
+  background: rgb(169, 169, 245);
 }

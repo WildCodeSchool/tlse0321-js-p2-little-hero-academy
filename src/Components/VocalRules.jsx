@@ -1,5 +1,6 @@
+import React from 'react';
+
 function VocalRules(props) {
-  // eslint-disable-next-line react/destructuring-assignment
   const utterance = new SpeechSynthesisUtterance(props.rules);
   utterance.lang = 'fr-FR';
   utterance.rate = 1.2;

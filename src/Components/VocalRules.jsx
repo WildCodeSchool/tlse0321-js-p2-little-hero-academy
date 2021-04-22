@@ -1,7 +1,7 @@
 import React from 'react';
 
-function VocalRules(props) {
-  const utterance = new SpeechSynthesisUtterance(props.rules);
+function VocalRules(rules) {
+  const utterance = new SpeechSynthesisUtterance(rules);
   utterance.lang = 'fr-FR';
   utterance.rate = 1.2;
   utterance.pitch = 0;

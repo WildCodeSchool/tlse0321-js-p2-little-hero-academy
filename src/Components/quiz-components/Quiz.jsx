@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import '../Styles/Quiz.css';
-import questions from './quiz-components/questions-data';
+import '../../Styles/Quiz.css';
+import questions from './questions-data';
+import wonderwoman from '../../img/avatarwonderwoman.png';
+import bulleBravo from '../../img/bulleBravo.png';
+import bulleDommage from '../../img/bulleDommage.png';
 
 const Question = () => {
-  const [showAnswer, setShowAnswer] = useState(0);
+  const [showAnswer, setShowAnswer] = useState(false);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
@@ -17,7 +20,7 @@ const Question = () => {
     setTimeout(() => {
       const nextQuestion = currentQuestion + 1;
       if (nextQuestion < questions.length) {
-        setCurrentQuestion(nextQuestion);
+        setCurrentQuestion(currentQuestion + 1);
         setShowAnswer(false);
       } else {
         setShowScore(true);
@@ -36,7 +39,15 @@ const Question = () => {
     <div className="question">
       {showScore ? (
         <div className="score-section">
-          You scored {score} out of {questions.length}
+          <div className="score">
+            You scored {score} out of {questions.length}
+          </div>
+          <img
+            className="bulle"
+            src={score > 5 ? bulleBravo : bulleDommage}
+            alt="bulle"
+          />
+          <img className="ImgWonder" src={wonderwoman} alt="wonderwoman" />
         </div>
       ) : (
         <div className="container">

@@ -1,7 +1,6 @@
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import './Styles/reset.css';
-import 'fontsource-roboto';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Gamepage from './Components/Gamepage';

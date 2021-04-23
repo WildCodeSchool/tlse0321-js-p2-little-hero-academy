@@ -40,7 +40,7 @@ const Question = () => {
       {showScore ? (
         <div className="score-section">
           <div className="score">
-            You scored {score} out of {questions.length}
+            Ton score est {score} sur {questions.length}
           </div>
           <img
             className="bulle"

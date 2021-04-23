@@ -68,7 +68,7 @@
   grid-gap: 50px;
 }
 
-button {
+.answer-section button {
   width: 100%;
   font-size: 20px;
   color: rgb(22, 120, 162);
@@ -84,15 +84,15 @@ button {
   margin-top: 40px;
 }
 
-.correct {
+.answer-section .correct {
   background-color: #7df77d;
 }
 
-.incorrect {
+.answer-section .incorrect {
   background-color: #f76060;
 }
 
-button:hover {
+.answer-section button:hover {
   border: 5px solid #067bc2;
 }
 

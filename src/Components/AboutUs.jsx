@@ -2,10 +2,10 @@ import React from 'react';
 import '../Styles/AboutUs.css';
 
 const AboutUs = () => (
-  <div className="aboutus">
-    <div className="aboutus-intro">
+  <article className="aboutus">
+    <section className="aboutus-intro">
       <h1 className="aboutus-title">A propos de nous</h1>
-      <div className="aboutus-description">
+      <article className="aboutus-description">
         <p>
           Notre mission, que l&apos;on a du accepter malgré nous, était de créer
           une appli en partant d&apos;une base de données API. Nous avons fait
@@ -14,12 +14,14 @@ const AboutUs = () => (
         </p>
         <p>
           Après réflexion, nous avons pris la direction d&apos;une appli de jeu
-          pour enfants dans le thème des héros.
+          pour enfants dans le thème des héros. Notre choix de jeu s&apos;est
+          porté sur des classiques comme le pendu qui sont des jeux accessible à
+          tous, notamment pour des enfants.
         </p>
-      </div>
-    </div>
-    <div className="aboutus-cardbloc">
-      <div className="aboutus-card" href="recettespages/recette-page.html">
+      </article>
+    </section>
+    <section className="aboutus-cardbloc">
+      <article className="aboutus-card" href="recettespages/recette-page.html">
         <div className="aboutus-img-container">
           <img
             className="aboutus-img"
@@ -53,8 +55,8 @@ const AboutUs = () => (
             <td>FLEMME</td>
           </tr>
         </table>
-      </div>
-      <div className="aboutus-card" href="recettespages/recette-page.html">
+      </article>
+      <article className="aboutus-card" href="recettespages/recette-page.html">
         <div className="aboutus-img-container">
           <img
             className="aboutus-img"
@@ -88,8 +90,8 @@ const AboutUs = () => (
             <td>FLEMME</td>
           </tr>
         </table>
-      </div>
-      <div className="aboutus-card" href="recettespages/recette-page.html">
+      </article>
+      <article className="aboutus-card" href="recettespages/recette-page.html">
         <div className="aboutus-img-container">
           <img
             className="aboutus-img"
@@ -123,8 +125,8 @@ const AboutUs = () => (
             <td>FLEMME</td>
           </tr>
         </table>
-      </div>
-      <div className="aboutus-card" href="recettespages/recette-page.html">
+      </article>
+      <article className="aboutus-card" href="recettespages/recette-page.html">
         <div className="aboutus-img-container">
           <img
             className="aboutus-img"
@@ -158,9 +160,9 @@ const AboutUs = () => (
             <td>FLEMME</td>
           </tr>
         </table>
-      </div>
-    </div>
-  </div>
+      </article>
+    </section>
+  </article>
 );
 
 export default AboutUs;

@@ -1,10 +1,10 @@
 import React from 'react';
-import '../Styles/Question.css';
-import Question from './Question';
+import '../Styles/Quiz.css';
+import Quiz from './quiz-components/Quiz';
 
 const Game = () => (
   <div className="game">
-    <Question />
+    <Quiz />
   </div>
 );
 

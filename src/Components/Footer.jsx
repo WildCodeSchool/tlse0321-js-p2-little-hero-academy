@@ -6,8 +6,10 @@ const Footer = () => (
   <div className="site-footer">
     <div className="footer-container">
       <div className="footer-credits">
-        <h6>Crédits</h6>
         <ul>
+          <li>
+            <h4>Crédits</h4>
+          </li>
           <li>
             Vecteurs par{' '}
             <a
@@ -46,8 +48,10 @@ const Footer = () => (
         </ul>
       </div>
       <div className="footer-social-link">
-        <h6>Suivez-nous</h6>
         <ul>
+          <li>
+            <h4>Suivez-nous</h4>
+          </li>
           <li>
             <a href="www.facebook.com" className="href-footer">
               Facebook
@@ -66,17 +70,18 @@ const Footer = () => (
         </ul>
       </div>
       <div className="footer-quick-links">
-        <h6>Lien rapide</h6>
         <ul>
+          <li>
+            <h4>Lien rapide</h4>
+          </li>
           <li>Notre histoire</li>
-          <li>Livre d&apos;Or</li>
           <li>Nous contacter</li>
           <li>Plan du site</li>
         </ul>
       </div>
     </div>
     <div className="separator">{null}</div>
-    <div className="footer-credits">
+    <div className="footer-endline">
       <div className="copyrights">
         <p>
           LITTLE HERO ACADEMY. Site crée par les élèves de la Wild Code School

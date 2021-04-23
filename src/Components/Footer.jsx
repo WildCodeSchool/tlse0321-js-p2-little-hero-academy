@@ -3,9 +3,9 @@ import '../Styles/Footer.css';
 import '../App.css';
 
 const Footer = () => (
-  <div className="site-footer">
-    <div className="footer-container">
-      <div className="footer-credits">
+  <article className="site-footer">
+    <section className="footer-container">
+      <article className="footer-credits">
         <ul>
           <li>
             <h4>Crédits</h4>
@@ -46,8 +46,8 @@ const Footer = () => (
             </a>{' '}
           </li>
         </ul>
-      </div>
-      <div className="footer-social-link">
+      </article>
+      <article className="footer-social-link">
         <ul>
           <li>
             <h4>Suivez-nous</h4>
@@ -68,8 +68,8 @@ const Footer = () => (
             </a>
           </li>
         </ul>
-      </div>
-      <div className="footer-quick-links">
+      </article>
+      <article className="footer-quick-links">
         <ul>
           <li>
             <h4>Lien rapide</h4>
@@ -78,18 +78,16 @@ const Footer = () => (
           <li>Nous contacter</li>
           <li>Plan du site</li>
         </ul>
-      </div>
-    </div>
+      </article>
+    </section>
     <div className="separator">{null}</div>
-    <div className="footer-endline">
-      <div className="copyrights">
-        <p>
-          LITTLE HERO ACADEMY. Site crée par les élèves de la Wild Code School
-          de Toulouse session mars 2021. Tous droits réservés.
-        </p>
-      </div>
-    </div>
-  </div>
+    <section className="copyrights">
+      <p>
+        LITTLE HERO ACADEMY. Site crée par les élèves de la Wild Code School de
+        Toulouse session mars 2021. Tous droits réservés.
+      </p>
+    </section>
+  </article>
 );
 
 export default Footer;

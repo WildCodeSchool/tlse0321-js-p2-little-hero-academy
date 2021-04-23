@@ -32,7 +32,14 @@ const header = () => {
             label="À propos"
             href="apropos"
           />
-          <Link closeMenu={closeMenu} label="Contact" href="contact" />
+          <Link closeMenu={closeMenu} to="/pendu" label="Pendu" href="Pendu" />
+          <Link closeMenu={closeMenu} label="À propos" href="apropos" />
+          <Link
+            closeMenu={closeMenu}
+            to="/contactform"
+            label="Contact"
+            href="contact"
+          />
         </ul>
         <button type="button" className="hamburger-btn" onClick={handleToggle}>
           <img

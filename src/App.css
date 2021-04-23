@@ -24,6 +24,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'TextHero-regular';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_1_0.woff2')
+      format('woff2'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff')
+      format('woff');
+  font-style: normal;
+  font-weight: 400;
+}
+
 :root {
   --greydark: #282828;
   --greylight: #f5f5f5;

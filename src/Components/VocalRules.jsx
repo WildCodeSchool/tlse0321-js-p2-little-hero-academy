@@ -1,10 +1,10 @@
 import React from 'react';
 
-function VocalRules(rules) {
+function VocalRules({ rules }) {
   const utterance = new SpeechSynthesisUtterance(rules);
   utterance.lang = 'fr-FR';
   utterance.rate = 1.2;
-  utterance.pitch = 0;
+  utterance.pitch = 2;
 
   return (
     <div>

@@ -1,5 +1,13 @@
 .new-game-container {
   margin-top: 2rem;
+  left: 10%;
+  position: fixed;
+  width: 70%;
+  height: 45rem;
+  top: 10rem;
+  border: 2px solid;
+  border-radius: 20px;
+  background-color: rgba(109, 101, 101, 0.966);
 }
 
 .btn-game {

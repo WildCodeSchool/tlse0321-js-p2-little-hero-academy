@@ -164,6 +164,11 @@ const pendu = () => {
       show: false,
     },
   ]);
+  const [gameStarted, setGameStarted] = useState(true);
+
+  const startGame = () => {
+    setGameStarted(false);
+  };
 
   //  Recherche si les lettre sont dans le mots a trouver.
   //  Passe la valeur de la key "inword" de la lettre a "true".
@@ -176,6 +181,7 @@ const pendu = () => {
         newAlphabet[index].inWord = false;
       }
       setAlphabet(newAlphabet);
+      startGame();
     });
   }
 
@@ -207,7 +213,6 @@ const pendu = () => {
 
   // Resort du tableau findObject les lettres pour les comparer au mots a trouver
   const findLetter = findObject.map((e) => e.value);
-  console.log(findLetter);
 
   // Copie le tableau de lettre cacher.
   const showLetter = notFoundLetter;
@@ -224,6 +229,7 @@ const pendu = () => {
     }
   }
   showMe();
+
   return (
     <div id="game">
       <GameWindow
@@ -235,6 +241,9 @@ const pendu = () => {
         setCount={setCount}
         word={word}
         findLetterInWord={findLetterInWord}
+        gameStarted={gameStarted}
+        setGameStarted={setGameStarted}
+        startGame={startGame}
       />
     </div>
   );

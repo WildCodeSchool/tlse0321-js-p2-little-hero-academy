@@ -13,9 +13,7 @@ const GameWindow = (props) => {
     setAlphabet,
     alphabet,
     findLetterInWord,
-    gameStarted,
-    setGameStarted,
-    startGame,
+    gameNotYetStarted,
   } = props;
 
   return (
@@ -25,9 +23,7 @@ const GameWindow = (props) => {
       <Letter showLetter={showLetter} />
       <NewGame
         findLetterInWord={findLetterInWord}
-        gameStarted={gameStarted}
-        setGameStarted={setGameStarted}
-        startGame={startGame}
+        gameNotYetStarted={gameNotYetStarted}
       />
       <Keyboard
         handleClick={handleClick}

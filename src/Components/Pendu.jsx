@@ -164,10 +164,10 @@ const pendu = () => {
       show: false,
     },
   ]);
-  const [gameStarted, setGameStarted] = useState(true);
+  const [gameNotYetStarted, setGameNotYetStarted] = useState(true);
 
   const startGame = () => {
-    setGameStarted(false);
+    setGameNotYetStarted(false);
   };
 
   //  Recherche si les lettre sont dans le mots a trouver.
@@ -241,9 +241,7 @@ const pendu = () => {
         setCount={setCount}
         word={word}
         findLetterInWord={findLetterInWord}
-        gameStarted={gameStarted}
-        setGameStarted={setGameStarted}
-        startGame={startGame}
+        gameNotYetStarted={gameNotYetStarted}
       />
     </div>
   );

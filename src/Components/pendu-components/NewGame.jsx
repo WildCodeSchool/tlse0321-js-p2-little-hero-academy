@@ -1,6 +1,6 @@
 import './style/NewGame.css';
 
-const NewGame = ({ findLetterInWord, gameStarted }) => gameStarted && (
+const NewGame = ({ findLetterInWord, gameNotYetStarted }) => gameNotYetStarted && (
   <section className="new-game-container">
     <div>
       <h1>Bienvenu au jeux du sauvetage</h1>

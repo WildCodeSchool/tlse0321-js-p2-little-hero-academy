@@ -2,6 +2,7 @@ import Letter from './Letter';
 import Keyboard from './Keyboard';
 import NewGame from './NewGame';
 import './style/GameWindow.css';
+import GameOverWindow from './GameOverWindow';
 
 const GameWindow = (props) => {
   const {
@@ -14,6 +15,8 @@ const GameWindow = (props) => {
     alphabet,
     findLetterInWord,
     gameNotYetStarted,
+    gameOver,
+    restartGame,
   } = props;
 
   return (
@@ -25,6 +28,8 @@ const GameWindow = (props) => {
         findLetterInWord={findLetterInWord}
         gameNotYetStarted={gameNotYetStarted}
       />
+      <GameOverWindow gameOver={gameOver} restartGame={restartGame} />
+
       <Keyboard
         handleClick={handleClick}
         alphabet={alphabet}

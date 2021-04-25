@@ -1,9 +1,8 @@
+import { Redirect } from 'react-router-dom';
 import Letter from './Letter';
 import Keyboard from './Keyboard';
 import NewGame from './NewGame';
 import './style/GameWindow.css';
-import GameOverWindow from './GameOverWindow';
-import GameWin from './GameWin';
 
 const GameWindow = (props) => {
   const {
@@ -17,7 +16,6 @@ const GameWindow = (props) => {
     findLetterInWord,
     gameNotYetStarted,
     gameOver,
-    restartGame,
     gameWin,
   } = props;
 
@@ -30,8 +28,6 @@ const GameWindow = (props) => {
         findLetterInWord={findLetterInWord}
         gameNotYetStarted={gameNotYetStarted}
       />
-      <GameOverWindow gameOver={gameOver} restartGame={restartGame} />
-      <GameWin gameWin={gameWin} restartGame={restartGame} />
       <Keyboard
         handleClick={handleClick}
         alphabet={alphabet}
@@ -40,6 +36,8 @@ const GameWindow = (props) => {
         setCount={setCount}
         word={word}
       />
+      {gameOver && <Redirect to="/GameOverWindow" label="GameOverWindow" />}
+      {gameWin && <Redirect to="/GameWin" label="GameWin" />}
     </section>
   );
 };

@@ -1,14 +1,17 @@
+import { Link } from 'react-router-dom';
 import './style/GameOverWindow.css';
 
-const GameOverWindow = ({ gameOver, restartGame }) => gameOver && (
+const GameOverWindow = () => (
   <section className="game-over">
     <div>
       <h1>Oops tu as perdu</h1>
       <p>Tu as pas reussi a sauver ce hero retente ta chance</p>
     </div>
-    <button type="button" className="btn-over" onClick={() => restartGame()}>
-      Re-commencer une partie
-    </button>
+    <Link to="/pendu">
+      <button type="button" className="btn-over">
+        Re-commencer une partie
+      </button>
+    </Link>
   </section>
 );
 

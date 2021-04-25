@@ -1,8 +1,6 @@
 .game-win {
-  margin-top: 2rem;
-  left: 10%;
-  position: fixed;
-  width: 70%;
+  margin: 2rem auto;
+  width: 90%;
   height: 20rem;
   top: 5rem;
   border: 2px solid;

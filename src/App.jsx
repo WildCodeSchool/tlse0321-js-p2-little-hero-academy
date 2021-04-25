@@ -9,7 +9,7 @@ import AboutUs from './Components/AboutUs';
 import ContactForm from './Components/ContactForm';
 import pendu from './Components/Pendu';
 import GameOverWindow from './Components/pendu-components/GameOverWindow';
-import GameWin from './Components/pendu-components/GameWin';
+import GameWinWindow from './Components/pendu-components/GameWinWindow';
 
 function App() {
   return (
@@ -21,8 +21,8 @@ function App() {
         <Route path="/aboutus" exact component={AboutUs} />
         <Route path="/contactform" exact component={ContactForm} />
         <Route path="/pendu" exact component={pendu} />
-        <Route path="/GameOverWindow" exact component={GameOverWindow} />
-        <Route path="/gameWin" exact component={GameWin} />
+        <Route path="/gameoverwindow" exact component={GameOverWindow} />
+        <Route path="/gamewinwindow" exact component={GameWinWindow} />
         <Footer />
       </Router>
     </div>

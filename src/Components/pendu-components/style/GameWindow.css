@@ -1,17 +1,6 @@
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-family: sans-serif;
-  font-size: 1em;
-  font-weight: normal;
-  font-style: normal;
-  text-decoration: none;
-}
-
 .window-container {
   width: 75%;
-  height: 70vh;
+  height: 100%;
   display: flex;
   margin: 0 auto;
   flex-direction: column;

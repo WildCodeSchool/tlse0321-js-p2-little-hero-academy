@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import './style/GameOverWindow.css';
+import './style/PenduEndGame.css';
 
 const GameOverWindow = () => (
   <section className="game-over">
@@ -8,7 +8,7 @@ const GameOverWindow = () => (
       <p>Tu as pas reussi a sauver ce hero retente ta chance</p>
     </div>
     <Link to="/pendu">
-      <button type="button" className="btn-over">
+      <button type="button" className="btn-win">
         Re-commencer une partie
       </button>
     </Link>

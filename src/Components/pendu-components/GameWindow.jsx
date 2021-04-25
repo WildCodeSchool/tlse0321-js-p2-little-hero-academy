@@ -36,8 +36,8 @@ const GameWindow = (props) => {
         setCount={setCount}
         word={word}
       />
-      {gameOver && <Redirect to="/GameOverWindow" label="GameOverWindow" />}
-      {gameWin && <Redirect to="/GameWin" label="GameWin" />}
+      {gameOver && <Redirect to="/gameoverwindow" label="GameOverWindow" />}
+      {gameWin && <Redirect to="/gamewinwindow" label="GameWinWindow" />}
     </section>
   );
 };

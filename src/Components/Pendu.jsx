@@ -169,7 +169,6 @@ const pendu = () => {
     (letter) => letter.show && letters.includes(letter.value),
   );
   const findLetter = findObject.map((e) => e.value);
-  console.log(findLetter.length);
   const showLetter = notFoundLetter;
   const [gameNotYetStarted, setGameNotYetStarted] = useState(true);
   const [gameOver, setGameOver] = useState(false);
@@ -191,12 +190,6 @@ const pendu = () => {
     setGameNotYetStarted(false);
   };
 
-  const restartGame = () => {
-    setGameNotYetStarted(true);
-    setCount(7);
-    setGameOver(false);
-    setGameWin(false);
-  };
   function findLetterInWord() {
     alphabet.forEach((object, index) => {
       const newAlphabet = [...alphabet];
@@ -245,7 +238,6 @@ const pendu = () => {
         findLetterInWord={findLetterInWord}
         gameNotYetStarted={gameNotYetStarted}
         gameOver={gameOver}
-        restartGame={restartGame}
         gameWin={gameWin}
       />
     </div>

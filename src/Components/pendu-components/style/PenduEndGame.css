@@ -1,4 +1,4 @@
-.game-win {
+.game-over {
   margin: 2rem auto;
   width: 90%;
   height: 20rem;
@@ -12,10 +12,10 @@
   align-items: center;
   text-align: center;
 }
-.btn-over {
+.btn-win {
   border: 1px solid;
   padding: 1rem;
-  width: 20%;
+  width: 100%;
   border-radius: 9999px;
   background-color: #ec6a32;
   cursor: pointer;

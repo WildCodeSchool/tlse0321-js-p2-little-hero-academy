@@ -21,7 +21,6 @@ const GameWindow = (props) => {
 
   return (
     <section className="window-container">
-      <h1>Pendu</h1>
       <h1>{count}</h1>
       <Letter showLetter={showLetter} />
       <NewGame

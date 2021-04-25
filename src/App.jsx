@@ -3,13 +3,13 @@ import './App.css';
 import './Styles/reset.css';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
-import Gamepage from './Components/Gamepage';
 import Carousel from './Components/Carousel';
 import AboutUs from './Components/AboutUs';
 import ContactForm from './Components/ContactForm';
 import pendu from './Components/Pendu';
 import GameOverWindow from './Components/pendu-components/GameOverWindow';
 import GameWinWindow from './Components/pendu-components/GameWinWindow';
+import QuizGame from './Components/QuizGame';
 
 function App() {
   return (
@@ -17,10 +17,10 @@ function App() {
       <Router>
         <Header />
         <Route path="/jeux" exact component={Carousel} />
-        <Route path="/quiz" exact component={Gamepage} />
+        <Route path="/quiz" exact component={QuizGame} />
+        <Route path="/pendu" exact component={pendu} />
         <Route path="/aboutus" exact component={AboutUs} />
         <Route path="/contactform" exact component={ContactForm} />
-        <Route path="/pendu" exact component={pendu} />
         <Route path="/gameoverwindow" exact component={GameOverWindow} />
         <Route path="/gamewinwindow" exact component={GameWinWindow} />
         <Footer />

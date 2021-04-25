@@ -3,6 +3,7 @@ import Keyboard from './Keyboard';
 import NewGame from './NewGame';
 import './style/GameWindow.css';
 import GameOverWindow from './GameOverWindow';
+import GameWin from './GameWin';
 
 const GameWindow = (props) => {
   const {
@@ -17,6 +18,7 @@ const GameWindow = (props) => {
     gameNotYetStarted,
     gameOver,
     restartGame,
+    gameWin,
   } = props;
 
   return (
@@ -29,7 +31,7 @@ const GameWindow = (props) => {
         gameNotYetStarted={gameNotYetStarted}
       />
       <GameOverWindow gameOver={gameOver} restartGame={restartGame} />
-
+      <GameWin gameWin={gameWin} restartGame={restartGame} />
       <Keyboard
         handleClick={handleClick}
         alphabet={alphabet}

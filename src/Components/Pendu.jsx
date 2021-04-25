@@ -169,21 +169,33 @@ const pendu = () => {
     (letter) => letter.show && letters.includes(letter.value),
   );
   const findLetter = findObject.map((e) => e.value);
+  console.log(findLetter.length);
   const showLetter = notFoundLetter;
   const [gameNotYetStarted, setGameNotYetStarted] = useState(true);
   const [gameOver, setGameOver] = useState(false);
+  const [gameWin, setGameWin] = useState(false);
 
   useEffect(() => {
     if (count === 0) {
       setGameOver(true);
     }
   }, [count]);
+
+  useEffect(() => {
+    if (findLetter.length === word.length) {
+      setGameWin(true);
+    }
+  }, [findLetter]);
+
   const startGame = () => {
     setGameNotYetStarted(false);
   };
 
   const restartGame = () => {
     setGameNotYetStarted(true);
+    setCount(7);
+    setGameOver(false);
+    setGameWin(false);
   };
   function findLetterInWord() {
     alphabet.forEach((object, index) => {
@@ -234,6 +246,7 @@ const pendu = () => {
         gameNotYetStarted={gameNotYetStarted}
         gameOver={gameOver}
         restartGame={restartGame}
+        gameWin={gameWin}
       />
     </div>
   );

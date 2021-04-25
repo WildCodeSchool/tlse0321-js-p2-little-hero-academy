@@ -4,6 +4,7 @@ import Keyboard from './Keyboard';
 import NewGame from './NewGame';
 import './style/GameWindow.css';
 import Gamepage from '../Gamepage';
+import HartLife from './HartLife';
 
 const GameWindow = (props) => {
   const {
@@ -18,17 +19,13 @@ const GameWindow = (props) => {
     gameNotYetStarted,
     gameOver,
     gameWin,
+    hartFinder,
   } = props;
-
   return (
     <section className="window-container">
       <Gamepage />
-      <h1>{count}</h1>
       <Letter showLetter={showLetter} />
-      <NewGame
-        findLetterInWord={findLetterInWord}
-        gameNotYetStarted={gameNotYetStarted}
-      />
+      <HartLife hartFinder={hartFinder} />
       <Keyboard
         handleClick={handleClick}
         alphabet={alphabet}
@@ -36,6 +33,10 @@ const GameWindow = (props) => {
         count={count}
         setCount={setCount}
         word={word}
+      />
+      <NewGame
+        findLetterInWord={findLetterInWord}
+        gameNotYetStarted={gameNotYetStarted}
       />
       {gameOver && <Redirect to="/gameoverwindow" label="GameOverWindow" />}
       {gameWin && <Redirect to="/gamewinwindow" label="GameWinWindow" />}

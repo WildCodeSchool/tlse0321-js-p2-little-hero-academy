@@ -1,0 +1,9 @@
+.hart-box {
+  padding: 1rem auto;
+  display: flex;
+}
+.hart-box h1 {
+  color: red;
+  font-size: 4rem;
+  margin-top: 2rem;
+}

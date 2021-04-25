@@ -173,6 +173,14 @@ const pendu = () => {
   const [gameNotYetStarted, setGameNotYetStarted] = useState(true);
   const [gameOver, setGameOver] = useState(false);
   const [gameWin, setGameWin] = useState(false);
+  const hart = '♡';
+  const hartFinder = [];
+  const showMyHart = () => {
+    for (let i = 0; i < count; i += 1) {
+      hartFinder.push(hart);
+    }
+  };
+  showMyHart();
 
   useEffect(() => {
     if (count === 0) {
@@ -239,6 +247,7 @@ const pendu = () => {
         gameNotYetStarted={gameNotYetStarted}
         gameOver={gameOver}
         gameWin={gameWin}
+        hartFinder={hartFinder}
       />
     </div>
   );

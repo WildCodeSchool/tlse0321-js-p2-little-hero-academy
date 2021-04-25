@@ -2,6 +2,7 @@ import Letter from './Letter';
 import Keyboard from './Keyboard';
 import NewGame from './NewGame';
 import './style/GameWindow.css';
+import Gamepage from '../Gamepage';
 
 const GameWindow = (props) => {
   const {
@@ -17,6 +18,7 @@ const GameWindow = (props) => {
 
   return (
     <section className="window-container">
+      <Gamepage />
       <h1>Pendu</h1>
       <h1>{count}</h1>
       <Letter showLetter={showLetter} />

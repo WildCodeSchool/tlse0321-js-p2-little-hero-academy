@@ -4,8 +4,8 @@ import './style/PenduEndGame.css';
 const GameWinWindow = () => (
   <section className="game-over">
     <div>
-      <h1>Yes bien joué</h1>
-      <p>Tu as reussi a sauver ce hero</p>
+      <h1>Super bien joué !!</h1>
+      <p>Tu as a sauver notre héro </p>
     </div>
     <Link to="/pendu">
       <button className="btn-win" type="button">

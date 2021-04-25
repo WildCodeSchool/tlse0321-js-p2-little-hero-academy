@@ -21,9 +21,14 @@ const GameWindow = (props) => {
     gameWin,
     hartFinder,
   } = props;
+  const gameInformation = {
+    name: 'Pendu',
+    rules:
+      "Bienvenue dans le jeu du Sauvetage! Dans ce jeu tu dois trouver le nom d'un hero. Tu a 7 coeur, à chaque erreur tu en perd un. Si tu trouve toutes les lettres du nom du héro, avant d'avoir perdu tout tes coeur, tu gagne . Bonne chance! ",
+  };
   return (
     <section className="window-container">
-      <Gamepage />
+      <Gamepage gameInformation={gameInformation} />
       <Letter showLetter={showLetter} />
       <HartLife hartFinder={hartFinder} />
       <Keyboard

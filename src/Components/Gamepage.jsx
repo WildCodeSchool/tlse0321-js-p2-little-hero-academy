@@ -1,10 +1,12 @@
 import '../Styles/Gamepage.css';
 import VocalRules from './VocalRules';
 
-const Gamepage = () => (
+const Gamepage = ({ gameInformation }) => (
   <section className="gamepage">
     <div className="gamepage-container">
-      <h2 className="gamepage-title">Bienvenue sur le jeu du ##### !</h2>
+      <h2 className="gamepage-title">
+        Bienvenue sur le jeu du {gameInformation.name} !
+      </h2>
       <div className="game-rules">
         <div className="rules-heropicture-container">
           <img
@@ -17,7 +19,7 @@ const Gamepage = () => (
           Did someone say <em>chimichangas?</em>
         </div>
         <div className="vocal-rules">
-          <VocalRules rules="Bienvenue dans le Quiz! Dans ce jeu tu dois répondre à une serie de 10 questions. Mieux tu réponds aux questions, plus ta note finale sera élevée. Bonne chance! " />
+          <VocalRules gameInformation={gameInformation} />
         </div>
       </div>
     </div>

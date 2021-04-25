@@ -1,3 +1,4 @@
+@import './Styles/reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 
 @font-face {
@@ -36,7 +37,7 @@
 
 :root {
   --greydark: #333333;
-  --greylight: #E0E0E0;
-  --red: #EC6A32;
-  --blue: #067BC2;
+  --greylight: #e0e0e0;
+  --red: #ec6a32;
+  --blue: #067bc2;
 }

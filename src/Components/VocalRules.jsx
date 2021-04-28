@@ -1,7 +1,5 @@
-import React from 'react';
-
-function VocalRules({ rules }) {
-  const utterance = new SpeechSynthesisUtterance(rules);
+function VocalRules({ gameInformation }) {
+  const utterance = new SpeechSynthesisUtterance(gameInformation.rules);
   utterance.lang = 'fr-FR';
   utterance.rate = 1.2;
   utterance.pitch = 2;

@@ -15,19 +15,21 @@
   justify-content: center;
 }
 .headerCarousel h1 {
+  font-family: 'RG-regular';
+  letter-spacing: 2px;
   font-size: 2rem;
   background-color: #282828e7;
   margin-top: 2rem;
   width: 20rem;
   height: 2rem;
   border-radius: 9999px;
-  color: var(--red);
+  color: var(--blue);
   text-align: center;
   padding: 1rem;
 }
 .carouselWindow {
   margin: 2rem auto;
-  width: 70%;
+  width: 80%;
   height: 60vh;
   background-color: rgb(90, 89, 87);
 }
@@ -42,9 +44,18 @@
 .alice-carousel__prev-btn-item,
 .alice-carousel__next-btn-item {
   font-size: 3rem;
-  background-color: var(--red);
+  background-color: transparent;
   padding: 1rem;
-  opacity: 0.5;
+  font-weight: bold;
+  transition: 0.6s ease;
+  color: #333;
+}
+
+.alice-carousel__prev-btn-item:hover,
+.alice-carousel__next-btn-item:hover {
+  background-color: var(--red);
+  opacity: 0.8;
+  color: var(--blue);
 }
 
 .alice-carousel__dots {
@@ -52,18 +63,28 @@
 }
 .alice-carousel__prev-btn {
   position: absolute;
-  top: 50%;
+  top: 45%;
   width: 75px;
+  left: 0px;
 }
 .alice-carousel__next-btn {
   position: absolute;
-  top: 50%;
+  top: 45%;
   right: 0px;
   width: 75px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 720px) {
   .carouselWindow {
     width: 100%;
+  }
+
+  .alice-carousel__prev-btn-item,
+  .alice-carousel__next-btn-item {
+    background-color: transparent;
+    padding: 1rem;
+    font-weight: bold;
+    transition: 0.6s ease;
+    color: var(--blue);
   }
 }

@@ -12,8 +12,8 @@ const QuizGame = () => {
   const [score, setScore] = useState(0);
   const [heroData, setheroData] = useState('');
   const [modifyQuestion, setModifyQuestion] = useState([...questions]);
-  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${346}`;
   console.log(setModifyQuestion);
+  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${69}`;
   const gameInformation = {
     name: 'Quiz',
     rules:
@@ -48,20 +48,28 @@ const QuizGame = () => {
       .get(urlHero)
       .then((results) => results.data)
       .then((data) => {
-        setheroData(
-          { img: data.image.url },
-          { name: data.name },
-          { fullName: data.biography['full.name'] },
-          { gender: data.appearance.gender },
-          { alignment: data.biography.alignment },
-          { race: data.biography.race },
-          { placeOfBirth: data.biography['place-of-birth'] },
-          { publisher: data.biography.publisher },
-          { FirstAppearance: data.biography['first-appearance'] },
-        );
+        setheroData([
+          data.name,
+          data.biography['full.name'],
+          data.appearance.gender,
+          data.biography.alignment,
+          data.biography.race,
+          data.biography['place-of-birth'],
+          data.biography.publisher,
+          data.biography['first-appearance'],
+          data.image.url,
+        ]);
       });
-  }, [Quiz]);
-  console.log(heroData.img);
+  }, []);
+  function changeQuestions() {
+    const newQuestion = [...questions];
+    questions[currentQuestion].answerOptions.forEach((answer, index) => {
+      if (answer.isCorrect) {
+        newQuestion[currentQuestion].answerOptions[index].answerText = heroData[currentQuestion];
+      }
+    });
+  }
+  changeQuestions();
 
   return (
     <div className="game">

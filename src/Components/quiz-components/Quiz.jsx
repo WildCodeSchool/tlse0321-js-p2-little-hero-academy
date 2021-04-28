@@ -30,7 +30,7 @@ const Question = ({
         </div>
         <div className="answer-section">
           <div className="image-personnage">
-            <img src={[heroData.img]} alt="personnage" />
+            <img src={heroData[heroData.length - 1]} alt="personnage" />
           </div>
           <div className="answer-area">
             {modifyQuestion[currentQuestion].answerOptions.map(

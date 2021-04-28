@@ -1,3 +1,4 @@
+@import './Styles/reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
 
 @font-face {
@@ -39,6 +40,7 @@
   --greylight: #e0e0e0;
   --red: #ec6a32;
   --blue: #067bc2;
+
 }
 
 H1 {
@@ -72,4 +74,5 @@ H4 {
 .p2 {
   font-weight: 300;
   font-family: 'Quicksand', sans-serif;
+
 }

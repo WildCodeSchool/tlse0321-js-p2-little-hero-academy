@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
 import '../../Styles/Quiz.css';
+import GameResult from '../GameResult';
 import questions from './questions-data';
-import wonderwoman from '../../img/avatarwonderwoman.png';
-import bulleBravo from '../../img/bulleBravo.png';
-import bulleDommage from '../../img/bulleDommage.png';
 
 const Question = () => {
   const [showAnswer, setShowAnswer] = useState(false);
@@ -40,14 +38,9 @@ const Question = () => {
       {showScore ? (
         <div className="score-section">
           <div className="score">
-            You scored {score} out of {questions.length}
+            Ton score est {score} sur {questions.length}
           </div>
-          <img
-            className="bulle"
-            src={score > 5 ? bulleBravo : bulleDommage}
-            alt="bulle"
-          />
-          <img className="ImgWonder" src={wonderwoman} alt="wonderwoman" />
+          <GameResult victory={score > 5} />
         </div>
       ) : (
         <div className="container">

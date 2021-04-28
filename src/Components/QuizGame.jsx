@@ -15,7 +15,6 @@ const QuizGame = () => {
       .get(urlHero)
       .then((results) => results.data)
       .then((data) => {
-        console.log(data);
         setCharacter({
           name: data.name,
           fullName: data.biography['full-name'],

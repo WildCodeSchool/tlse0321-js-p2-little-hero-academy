@@ -44,7 +44,9 @@ const GameWindow = (props) => {
         gameNotYetStarted={gameNotYetStarted}
       />
       {gameOver && <Redirect to="/gameoverwindow" label="GameOverWindow" />}
-      {gameWin && <Redirect to="/gamewinwindow" label="GameWinWindow" />}
+      {gameWin && (
+        <Redirect to="/gamewinwindow" word={word} label="GameWinWindow" />
+      )}
     </section>
   );
 };

@@ -1,9 +1,53 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 import '../Styles/Pendu.css';
 import GameWindow from './pendu-components/GameWindow';
 
-const pendu = () => {
-  const word = 'superman';
+const Pendu = () => {
+  const heros = [
+    38,
+    69,
+    30,
+    346,
+    620,
+    659,
+    149,
+    165,
+    106,
+    213,
+    263,
+    717,
+    720,
+    201,
+    332,
+    238,
+    480,
+    418,
+    644,
+    729,
+    309,
+    308,
+    310,
+  ];
+
+  function getRandomHero(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+  const randomIdHero = getRandomHero(22);
+  const randomHero = heros[randomIdHero];
+  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${randomHero}`;
+  const [word, setWord] = useState('superman');
+
+  useEffect(() => {
+    axios
+      .get(urlHero)
+      .then((results) => results.data)
+      .then((data) => {
+        setWord(data.name.toLowerCase());
+      });
+  }, []);
+
   const [count, setCount] = useState(7);
   const [alphabet, setAlphabet] = useState([
     {
@@ -181,6 +225,7 @@ const pendu = () => {
     }
   };
   showMyHart();
+  const [lenghtInWord, setLenghtInWord] = useState(100);
 
   useEffect(() => {
     if (count === 0) {
@@ -189,7 +234,10 @@ const pendu = () => {
   }, [count]);
 
   useEffect(() => {
-    if (findLetter.length === word.length) {
+    if (
+      findLetter.length === word.length
+      || findLetter.length === lenghtInWord
+    ) {
       setGameWin(true);
     }
   }, [findLetter]);
@@ -208,6 +256,8 @@ const pendu = () => {
       }
       setAlphabet(newAlphabet);
       startGame();
+      const inWordArray = alphabet.filter((letter) => letter.inWord === true);
+      setLenghtInWord(inWordArray.length);
     });
   }
   function handleClick(index) {
@@ -253,4 +303,4 @@ const pendu = () => {
   );
 };
 
-export default pendu;
+export default Pendu;

@@ -9,6 +9,7 @@ const QuizGame = () => {
   // const [imgPersonnage, setImgPersonnage] = useState('');
   // const [characterName, setCharacterName] = useState('');
   // const [characterFullName, setCharacterFullName] = useState('');
+  // ********=>virer les variable de state il n'en reste qu'une seul********<===
   // const [characterGender, setCharacterGender] = useState('');
   // const [characterAlignment, setCharacterAlignment] = useState('');
   // const [characterRace, setCharacterRace] = useState('');
@@ -16,8 +17,9 @@ const QuizGame = () => {
   // const [characterPublisher, setCharacterPublisher] = useState('');
   // const [characterFirstAppearance, setCharacterFirstAppearance] = useState('');
   // useEffect(() => {
+  // *********=>boucle chaque question is true => changer par state(dones axios) meme [i]
   //   const newQuestion = [...questions];
-  //   newQuestion[0].answerOptions[2].answerText = characterName;
+  //   newQuestion[0].answerOptions[2].answerText = characterName; // exemple(dones.name......)
   //   newQuestion[1].answerOptions[1].answerText = characterFullName;
   //   newQuestion[2].answerOptions[1].answerText = characterGender;
   //   newQuestion[3].answerOptions[0].answerText = characterAlignment;
@@ -44,6 +46,8 @@ const QuizGame = () => {
   //       setCharacterFirstAppearance(data.biography['first-appearance']);
   //     });
   // }, []);
+
+  // 1 seul requete api pour requperer les donnes
 
   const gameInformation = {
     name: 'Quiz',

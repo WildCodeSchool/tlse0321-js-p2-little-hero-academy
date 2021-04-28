@@ -51,11 +51,9 @@
   color: var(--red);
 }
 
-#contact h4 {
+#contact h3 {
   margin: 5px 0 15px;
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
+  color: var(--greydark);
 }
 
 #contact input[type='text'],
@@ -150,7 +148,7 @@
   transform: scaleY(1);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
   .contact-form-container {
     width: 100%;
   }

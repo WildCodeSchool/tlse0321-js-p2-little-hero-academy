@@ -16,7 +16,7 @@ const Gamepage = ({ gameInformation }) => (
           />
         </div>
         <div className="rules-text">
-          Did someone say <em>chimichangas?</em>
+          <p>{gameInformation.rules}</p>
         </div>
         <div className="vocal-rules">
           <VocalRules gameInformation={gameInformation} />

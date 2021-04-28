@@ -22,7 +22,7 @@
 
 .question {
   background-color: #067bc2;
-  width: 850px;
+  width: 83rem;
   border-radius: 15px;
   padding: 20px;
   box-shadow: 10px 10px 42px 0px #333333;
@@ -63,11 +63,22 @@
 
 .answer-section {
   width: 100%;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.image-personnage img {
+  width: 15rem;
+  height: 20rem;
+  border-radius: 20px;
+  margin-right: 1rem;
 }
 
+.answer-area {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
 button {
   width: 100%;
   font-size: 20px;
@@ -80,7 +91,7 @@ button {
   align-items: center;
   border: 5px solid #ec6a32;
   cursor: pointer;
-  height: 50px;
+  height: 3rem;
   margin-top: 40px;
 }
 

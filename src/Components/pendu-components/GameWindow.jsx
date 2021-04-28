@@ -1,7 +1,10 @@
+import { Redirect } from 'react-router-dom';
 import Letter from './Letter';
 import Keyboard from './Keyboard';
 import NewGame from './NewGame';
 import './style/GameWindow.css';
+import Gamepage from '../Gamepage';
+import HartLife from './HartLife';
 
 const GameWindow = (props) => {
   const {
@@ -13,14 +16,21 @@ const GameWindow = (props) => {
     setAlphabet,
     alphabet,
     findLetterInWord,
+    gameNotYetStarted,
+    gameOver,
+    gameWin,
+    hartFinder,
   } = props;
-
+  const gameInformation = {
+    name: 'Pendu',
+    rules:
+      "Bienvenue dans le jeu du Sauvetage! Dans ce jeu tu dois trouver le nom d'un hero. Tu a 7 coeur, à chaque erreur tu en perd un. Si tu trouve toutes les lettres du nom du héro, avant d'avoir perdu tout tes coeur, tu gagne . Bonne chance! ",
+  };
   return (
     <section className="window-container">
-      <h1>Pendu</h1>
-      <h1>{count}</h1>
+      <Gamepage gameInformation={gameInformation} />
       <Letter showLetter={showLetter} />
-      <NewGame findLetterInWord={findLetterInWord} />
+      <HartLife hartFinder={hartFinder} />
       <Keyboard
         handleClick={handleClick}
         alphabet={alphabet}
@@ -29,6 +39,14 @@ const GameWindow = (props) => {
         setCount={setCount}
         word={word}
       />
+      <NewGame
+        findLetterInWord={findLetterInWord}
+        gameNotYetStarted={gameNotYetStarted}
+      />
+      {gameOver && <Redirect to="/gameoverwindow" label="GameOverWindow" />}
+      {gameWin && (
+        <Redirect to="/gamewinwindow" word={word} label="GameWinWindow" />
+      )}
     </section>
   );
 };

@@ -3,11 +3,13 @@ import '../Styles/Footer.css';
 import '../App.css';
 
 const Footer = () => (
-  <div className="site-footer">
-    <div className="footer-container">
-      <div className="footer-credits">
-        <h6>Crédits</h6>
+  <article className="site-footer">
+    <section className="footer-container">
+      <article className="footer-credits">
         <ul>
+          <li>
+            <h4>Crédits</h4>
+          </li>
           <li>
             Vecteurs par{' '}
             <a
@@ -44,10 +46,12 @@ const Footer = () => (
             </a>{' '}
           </li>
         </ul>
-      </div>
-      <div className="footer-social-link">
-        <h6>Suivez-nous</h6>
+      </article>
+      <article className="footer-social-link">
         <ul>
+          <li>
+            <h4>Suivez-nous</h4>
+          </li>
           <li>
             <a href="www.facebook.com" className="href-footer">
               Facebook
@@ -64,27 +68,26 @@ const Footer = () => (
             </a>
           </li>
         </ul>
-      </div>
-      <div className="footer-quick-links">
-        <h6>Lien rapide</h6>
+      </article>
+      <article className="footer-quick-links">
         <ul>
+          <li>
+            <h4>Lien rapide</h4>
+          </li>
           <li>Notre histoire</li>
-          <li>Livre d&apos;Or</li>
           <li>Nous contacter</li>
           <li>Plan du site</li>
         </ul>
-      </div>
-    </div>
+      </article>
+    </section>
     <div className="separator">{null}</div>
-    <div className="footer-credits">
-      <div className="copyrights">
-        <p>
-          LITTLE HERO ACADEMY. Site crée par les élèves de la Wild Code School
-          de Toulouse session mars 2021. Tous droits réservés.
-        </p>
-      </div>
-    </div>
-  </div>
+    <section className="copyrights">
+      <p>
+        LITTLE HERO ACADEMY. Site crée par les élèves de la Wild Code School de
+        Toulouse session mars 2021. Tous droits réservés.
+      </p>
+    </section>
+  </article>
 );
 
 export default Footer;

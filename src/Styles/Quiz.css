@@ -12,7 +12,7 @@
 .game {
   background-color: white;
   margin: auto;
-  height: 600px;
+  height: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -29,6 +29,7 @@
   display: flex;
   justify-content: space-evenly;
   margin-top: 5rem;
+  margin-bottom: 5rem;
   height: 420px;
 }
 
@@ -79,7 +80,9 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
 }
-button {
+
+.answer-section button {
+
   width: 100%;
   font-size: 20px;
   color: rgb(22, 120, 162);
@@ -95,15 +98,15 @@ button {
   margin-top: 40px;
 }
 
-.correct {
+.answer-section .correct {
   background-color: #7df77d;
 }
 
-.incorrect {
+.answer-section .incorrect {
   background-color: #f76060;
 }
 
-button:hover {
+.answer-section button:hover {
   border: 5px solid #067bc2;
 }
 

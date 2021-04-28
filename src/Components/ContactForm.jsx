@@ -3,8 +3,9 @@ import '../Styles/ContactForm.css';
 
 const ContactForm = () => (
   <article className="contact-form-container">
+    <div className="contact-form-img">image ici </div>
     <form id="contact" method="post">
-      <h3>Nous contacter</h3>
+      <h1 className="h1">Nous contacter</h1>
       <h4>Un retour, une suggestion ou un commentaire ?</h4>
       <input placeholder="Votre nom" type="text" tabIndex="-3" required />
       <input placeholder="Votre Email" type="email" tabIndex="-2" required />
@@ -17,17 +18,6 @@ const ContactForm = () => (
       >
         Envoyer
       </button>
-      <p className="copyright">
-        Designed by{' '}
-        <a
-          href="https://colorlib.com"
-          target="_blank"
-          title="Colorlib"
-          rel="noreferrer"
-        >
-          Colorlib
-        </a>
-      </p>
     </form>
   </article>
 );

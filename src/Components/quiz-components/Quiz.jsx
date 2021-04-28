@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import '../../Styles/Quiz.css';
 import GameResult from '../GameResult';
 import questions from './questions-data';
@@ -33,6 +34,17 @@ const Question = () => {
     return '';
   };
 
+  //  ******************************** */
+  const [imgPersonnage, setImgPersonnage] = useState('');
+  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${346}`;
+
+  axios
+    .get(urlHero)
+    .then((results) => results.data)
+    .then((data) => {
+      setImgPersonnage(data.image.url);
+    });
+
   return (
     <div className="question">
       {showScore ? (
@@ -53,15 +65,20 @@ const Question = () => {
             </div>
           </div>
           <div className="answer-section">
-            {questions[currentQuestion].answerOptions.map((answerOption) => (
-              <button
-                onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
-                className={toggleAnswerClass(answerOption.isCorrect)}
-                type="button"
-              >
-                {answerOption.answerText}
-              </button>
-            ))}
+            <div className="image-personnage">
+              <img src={imgPersonnage} alt="personnage" />
+            </div>
+            <div className="answer-area">
+              {questions[currentQuestion].answerOptions.map((answerOption) => (
+                <button
+                  onClick={() => handleAnswerOptionClick(answerOption.isCorrect)}
+                  className={toggleAnswerClass(answerOption.isCorrect)}
+                  type="button"
+                >
+                  {answerOption.answerText}
+                </button>
+              ))}
+            </div>
           </div>
         </div>
       )}

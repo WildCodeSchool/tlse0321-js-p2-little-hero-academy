@@ -1,11 +1,54 @@
-import { useState } from 'react';
-// import '../Styles/Pendu.css';
+import { useState, useEffect } from 'react';
+import axios from 'axios';
+import '../Styles/Pendu.css';
 import GameWindow from './pendu-components/GameWindow';
 
-const pendu = () => {
-  const word = 'superman';
+const Pendu = () => {
+  const heros = [
+    38,
+    69,
+    30,
+    346,
+    620,
+    659,
+    149,
+    165,
+    106,
+    213,
+    263,
+    717,
+    720,
+    201,
+    332,
+    238,
+    480,
+    418,
+    644,
+    729,
+    309,
+    308,
+    310,
+  ];
 
-  const [count, setCount] = useState(0);
+  function getRandomHero(max) {
+    return Math.floor(Math.random() * max);
+  }
+
+  const randomIdHero = getRandomHero(22);
+  const randomHero = heros[randomIdHero];
+  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${randomHero}`;
+  const [word, setWord] = useState('superman');
+
+  useEffect(() => {
+    axios
+      .get(urlHero)
+      .then((results) => results.data)
+      .then((data) => {
+        setWord(data.name.toLowerCase());
+      });
+  }, []);
+
+  const [count, setCount] = useState(7);
   const [alphabet, setAlphabet] = useState([
     {
       letter: 'a',
@@ -164,9 +207,37 @@ const pendu = () => {
       show: false,
     },
   ]);
+  const letters = word.split('');
+  const notFoundLetter = letters.map((letter) => letter.replace(letter, '_'));
+  const findObject = alphabet.filter(
+    (letter) => letter.show && letters.includes(letter.value),
+  );
+  const findLetter = findObject.map((e) => e.value);
+  const showLetter = notFoundLetter;
+  const [gameNotYetStarted, setGameNotYetStarted] = useState(true);
+  const [gameOver, setGameOver] = useState(false);
+  const [gameWin, setGameWin] = useState(false);
+  const [lenghtInWord, setLenghtInWord] = useState(100);
 
-  //  Recherche si les lettre sont dans le mots a trouver.
-  //  Passe la valeur de la key "inword" de la lettre a "true".
+  useEffect(() => {
+    if (count === 0) {
+      setGameOver(true);
+    }
+  }, [count]);
+
+  useEffect(() => {
+    if (
+      findLetter.length === word.length
+      || findLetter.length === lenghtInWord
+    ) {
+      setGameWin(true);
+    }
+  }, [findLetter]);
+
+  const startGame = () => {
+    setGameNotYetStarted(false);
+  };
+
   function findLetterInWord() {
     alphabet.forEach((object, index) => {
       const newAlphabet = [...alphabet];
@@ -176,12 +247,11 @@ const pendu = () => {
         newAlphabet[index].inWord = false;
       }
       setAlphabet(newAlphabet);
+      startGame();
+      const inWordArray = alphabet.filter((letter) => letter.inWord === true);
+      setLenghtInWord(inWordArray.length);
     });
   }
-
-  // Quand tu clique sur la lettre du keyboard la lettre change pour un "_".
-  // Passe la valeur de la key show a true si la valeur de la key inword est egale a true.
-  // Le compteur de coup s'incrémente de 1 en cliquant .
   function handleClick(index) {
     const newAlphabet = [...alphabet];
     newAlphabet[index].letter = '_';
@@ -189,31 +259,11 @@ const pendu = () => {
       newAlphabet[index].show = true;
     } else {
       newAlphabet[index].show = false;
+      setCount(count - 1);
     }
-    setCount(count + 1);
     setAlphabet(newAlphabet);
   }
 
-  // Le mots a trouver est mis dans un tableau spliter par lettre.
-  const letters = word.split('');
-
-  // Remplace toutes les lettre du mots afficher par des "_" pour cacher les lettres.
-  const notFoundLetter = letters.map((letter) => letter.replace(letter, '_'));
-
-  // Retourne un tableau d'objet des lettres cliquer qui sont correct.
-  const findObject = alphabet.filter(
-    (letter) => letter.show && letters.includes(letter.value),
-  );
-
-  // Resort du tableau findObject les lettres pour les comparer au mots a trouver
-  const findLetter = findObject.map((e) => e.value);
-  console.log(findLetter);
-
-  // Copie le tableau de lettre cacher.
-  const showLetter = notFoundLetter;
-
-  // remplace chaque lettres du tableau showLetter par sa lettre,
-  // si elle correspond a une lettre du tableau letters.
   function showMe() {
     for (let i = 0; i < letters.length; i += 1) {
       for (let j = 0; j < findLetter.length; j += 1) {
@@ -224,6 +274,7 @@ const pendu = () => {
     }
   }
   showMe();
+
   return (
     <div id="game">
       <GameWindow
@@ -235,9 +286,12 @@ const pendu = () => {
         setCount={setCount}
         word={word}
         findLetterInWord={findLetterInWord}
+        gameNotYetStarted={gameNotYetStarted}
+        gameOver={gameOver}
+        gameWin={gameWin}
       />
     </div>
   );
 };
 
-export default pendu;
+export default Pendu;

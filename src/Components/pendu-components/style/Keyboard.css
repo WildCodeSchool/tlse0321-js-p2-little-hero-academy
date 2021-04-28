@@ -1,12 +1,12 @@
 .keyboard-container {
   max-width: 30rem;
-  height: 10rem;
   border: 1ps solid;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 5rem;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
 }
 .keyboard-container button {
   border: 1px solid;
@@ -20,4 +20,10 @@
   font-size: 2rem;
   background-color: #067bc2;
   cursor: pointer;
+}
+
+.keyboard-container button:hover {
+  border: 1px solid;
+  color: #067bc2;
+  background-color: #ec6a32;
 }

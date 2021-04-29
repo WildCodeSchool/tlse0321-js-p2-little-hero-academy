@@ -24,7 +24,7 @@ const GameWindow = (props) => {
   const gameInformation = {
     name: 'Sauvetage',
     rules:
-      'Bienvenue dans le jeu du Sauvetage! Ta mission consiste à trouver le nom de notre héro. Si tu y arrive avant que les coeurs aient disparu, tu auras gagner. Bonne chance! ',
+      'Bienvenue dans le jeu du Sauvetage! Ta mission consiste à trouver le nom de notre héro. Si tu y arrives avant que les coeurs aient disparu, tu auras gagner. Bonne chance !',
   };
   return (
     <section className="window-container">

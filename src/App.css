@@ -40,7 +40,6 @@
   --greylight: #e0e0e0;
   --red: #ec6a32;
   --blue: #067bc2;
-
 }
 
 H1 {
@@ -74,5 +73,7 @@ H4 {
 .p2 {
   font-weight: 300;
   font-family: 'Quicksand', sans-serif;
-
+}
+body {
+  background-image: url('./img/BackgroundBlue.png');
 }

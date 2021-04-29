@@ -1,58 +1,101 @@
+import { useState, useEffect } from 'react';
 import axios from 'axios';
-import React, { useEffect, useState } from 'react';
 import '../Styles/Quiz.css';
 import Gamepage from './Gamepage';
 import Quiz from './quiz-components/Quiz';
 import questions from './quiz-components/questions-data';
 
 const QuizGame = () => {
-  const [character, setCharacter] = useState();
-
-  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${346}`;
+  const [showAnswer, setShowAnswer] = useState(false);
+  const [currentQuestion, setCurrentQuestion] = useState(0);
+  const [showScore, setShowScore] = useState(false);
+  const [score, setScore] = useState(0);
+  const [heroData, setheroData] = useState('');
+  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${165}`;
+  const gameInformation = {
+    name: 'Quiz',
+    rules:
+      'Bienvenue dans le Quiz! Dans ce jeu tu dois répondre à une serie de 8 questions. Mieux tu réponds aux questions, plus ta note finale sera élevée. Bonne chance! ',
+  };
+  const handleAnswerOptionClick = (isCorrect) => {
+    if (isCorrect) {
+      setScore(score + 1);
+    }
+    setShowAnswer(true);
+    setTimeout(() => {
+      const nextQuestion = currentQuestion + 1;
+      if (nextQuestion < questions.length) {
+        setCurrentQuestion(currentQuestion + 1);
+        setShowAnswer(false);
+      } else {
+        setShowScore(true);
+      }
+    }, 2000);
+  };
+  const toggleAnswerClass = (isCorrect) => {
+    if (showAnswer) {
+      return isCorrect ? 'correct' : 'incorrect';
+    }
+    return '';
+  };
 
   useEffect(() => {
     axios
       .get(urlHero)
       .then((results) => results.data)
       .then((data) => {
-        setCharacter({
-          name: data.name,
-          fullName: data.biography['full-name'],
-          gender: data.appearance.gender,
-          alignment: data.biography.alignment,
-          race: data.appearance.race,
-          placeOfBirth: data.biography['place-of-birth'],
-          publisher: data.biography.publisher,
-          firstAppearance: data.biography['first-appearance'],
-          image: data.image.url,
-        });
+        setheroData([
+          data.name,
+          data.biography['full-name'],
+          data.appearance.gender,
+          data.biography.alignment,
+          data.appearance.race,
+          data.biography['place-of-birth'],
+          data.biography.publisher,
+          data.biography['first-appearance'],
+          data.image.url,
+        ]);
       });
   }, []);
-
-  useEffect(() => {
-    if (character) {
-      const newQuestion = [...questions];
-      const keys = Object.keys(character);
-      for (let i = 0; i <= 7; i += 1) {
-        for (let j = 0; j <= 3; j += 1) {
-          if (newQuestion[i].answerOptions[j]?.isCorrect) {
-            newQuestion[i].answerOptions[j].answerText = character[keys[i]];
-          }
+  function changeQuestions() {
+    const newQuestion = [...questions];
+    questions[currentQuestion].answerOptions.forEach((answer, index) => {
+      if (answer.isCorrect) {
+        newQuestion[currentQuestion].answerOptions[index].answerText = heroData[currentQuestion];
+        if (heroData[currentQuestion] === 'Female') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Une Femme';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Homme';
+        }
+        if (heroData[currentQuestion] === 'Male') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Homme';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Une Femme';
+        }
+        if (heroData[currentQuestion] === 'bad') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Mechant';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Hero';
+        }
+        if (heroData[currentQuestion] === 'good') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Hero';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Mechant';
         }
       }
-    }
-  }, [character]);
-
-  const gameInformation = {
-    name: 'Quiz',
-    rules:
-      'Bienvenue dans le Quiz! Dans ce jeu tu dois répondre à une serie de 8 questions. Mieux tu réponds aux questions, plus ta note finale sera élevée. Bonne chance! ',
-  };
+    });
+  }
+  changeQuestions();
 
   return (
     <div className="game">
       <Gamepage gameInformation={gameInformation} />
-      <Quiz />
+      <Quiz
+        currentQuestion={currentQuestion}
+        showScore={showScore}
+        score={score}
+        setScore={setScore}
+        handleAnswerOptionClick={handleAnswerOptionClick}
+        toggleAnswerClass={toggleAnswerClass}
+        heroData={heroData}
+        questions={questions}
+      />
     </div>
   );
 };

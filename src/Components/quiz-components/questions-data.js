@@ -20,7 +20,7 @@ const questions = [
   {
     questionText: 'Ce personnage est :',
     answerOptions: [
-      { answerText: 'Un homme', isCorrect: true },
+      { answerText: 'Un Homme', isCorrect: true },
       { answerText: 'Une Femme', isCorrect: false },
     ],
   },
@@ -62,7 +62,7 @@ const questions = [
     questionText: 'Où a-t-on pu voir ce personnage pour la première fois?',
     answerOptions: [
       { answerText: 'Star Wars : Un nouvel espoir', isCorrect: false },
-      { answerText: 'X-MEN Vol. 1 #1', isCorrect: false },
+      { answerText: 'Birdman and the Galaxy Trio (1967)', isCorrect: false },
       {
         answerText: 'Le Seigneur des anneaux : Les Deux Tours',
         isCorrect: false,

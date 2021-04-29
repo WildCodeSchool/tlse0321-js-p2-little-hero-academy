@@ -33,21 +33,13 @@ const QuizGame = () => {
     720,
     201,
     332,
-    238,
-    480,
     418,
     644,
-    729,
-    309,
-    308,
-    370,
     423,
-    405,
     208,
-    514,
     538,
-    575,
   ];
+  console.log(heros);
 
   function getRandomHero(max) {
     return Math.floor(Math.random() * max);
@@ -117,6 +109,33 @@ const QuizGame = () => {
         if (heroData[currentQuestion] === 'good') {
           newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Hero';
           newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Mechant';
+        }
+        if (heroData[currentQuestion] === 'Human') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Humain';
+        }
+        if (heroData[currentQuestion] === 'Atlantean') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Atlantes';
+        }
+        if (heroData[currentQuestion] === 'Asgardian') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Asgardien';
+        }
+        if (heroData[currentQuestion] === 'neutral') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Neutre';
+        }
+        if (heroData[currentQuestion] === 'Amazon') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Une Amazone';
+        }
+        if (heroData[currentQuestion] === 'Human / Radiation') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Humain';
+        }
+        if (heroData[currentQuestion] === 'Kryptonian') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Kryptonien';
+        }
+        if (
+          heroData[currentQuestion]
+          === 'Unrevealed, probably somewhere in Northern Europe'
+        ) {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Nuremberg';
         }
       }
     });

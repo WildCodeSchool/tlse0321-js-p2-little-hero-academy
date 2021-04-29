@@ -11,12 +11,52 @@ const QuizGame = () => {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
   const [heroData, setheroData] = useState('');
-  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${165}`;
   const gameInformation = {
     name: 'Quiz',
     rules:
       'Bienvenue dans le Quiz! Dans ce jeu tu dois répondre à une serie de 8 questions. Mieux tu réponds aux questions, plus ta note finale sera élevée. Bonne chance! ',
   };
+
+  const heros = [
+    38,
+    69,
+    30,
+    346,
+    620,
+    659,
+    149,
+    165,
+    106,
+    213,
+    263,
+    717,
+    720,
+    201,
+    332,
+    238,
+    480,
+    418,
+    644,
+    729,
+    309,
+    308,
+    370,
+    423,
+    405,
+    208,
+    514,
+    538,
+    575,
+  ];
+
+  function getRandomHero(max) {
+    return Math.floor(Math.random() * max);
+  }
+  const heroNumber = heros.length - 1;
+  const randomIdHero = getRandomHero(heroNumber);
+  const randomHero = heros[randomIdHero];
+  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${randomHero}`;
+
   const handleAnswerOptionClick = (isCorrect) => {
     if (isCorrect) {
       setScore(score + 1);

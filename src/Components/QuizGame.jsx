@@ -11,9 +11,7 @@ const QuizGame = () => {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
   const [heroData, setheroData] = useState('');
-  const [modifyQuestion, setModifyQuestion] = useState([...questions]);
-  console.log(setModifyQuestion);
-  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${69}`;
+  const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${165}`;
   const gameInformation = {
     name: 'Quiz',
     rules:
@@ -50,10 +48,10 @@ const QuizGame = () => {
       .then((data) => {
         setheroData([
           data.name,
-          data.biography['full.name'],
+          data.biography['full-name'],
           data.appearance.gender,
           data.biography.alignment,
-          data.biography.race,
+          data.appearance.race,
           data.biography['place-of-birth'],
           data.biography.publisher,
           data.biography['first-appearance'],
@@ -66,6 +64,22 @@ const QuizGame = () => {
     questions[currentQuestion].answerOptions.forEach((answer, index) => {
       if (answer.isCorrect) {
         newQuestion[currentQuestion].answerOptions[index].answerText = heroData[currentQuestion];
+        if (heroData[currentQuestion] === 'Female') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Une Femme';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Homme';
+        }
+        if (heroData[currentQuestion] === 'Male') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Homme';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Une Femme';
+        }
+        if (heroData[currentQuestion] === 'bad') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Mechant';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Hero';
+        }
+        if (heroData[currentQuestion] === 'good') {
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Hero';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Mechant';
+        }
       }
     });
   }
@@ -82,7 +96,7 @@ const QuizGame = () => {
         handleAnswerOptionClick={handleAnswerOptionClick}
         toggleAnswerClass={toggleAnswerClass}
         heroData={heroData}
-        modifyQuestion={modifyQuestion}
+        questions={questions}
       />
     </div>
   );

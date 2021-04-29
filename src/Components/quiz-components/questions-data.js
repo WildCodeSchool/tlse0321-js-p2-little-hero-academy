@@ -52,7 +52,7 @@ const questions = [
   {
     questionText: 'Qui à créé Iron Man?',
     answerOptions: [
-      { answerText: 'DC Comics', isCorrect: false },
+      { answerText: 'Tolken', isCorrect: false },
       { answerText: 'J.K. Rowling', isCorrect: false },
       { answerText: 'Marvel Comics', isCorrect: true },
       { answerText: 'George Lucas', isCorrect: false },

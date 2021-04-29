@@ -1,22 +1,14 @@
 import React from 'react';
 import '../Styles/ContactForm.css';
-// import axios from 'axios';
 
 const ContactForm = () => (
-  // const [imgPersonnage, setImgPersonnage] = useState('');
-  // const randomImg = Math.floor(Math.random() * 300) + 1;
-  // const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${randomImg}`;
-
-  // axios
-  //   .get(urlHero)
-  //   .then((results) => results.data)
-  //   .then((data) => {
-  //     setImgPersonnage(data.image.url);
-  //   });
-
   <article className="contact-form-container">
     <div className="contact-form-img">
-      <img src="url" alt="images" />
+      <img
+        id="imgcontact"
+        src="https://www.superherodb.com/pictures2/portraits/10/100/1112.jpg"
+        alt="images"
+      />
     </div>
     <form id="contact" method="post">
       <h1 className="h1">Nous contacter</h1>

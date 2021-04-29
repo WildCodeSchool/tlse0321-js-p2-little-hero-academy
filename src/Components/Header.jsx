@@ -25,8 +25,6 @@ const header = () => {
         <img className="logo" src={logo} alt="logo-little-hero-academy" />
         <ul className={`liste-nav ${navbarOpen ? ' showMenu' : ''}`}>
           <Link closeMenu={closeMenu} to="/jeux" label="Jeux" href="jeux" />
-          <Link closeMenu={closeMenu} to="/quiz" label="Quiz" href="quiz" />
-          <Link closeMenu={closeMenu} to="/pendu" label="Pendu" href="Pendu" />
           <Link
             closeMenu={closeMenu}
             to="/aboutus"

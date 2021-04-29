@@ -41,20 +41,24 @@ const AboutUs = () => (
           n&apos;est pas du tout du matin ! Il est super, c&apos;est un héro,
           c&apos;est un super hero !!
         </div>
-        <table className="aboutus-stats">
-          <tr>
-            <td>67</td>
-            <td>43</td>
-            <td>72</td>
-            <td>99</td>
-          </tr>
-          <tr>
-            <td>INT</td>
-            <td>STR</td>
-            <td>DEX</td>
-            <td>FLEMME</td>
-          </tr>
-        </table>
+        <div className="aboutus-stats">
+          <div className="stats">
+            <div>STR</div>
+            <div>33</div>
+          </div>
+          <div className="stats">
+            <div>INT</div>
+            <div>65</div>
+          </div>
+          <div className="stats">
+            <div>DEX</div>
+            <div>51</div>
+          </div>
+          <div className="stats">
+            <div>FATIGUE</div>
+            <div>96</div>
+          </div>
+        </div>
       </article>
       <article className="aboutus-card" href="recettespages/recette-page.html">
         <div className="aboutus-img-container">
@@ -67,7 +71,7 @@ const AboutUs = () => (
         <div className="aboutus-card-title">
           <h2>
             Charlotte,
-            <br /> super chat
+            <br /> super Heroine
           </h2>
         </div>
         <div className="aboutus-card-text">
@@ -76,20 +80,24 @@ const AboutUs = () => (
           n&apos;est pas du tout du matin ! Il est super, c&apos;est un héro,
           c&apos;est un super hero !!
         </div>
-        <table className="aboutus-stats">
-          <tr>
-            <td>67</td>
-            <td>43</td>
-            <td>72</td>
-            <td>99</td>
-          </tr>
-          <tr>
-            <td>INT</td>
-            <td>STR</td>
-            <td>DEX</td>
-            <td>FLEMME</td>
-          </tr>
-        </table>
+        <div className="aboutus-stats">
+          <div className="stats">
+            <div>STR</div>
+            <div>23</div>
+          </div>
+          <div className="stats">
+            <div>INT</div>
+            <div>66</div>
+          </div>
+          <div className="stats">
+            <div>DEX</div>
+            <div>51</div>
+          </div>
+          <div className="stats">
+            <div>STATS</div>
+            <div>##</div>
+          </div>
+        </div>
       </article>
       <article className="aboutus-card" href="recettespages/recette-page.html">
         <div className="aboutus-img-container">
@@ -101,8 +109,8 @@ const AboutUs = () => (
         </div>
         <div className="aboutus-card-title">
           <h2>
-            Simon,
-            <br /> super codeur
+            Kévin,
+            <br /> super hero
           </h2>
         </div>
         <div className="aboutus-card-text">
@@ -111,20 +119,24 @@ const AboutUs = () => (
           n&apos;est pas du tout du matin ! Il est super, c&apos;est un héro,
           c&apos;est un super hero !!
         </div>
-        <table className="aboutus-stats">
-          <tr>
-            <td>67</td>
-            <td>43</td>
-            <td>72</td>
-            <td>99</td>
-          </tr>
-          <tr>
-            <td>INT</td>
-            <td>STR</td>
-            <td>DEX</td>
-            <td>FLEMME</td>
-          </tr>
-        </table>
+        <div className="aboutus-stats">
+          <div className="stats">
+            <div>STR</div>
+            <div>67</div>
+          </div>
+          <div className="stats">
+            <div>INT</div>
+            <div>66</div>
+          </div>
+          <div className="stats">
+            <div>DEX</div>
+            <div>33</div>
+          </div>
+          <div className="stats">
+            <div>STR</div>
+            <div>33</div>
+          </div>
+        </div>
       </article>
       <article className="aboutus-card" href="recettespages/recette-page.html">
         <div className="aboutus-img-container">
@@ -136,8 +148,8 @@ const AboutUs = () => (
         </div>
         <div className="aboutus-card-title">
           <h2>
-            Kevin,
-            <br /> super pauseur
+            Jerome,
+            <br /> super dormeur
           </h2>
         </div>
         <div className="aboutus-card-text">
@@ -146,20 +158,24 @@ const AboutUs = () => (
           n&apos;est pas du tout du matin ! Il est super, c&apos;est un héro,
           c&apos;est un super hero !!
         </div>
-        <table className="aboutus-stats">
-          <tr>
-            <td>67</td>
-            <td>43</td>
-            <td>72</td>
-            <td>99</td>
-          </tr>
-          <tr>
-            <td>INT</td>
-            <td>STR</td>
-            <td>DEX</td>
-            <td>FLEMME</td>
-          </tr>
-        </table>
+        <div className="aboutus-stats">
+          <div className="stats">
+            <div>STR</div>
+            <div>33</div>
+          </div>
+          <div className="stats">
+            <div>STR</div>
+            <div>33</div>
+          </div>
+          <div className="stats">
+            <div>STR</div>
+            <div>33</div>
+          </div>
+          <div className="stats">
+            <div>STR</div>
+            <div>33</div>
+          </div>
+        </div>
       </article>
     </section>
   </article>

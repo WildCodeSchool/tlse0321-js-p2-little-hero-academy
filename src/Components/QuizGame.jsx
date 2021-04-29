@@ -16,7 +16,21 @@ const QuizGame = () => {
     rules:
       'Bienvenue dans le Quiz! Dans ce jeu tu dois répondre à une serie de 8 questions. Mieux tu réponds aux questions, plus ta note finale sera élevée. Bonne chance! ',
   };
-
+  useEffect(() => {
+    questions.forEach((question) => {
+      const quest = question.answerOptions;
+      if (quest.length > 2) {
+        let counter = quest.length;
+        while (counter > 0) {
+          const index = Math.floor(Math.random() * counter);
+          counter -= 1;
+          const temp = quest[counter];
+          quest[counter] = quest[index];
+          quest[index] = temp;
+        }
+      }
+    });
+  }, []);
   const heros = [
     38,
     69,

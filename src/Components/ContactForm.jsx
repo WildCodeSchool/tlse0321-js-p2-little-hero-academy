@@ -4,7 +4,6 @@ import '../Styles/ContactForm.css';
 const ContactForm = () => (
   <article className="contact-form-page">
     <div className="contact-form-bg" />
-
     <article className="contact-form-container">
       <div className="contact-form-img">
         <img

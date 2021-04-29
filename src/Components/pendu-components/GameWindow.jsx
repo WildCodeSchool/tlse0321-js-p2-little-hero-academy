@@ -22,9 +22,9 @@ const GameWindow = (props) => {
     hartFinder,
   } = props;
   const gameInformation = {
-    name: 'Pendu',
+    name: 'Sauvetage',
     rules:
-      "Bienvenue dans le jeu du Sauvetage! Dans ce jeu tu dois trouver le nom d'un hero. Tu a 7 coeur, à chaque erreur tu en perd un. Si tu trouve toutes les lettres du nom du héro, avant d'avoir perdu tout tes coeur, tu gagne . Bonne chance! ",
+      "Bienvenue dans le jeu du Sauvetage! Ta mission: retrouver le nom d'un Super-Hero en cliquant sur les lettres ci-dessous. Si tu trouves le nom de notre héro avant que les coeurs aient disparu, tu gagnes. Bonne chance! ",
   };
   return (
     <section className="window-container">

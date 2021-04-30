@@ -7,15 +7,50 @@
 }
 
 .contact-form-container {
-  max-width: 800px;
-  width: 100%;
+  max-width: 1000px;
+  height: 450px;
+  width: 80%;
   margin: 0 auto;
   position: relative;
   font-family: 'Quicksand', Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
-  color: #777;
+  margin: -100px auto 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.contact-form-bg {
+  background-image: url('https://i.ibb.co/w0n2Qr6/Background-Yellow.png');
+  height: 250px;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  -webkit-mask-image: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    from(rgba(0, 0, 0, 1)),
+    to(rgba(0, 0, 0, 0))
+  );
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+}
+
+.contact-form-img {
+  width: 30%;
+  height: 100%;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.contact-form-img img {
+  height: 100%;
 }
 
 #contact input[type='text'],
@@ -28,34 +63,21 @@
 }
 
 #contact {
+  width: 1fr;
+  height: 100%;
   background: #f9f9f9;
   padding: 25px;
-  margin: 150px 0;
-  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h1 {
+  display: block;
+  margin-bottom: 10px;
+  color: var(--red);
 }
 
 #contact h3 {
-  font-family: 'RG-regular';
-  display: block;
-  font-size: 30px;
-  font-weight: 300;
-  margin-bottom: 10px;
-  color: var();
-}
-
-#contact h4 {
   margin: 5px 0 15px;
-  display: block;
-  font-size: 13px;
-  font-weight: 400;
-}
-
-fieldset {
-  border: medium none !important;
-  margin: 0 0 10px;
-  min-width: 100%;
-  padding: 0;
-  width: 100%;
+  color: var(--greydark);
 }
 
 #contact input[type='text'],
@@ -76,10 +98,6 @@ fieldset {
   max-width: 100%;
   resize: none;
   font-family: 'Quicksand';
-}
-
-.copyright {
-  text-align: center;
 }
 
 #contact input:focus,
@@ -152,4 +170,45 @@ fieldset {
 .hvr-sweep-to-bottom:active:before {
   -webkit-transform: scaleY(1);
   transform: scaleY(1);
+}
+
+@media screen and (max-width: 700px) {
+  .contact-form-container {
+    width: 100%;
+  }
+
+  .contact-form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    margin: 0px;
+  }
+
+  #contact {
+    height: 1fr;
+    width: 100%;
+    background: #f9f9f9;
+    padding: 25px;
+  }
+
+  .contact-form-img {
+    height: 50vh;
+    overflow: hidden;
+    width: 100%;
+    object-fit: contain;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+
+  #imgcontact {
+    width: 100%;
+    height: auto;
+  }
+
+  .contact-form-bg {
+    display: none !important;
+  }
 }

@@ -4,7 +4,6 @@ nav {
   background: #333;
   z-index: 100;
   border-bottom: 1px dotted #f1f1f1;
-  /* background: linear-gradient(to bottom, #282828, #626262); */
   display: flex;
 }
 .header {
@@ -37,7 +36,6 @@ nav {
 
 .liste-nav {
   background: #333;
-  /* background: linear-gradient(to bottom, #282828, #626262); */
   height: 5rem;
   width: 100%;
   display: flex;

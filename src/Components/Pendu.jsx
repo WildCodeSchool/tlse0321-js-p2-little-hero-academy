@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
 import GameWindow from './pendu-components/GameWindow';
+import diplome from '../img/diploma.png';
 
 const Pendu = () => {
   const heros = [
@@ -216,7 +217,7 @@ const Pendu = () => {
   const [gameNotYetStarted, setGameNotYetStarted] = useState(true);
   const [gameOver, setGameOver] = useState(false);
   const [gameWin, setGameWin] = useState(false);
-  const hart = '♡';
+  const hart = diplome;
   const hartFinder = [];
   const showMyHart = () => {
     for (let i = 0; i < count; i += 1) {

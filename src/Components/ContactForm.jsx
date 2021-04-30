@@ -8,7 +8,7 @@ const ContactForm = () => (
       <div className="contact-form-img">
         <img
           id="imgcontact"
-          src="https://www.superherodb.com/pictures2/portraits/10/100/1112.jpg"
+          src="https://www.superherodb.com/pictures2/portraits/10/100/940.jpg"
           alt="images"
         />
       </div>

@@ -1,7 +1,7 @@
 .game-over {
   margin: 2rem auto;
   width: 90%;
-  height: 20rem;
+  height: 62vh;
   top: 5rem;
   border: 2px solid;
   border-radius: 20px;
@@ -12,7 +12,11 @@
   align-items: center;
   text-align: center;
 }
+.game-over h1 {
+  margin: 2rem 0 2rem;
+}
 .btn-win {
+  margin: 2rem 0 2rem;
   border: 1px solid;
   padding: 1rem;
   width: 100%;

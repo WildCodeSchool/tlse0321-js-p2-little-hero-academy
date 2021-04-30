@@ -57,16 +57,12 @@
 }
 
 .aboutus-card-title {
-  font-size: 1.5em;
-  letter-spacing: 0.1em;
-  display: inline-flex;
   justify-content: center;
   align-items: center;
   font-family: 'RG-italic';
-  padding: 15px 0px 15px 0px;
+  padding: 1.5em;
   color: #ec6a32;
   background-color: #333;
-  width: 100%;
 }
 
 .aboutus-card-text {
@@ -76,33 +72,33 @@
   text-align: justify;
   color: var(--colorgrey);
   font-family: 'Quicksand';
-}
-.stats-post i,
-.tag-post-recette i {
-  color: #dd7e55;
-  font-size: 1.2em;
+  margin-bottom: 17%;
 }
 
 .aboutus-stats {
-  width: 90%;
-  margin: 5px auto 10px auto;
-  padding: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 5px 0px 5px 0px;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
   font-size: 0.8em;
   text-align: center;
-  bottom: 5px;
   font-family: 'RG-regular';
   text-rendering: optimizeLegibility;
-  table-layout: auto;
-  border: 8px double #067bc2;
   background-color: #e0e0e0;
-  border-style: double;
 }
 
-.aboutus-stats td {
-  font-size: 1.3em;
-  color: #333;
-  border-left: 3px solid #067bc2;
-  padding: 3px;
+.stats {
+  color: var(--greydark);
+  font-size: 1.2em;
+  padding: 0.8em;
+  background-color: var(--blue);
+  transform: skew(-15deg);
+}
+.stats div:first-child {
+  color: var(--greylight);
 }
 
 @media (min-width: 1024px) {
@@ -136,5 +132,12 @@
       scale(1);
     filter: blur(0);
     opacity: 1;
+  }
+  .stats {
+    color: var(--greydark);
+    font-size: 1.2em;
+    padding: 0.5em 0.8em 0.5em 0.8em;
+    background-color: var(--blue);
+    transform: skew(-15deg);
   }
 }

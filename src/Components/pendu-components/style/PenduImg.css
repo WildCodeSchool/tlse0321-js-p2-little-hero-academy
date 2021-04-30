@@ -1,0 +1,9 @@
+.sauvetage-img-container {
+  margin-top: 3rem;
+  text-align: center;
+}
+
+.sauvetage-img-container img {
+  width: 15rem;
+  height: 18rem;
+}

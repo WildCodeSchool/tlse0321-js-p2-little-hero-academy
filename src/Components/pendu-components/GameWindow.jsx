@@ -5,6 +5,7 @@ import NewGame from './NewGame';
 import './style/GameWindow.css';
 import Gamepage from '../Gamepage';
 import HartLife from './HartLife';
+import PenduImg from './PenduImg';
 
 const GameWindow = (props) => {
   const {
@@ -22,13 +23,14 @@ const GameWindow = (props) => {
     hartFinder,
   } = props;
   const gameInformation = {
-    name: 'Pendu',
+    name: 'Sauvetage',
     rules:
-      "Bienvenue dans le jeu du Sauvetage! Dans ce jeu tu dois trouver le nom d'un hero. Tu a 7 coeur, à chaque erreur tu en perd un. Si tu trouve toutes les lettres du nom du héro, avant d'avoir perdu tout tes coeur, tu gagne . Bonne chance! ",
+      'Bienvenue dans le jeu du Sauvetage! Ta mission consiste à trouver le nom de notre héro. Si tu y arrives avant que les coeurs aient disparu, tu auras gagner. Bonne chance !',
   };
   return (
     <section className="window-container">
       <Gamepage gameInformation={gameInformation} />
+      <PenduImg count={count} />
       <Letter showLetter={showLetter} />
       <HartLife hartFinder={hartFinder} />
       <Keyboard

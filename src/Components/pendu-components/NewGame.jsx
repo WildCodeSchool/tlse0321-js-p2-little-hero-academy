@@ -4,7 +4,6 @@ const NewGame = ({ findLetterInWord, gameNotYetStarted }) => gameNotYetStarted &
   <section className="new-game-container">
     <div>
       <h1>Bienvenu dans le jeu du sauvetage</h1>
-      <p>Clique sur le bouton pour commencer le jeux , Bonne chance</p>
     </div>
     <button
       type="button"

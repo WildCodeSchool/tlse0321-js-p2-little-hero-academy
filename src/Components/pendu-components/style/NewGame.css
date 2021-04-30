@@ -13,7 +13,9 @@
   align-items: center;
   text-align: center;
 }
-
+.new-game-container h1 {
+  margin: 2rem 0 6rem;
+}
 .btn-game {
   border: 1px solid;
   padding: 1rem;

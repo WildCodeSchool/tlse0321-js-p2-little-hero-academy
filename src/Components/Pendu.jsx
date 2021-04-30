@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react';
 import axios from 'axios';
-import '../Styles/Pendu.css';
 import GameWindow from './pendu-components/GameWindow';
 
 const Pendu = () => {

@@ -8,9 +8,17 @@ import img1 from '../../img/Pendu1.png';
 const PenduImg = ({ count }) => {
   const imgArray = [img5, img4, img3, img3, img2, img1, img1];
   const curentImg = imgArray[count - 1];
+  console.log(count);
+
+  let oneMore = false;
+  console.log(oneMore);
+  if (count === 1) {
+    oneMore = true;
+  }
   return (
     <div className="sauvetage-img-container">
       <img src={curentImg} alt="hero tombe" />
+      {oneMore && <h1>Vite sauve moi!!!!</h1>}
     </div>
   );
 };

@@ -112,7 +112,7 @@
 .bulle {
   height: 230px;
   margin-bottom: 345px;
-  position: relative;
+  position: absolute;
   margin-left: 170px;
 }
 

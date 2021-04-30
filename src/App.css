@@ -75,5 +75,9 @@ H4 {
   font-family: 'Quicksand', sans-serif;
 }
 body {
+  background-repeat: no-repeat;
+  background-position: bottom;
   background-image: url('./img/BackgroundBlue.png');
+  background-size: cover;
+  min-height: 100vh;
 }

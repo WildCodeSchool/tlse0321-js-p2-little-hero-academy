@@ -5,6 +5,7 @@ import NewGame from './NewGame';
 import './style/GameWindow.css';
 import Gamepage from '../Gamepage';
 import HartLife from './HartLife';
+import PenduImg from './PenduImg';
 
 const GameWindow = (props) => {
   const {
@@ -29,6 +30,7 @@ const GameWindow = (props) => {
   return (
     <section className="window-container">
       <Gamepage gameInformation={gameInformation} />
+      <PenduImg count={count} />
       <Letter showLetter={showLetter} />
       <HartLife hartFinder={hartFinder} />
       <Keyboard

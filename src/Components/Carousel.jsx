@@ -42,14 +42,14 @@ const Carousel = () => (
             <h1>Sauvetage</h1>
           </div>
         </Link>
-        <Link to="/pendu" label="Pendu">
+        <Link to="/codex" label="Codex">
           <img
             src="https://images.unsplash.com/photo-1569003339405-ea396a5a8a90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80"
             className="yours-custom-class"
             alt="img"
           />
           <div className="centred">
-            <h1>En Construction</h1>
+            <h1>Codex</h1>
           </div>
         </Link>
       </AliceCarousel>

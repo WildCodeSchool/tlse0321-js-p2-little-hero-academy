@@ -1,14 +1,19 @@
 .Codex {
   width: 100%;
   height: auto;
+  display: flex;
+  justify-content: center;
+
 }
 
 .Hero-card-container {
   width: 80%;
   height: auto;
-  flex-wrap: wrap;
   display: flex;
-  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
 }
 .card {
   margin: 2rem;

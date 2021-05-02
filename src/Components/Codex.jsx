@@ -1,4 +1,5 @@
 import CarteHero from './CarteHero';
+import '../Styles/Codex.css';
 
 const Codex = () => {
   const heros = [
@@ -35,10 +36,12 @@ const Codex = () => {
   ];
 
   return (
-    <div>
-      {heros.map((perso) => (
-        <CarteHero perso={perso} />
-      ))}
+    <div className="Codex">
+      <div className="Hero-card-container">
+        {heros.map((perso) => (
+          <CarteHero perso={perso} />
+        ))}
+      </div>
     </div>
   );
 };

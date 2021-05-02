@@ -17,8 +17,8 @@
 }
 .card {
   margin: 2rem;
-  width: 400px;
-  height: 600px;
+  width: 25rem;
+  height: 40rem;
   perspective: 1000px;
 }
 .card button {
@@ -71,7 +71,7 @@
 }
 .card__face--back h1 {
   color: #fff;
-  font-size: 32px;
+  font-size: 2rem;
 }
 .card__face--back img {
   width: 15rem;
@@ -95,7 +95,7 @@
 
 .card__header h2 {
   color: #fff;
-  font-size: 32px;
+  font-size: 3rem;
   font-weight: 900;
   text-transform: uppercase;
   margin-top: 2rem;
@@ -104,18 +104,60 @@
 
 .card__body {
   text-align: center;
-  padding: 30px;
+  padding: 2rem;
 }
 
 .card__body h3 {
   color: var(--dark);
-  font-size: 24px;
+  font-size: 1.7rem;
   font-weight: 600;
-  margin-bottom: 15px;
+  margin-bottom: 0.7rem;
 }
 
 .card__body p {
   color: var(--dark);
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.4;
+}
+@media screen and (max-width: 700px) {
+
+  .card{
+    width: 15rem;
+    height: 20rem;
+  }
+  .card__face--front h1 {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .card__header h2 {
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+
+  }
+  .card__face--front img {
+    width: 8rem;
+    height: 12rem;
+    margin-top: 1rem;
+    top: 5rem;
+    border-radius: 20px;
+  }
+  
+  .card__face--back img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 0.1rem;
+    top: 1rem;
+    border-radius: 9999px;
+  }
+  .card__face--back h1 {
+    font-size: 1rem;
+  }
+  .card__body h3 {
+    font-size: 1rem;
+  }
+  .card__body {
+    padding: 0.5rem;
+    margin: -0.5rem;
+  }
 }

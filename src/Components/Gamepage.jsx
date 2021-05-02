@@ -2,28 +2,24 @@ import '../Styles/Gamepage.css';
 import VocalRules from './VocalRules';
 
 const Gamepage = ({ gameInformation }) => (
-  <section className="gamepage">
-    <div className="gamepage-container">
-      <h2 className="gamepage-title">
-        Bienvenue sur le jeu du {gameInformation.name} !
-      </h2>
-      <div className="game-rules">
-        <div className="rules-heropicture-container">
-          <img
-            src="https://cdn4.iconfinder.com/data/icons/avatars-xmas-giveaway/128/batman_hero_avatar_comics-512.png"
-            alt="hero"
-            className="rules-heropicture"
-          />
-        </div>
-        <div className="rules-text">
-          <p>{gameInformation.rules}</p>
-        </div>
-        <div className="vocal-rules">
-          <VocalRules gameInformation={gameInformation} />
-        </div>
+  <article className="gamepage-container">
+    <h2 className="gamepage-title">
+      Bienvenue sur le jeu du {gameInformation.name} !
+    </h2>
+    <div className="game-rules">
+      <div className="rules-heropicture-container">
+        <img
+          src="https://i.ibb.co/1njD7r4/avatar-1619777354401.png"
+          alt="hero"
+          className="rules-heropicture"
+        />
       </div>
+      <div className="rules-text">
+        <p>{gameInformation.rules}</p>
+      </div>
+      <VocalRules gameInformation={gameInformation} />
     </div>
-  </section>
+  </article>
 );
 
 export default Gamepage;

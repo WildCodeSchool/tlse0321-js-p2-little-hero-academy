@@ -1,28 +1,25 @@
-.gamepage {
-  width: 100%;
-  margin: auto;
-}
-
 .gamepage-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: grey;
-  padding: 1em;
+  width: 80%;
+  margin: 1em auto 1em auto;
 }
 
 h2.gamepage-title {
   font-size: 1.3em;
   text-align: center;
-  color: rgb(3, 3, 3);
-  margin-bottom: 10px;
+  color: var(--red);
+  margin: 1em;
 }
 .game-rules {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  position: relative;
 }
 
 .rules-text {
@@ -35,4 +32,30 @@ h2.gamepage-title {
 
 .rules-heropicture {
   width: 150px;
+}
+
+.vocal-rules {
+  position: absolute;
+  bottom: 10px;
+  right: 20%;
+}
+.vocal-rules button {
+  background-color: var(--greydark);
+  color: var(--blue);
+  padding: 1em;
+  border: none;
+  font-family: 'Quicksand';
+  font-variant: small-caps;
+}
+
+.vocal-rules button {
+  background-color: var(--greydark);
+  padding: 1em;
+  border: none;
+  transition-duration: 0.3s;
+}
+
+.vocal-rules button:hover {
+  background-color: var(--blue);
+  color: #333;
 }

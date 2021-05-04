@@ -4,3 +4,14 @@
   justify-content: center;
   align-items: center;
 }
+
+.pendugame-container {
+  width: 80%;
+  background-color: var(--greylight);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 2em;
+  box-sizing: border-box;
+}

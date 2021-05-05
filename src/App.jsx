@@ -10,14 +10,14 @@ import pendu from './Components/Pendu';
 import GameOverWindow from './Components/pendu-components/GameOverWindow';
 import GameWinWindow from './Components/pendu-components/GameWinWindow';
 import QuizGame from './Components/QuizGame';
-import homePage from './Components/HomePage';
+import HomePage from './Components/HomePage';
 
 function App() {
   return (
     <div className="App">
       <Router>
         <Header />
-        <Route path="/" exact component={homePage} />
+        <Route path="/" exact component={HomePage} />
         <Route path="/jeux" exact component={Carousel} />
         <Route path="/quiz" exact component={QuizGame} />
         <Route path="/pendu" exact component={pendu} />

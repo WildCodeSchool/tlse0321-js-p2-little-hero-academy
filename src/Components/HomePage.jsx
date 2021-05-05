@@ -2,7 +2,7 @@ import { Route } from 'react-router-dom';
 import '../Styles/HomePage.css';
 import imgAcademy from '../img/academyheros.png';
 
-const homePage = () => (
+const HomePage = () => (
   <div className="homePresentation">
     <div className="homeText">
       <p>BIENVENUE À LA</p>
@@ -25,4 +25,4 @@ const homePage = () => (
   </div>
 );
 
-export default homePage;
+export default HomePage;

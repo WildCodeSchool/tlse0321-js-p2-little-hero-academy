@@ -180,9 +180,10 @@ const AboutUs = () => (
           <h2>Crédits</h2>
         </div>
         <div className="aboutus-card-text">
-          Ils nous on aidée a réaliser notre site nous avons utiliser leurs
-          magnifique travaille pour embelire notre site , nous les remercions ce
-          sont eux aussi des super heros , nos supoer heros!!
+          Ils nous ont aidée à réaliser notre site, nous avons utilisé leur
+          magnifique travail pour embellir le notre.
+          <br />
+          Nous les remercions ce sont aussi des super-héros , nos super-héros!!
         </div>
         <div className="credit">
           <ul>

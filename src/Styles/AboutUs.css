@@ -107,7 +107,12 @@
     background-color: white;
     margin: 2em auto 2em auto;
   }
-
+.aboutus-cardbloc{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
   .aboutus-description {
     display: flex;
     flex-direction: row;
@@ -121,10 +126,12 @@
   }
 
   .aboutus-card {
+    width: 20rem;
     transform: perspective(800px) rotateY(15deg) scale(0.9) rotateX(10deg);
     filter: blur(1px);
     opacity: 0.9;
     transition: 0.6s ease all;
+
   }
 
   .aboutus-card:hover {

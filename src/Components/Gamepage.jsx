@@ -1,22 +1,18 @@
 import '../Styles/Gamepage.css';
+import HeroRule from '../img/herogamerules.png';
 import VocalRules from './VocalRules';
 
 const Gamepage = ({ gameInformation }) => (
-  <article className="gamepage-container">
-    <h2 className="gamepage-title">
-      Bienvenue sur le jeu du {gameInformation.name} !
-    </h2>
-    <div className="game-rules">
-      <div className="rules-heropicture-container">
-        <img
-          src="https://i.ibb.co/1njD7r4/avatar-1619777354401.png"
-          alt="hero"
-          className="rules-heropicture"
-        />
-      </div>
-      <div className="rules-text">
-        <p>{gameInformation.rules}</p>
-      </div>
+  <article className="game-rules-container">
+    <div className="rules-heropicture-container">
+      <img src={HeroRule} alt="hero" className="rules-heropicture" />
+    </div>
+
+    <div className="rules-text">
+      <h2 className="gamepage-title">
+        Bienvenue sur le jeu du {gameInformation.name} !
+      </h2>
+      <p>{gameInformation.rules}</p>
       <VocalRules gameInformation={gameInformation} />
     </div>
   </article>

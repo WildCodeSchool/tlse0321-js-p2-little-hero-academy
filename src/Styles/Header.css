@@ -2,15 +2,15 @@ nav {
   position: fixed;
   width: 100%;
   z-index: 100;
- 
+
   border-bottom: 1px dotted #f1f1f1;
   display: flex;
 }
 .header {
   width: 100%;
-  height: 5rem;
+  height: 7rem;
 }
-  .header .logo {
+.header .logo {
   width: 7rem;
   height: 7rem;
   z-index: 200;
@@ -59,7 +59,7 @@ nav {
 }
 .item-nav a {
   font-size: 2rem;
-  font-family:RG-regular ;
+  font-family: RG-regular;
   color: var(--blue);
   text-decoration: none;
   margin: 1rem;

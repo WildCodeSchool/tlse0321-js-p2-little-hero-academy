@@ -31,12 +31,12 @@ const GameWindow = (props) => {
     <article className="window-container">
       <Gamepage gameInformation={gameInformation} />
       <section className="pendugame-container">
-        <section className="pendugame-life">
-          <PenduImg count={count} />
+        <article className="pendugame-info">
+          <Letter showLetter={showLetter} />{' '}
           <HartLife hartFinder={hartFinder} />
-        </section>
-        <section className="gamependu-keyboard">
-          <Letter showLetter={showLetter} />
+        </article>
+        <article className="pendugame-container2">
+          <PenduImg count={count} />
           <Keyboard
             handleClick={handleClick}
             alphabet={alphabet}
@@ -45,7 +45,7 @@ const GameWindow = (props) => {
             setCount={setCount}
             word={word}
           />
-        </section>
+        </article>
         <NewGame
           findLetterInWord={findLetterInWord}
           gameNotYetStarted={gameNotYetStarted}

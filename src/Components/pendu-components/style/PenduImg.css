@@ -1,9 +1,21 @@
 .sauvetage-img-container {
-  margin-top: 3rem;
   text-align: center;
+  width: 25rem;
+  height: 28rem;
 }
 
 .sauvetage-img-container img {
-  width: 15rem;
-  height: 18rem;
+  object-fit: contain;
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .sauvetage-img-container {
+    width: 50%;
+    height: auto;
+  }
+
+  .sauvetage-img-container img {
+    object-fit: contain;
+  }
 }

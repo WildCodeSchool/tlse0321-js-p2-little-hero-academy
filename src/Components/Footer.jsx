@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../Styles/Footer.css';
 import '../App.css';
 
@@ -47,36 +48,19 @@ const Footer = () => (
           </li>
         </ul>
       </article>
-      <article className="footer-social-link">
-        <ul>
-          <li>
-            <h4>Suivez-nous</h4>
-          </li>
-          <li>
-            <a href="www.facebook.com" className="href-footer">
-              Facebook
-            </a>
-          </li>
-          <li>
-            <a href="wwww.twitter.com" className="href-footer">
-              Twitter
-            </a>
-          </li>
-          <li>
-            <a href="wwww.instragram.com" className="href-footer">
-              Instragram
-            </a>
-          </li>
-        </ul>
-      </article>
       <article className="footer-quick-links">
         <ul>
           <li>
             <h4>Lien rapide</h4>
           </li>
-          <li>Notre histoire</li>
-          <li>Nous contacter</li>
-          <li>Plan du site</li>
+          <li>
+            <Link to={{ pathname: '/' }}>Page d&apos;accueil</Link>
+          </li>
+          <li>
+            <a href="https://github.com/WildCodeSchool/tlse0321-js-p2-little-hero-academy">
+              GitHub
+            </a>
+          </li>
         </ul>
       </article>
     </section>

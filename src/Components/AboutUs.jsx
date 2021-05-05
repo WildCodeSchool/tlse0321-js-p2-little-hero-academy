@@ -7,10 +7,9 @@ const AboutUs = () => (
       <h1 className="aboutus-title">A propos de nous</h1>
       <article className="aboutus-description">
         <p>
-          Notre mission, que l&apos;on a dû accepter malgré nous, était de créer
-          une appli en partant d&apos;une base de données API. Nous avons fait
-          le choix de l&apos;API des SUPER HEROS, tous confondus : marvel, DC,
-          star wars..
+          Notre mission était de créer une appli en partant d&apos;une base de
+          données API. Nous avons fait le choix de l&apos;API des SUPER HEROS,
+          tous confondus : marvel, DC, star wars..
         </p>
         <p>
           Après réflexion, nous avons pris la direction d&apos;une appli de jeu

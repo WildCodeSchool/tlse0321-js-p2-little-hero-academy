@@ -133,11 +133,12 @@
   height: 230px;
   margin-bottom: 345px;
   position: absolute;
-  margin-left: 170px;
+  margin-left: 200px;
 }
 
 .score {
-  font-size: 27px;
+  font-size: 30px;
+  color:#ec6a32;
 }
 
 @media screen and (max-width: 800px) {

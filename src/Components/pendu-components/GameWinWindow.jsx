@@ -5,7 +5,7 @@ const GameWinWindow = () => (
   <section className="game-over">
     <div>
       <h1>Bravo !!</h1>
-      <p>Tu as réussi à sauver notre héro ! </p>
+      <p>Tu as réussi à sauver notre héros ! </p>
     </div>
     <Link to="/pendu">
       <button className="btn-win" type="button">

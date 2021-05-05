@@ -2,34 +2,9 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 import GameWindow from './pendu-components/GameWindow';
 import diplome from '../img/diploma.png';
+import heros from '../data/ListeHero';
 
 const Pendu = () => {
-  const heros = [
-    38,
-    69,
-    30,
-    346,
-    620,
-    659,
-    149,
-    165,
-    106,
-    213,
-    263,
-    717,
-    720,
-    201,
-    332,
-    238,
-    480,
-    418,
-    644,
-    729,
-    309,
-    308,
-    310,
-  ];
-
   function getRandomHero(max) {
     return Math.floor(Math.random() * max);
   }

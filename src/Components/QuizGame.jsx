@@ -3,7 +3,8 @@ import axios from 'axios';
 import '../Styles/Quiz.css';
 import Gamepage from './Gamepage';
 import Quiz from './quiz-components/Quiz';
-import questions from './quiz-components/questions-data';
+import questions from '../data/questions-data';
+import heros from '../data/ListeHero';
 
 const QuizGame = () => {
   const [showAnswer, setShowAnswer] = useState(false);
@@ -31,28 +32,7 @@ const QuizGame = () => {
       }
     });
   }, []);
-  const heros = [
-    38,
-    69,
-    30,
-    346,
-    620,
-    659,
-    149,
-    165,
-    106,
-    213,
-    263,
-    717,
-    720,
-    201,
-    332,
-    418,
-    644,
-    423,
-    208,
-    538,
-  ];
+
   console.log(heros);
 
   function getRandomHero(max) {

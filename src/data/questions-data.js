@@ -13,8 +13,8 @@ const questions = [
     answerOptions: [
       { answerText: 'Bruce Wayne', isCorrect: false },
       { answerText: 'Tony Stark', isCorrect: true },
-      { answerText: 'Luke Skywalker', isCorrect: false },
-      { answerText: 'Harry potter', isCorrect: false },
+      { answerText: 'Raven Darkhölme', isCorrect: false },
+      { answerText: 'John Hancock', isCorrect: false },
     ],
   },
   {
@@ -27,7 +27,7 @@ const questions = [
   {
     questionText: 'Ce personnage est-il: ',
     answerOptions: [
-      { answerText: 'Un Super-Héro', isCorrect: true },
+      { answerText: 'Un Super-Héros', isCorrect: true },
       { answerText: 'Un Super-Méchant', isCorrect: false },
     ],
   },
@@ -46,22 +46,25 @@ const questions = [
       { answerText: 'Sur la Lune', isCorrect: false },
       { answerText: 'À Tokyo', isCorrect: false },
       { answerText: 'À Paris', isCorrect: false },
-      { answerText: 'À Londre', isCorrect: true },
+      { answerText: 'À Londres', isCorrect: true },
     ],
   },
   {
     questionText: 'Qui à créé ce personnage?',
     answerOptions: [
-      { answerText: 'Tolken', isCorrect: false },
+      { answerText: 'J.R.R. Tolkien', isCorrect: false },
       { answerText: 'J.K. Rowling', isCorrect: false },
       { answerText: 'Marvel Comics', isCorrect: true },
-      { answerText: 'George Lucas', isCorrect: false },
+      { answerText: 'Steven Spielberg', isCorrect: false },
     ],
   },
   {
     questionText: 'Où a-t-on pu voir ce personnage pour la première fois?',
     answerOptions: [
-      { answerText: 'Star Wars : Un nouvel espoir', isCorrect: false },
+      {
+        answerText: 'Harry Potter à l&apos;école des sorciers',
+        isCorrect: false,
+      },
       { answerText: 'Birdman and the Galaxy Trio (1967)', isCorrect: false },
       {
         answerText: 'Le Seigneur des anneaux : Les Deux Tours',

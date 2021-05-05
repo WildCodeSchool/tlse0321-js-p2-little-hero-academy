@@ -22,7 +22,9 @@ const Question = ({
       <div className="container">
         <div className="question-section">
           <div className="question-count">
-            <span>Question {currentQuestion + 1}</span>/{questions.length}
+            <span>
+              Question {currentQuestion + 1}/{questions.length} :
+            </span>
           </div>
           <div className="question-text">
             {questions[currentQuestion].questionText}

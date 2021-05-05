@@ -1,19 +1,20 @@
+.gamependu-keyboard {
+  width: 50%;
+}
+
 .keyboard-container {
   max-width: 30rem;
   height: 100%;
-  border: 1ps solid;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  height: 100%;
 }
+
 .keyboard-container button {
-  border: 1px solid;
-  margin: 0.03rem;
-  border-radius: 25px;
-  outline: none;
+  margin: 0.1em;
+  border: none;
   width: 4rem;
   height: 4rem;
   color: #ec6a32;
@@ -21,10 +22,33 @@
   font-size: 2rem;
   background-color: #333333;
   cursor: pointer;
+  font-family: 'RG-regular';
 }
 
 .keyboard-container button:hover {
-  border: 1px solid;
   color: #067bc2;
   background-color: #ec6a32;
+}
+
+@media (max-width: 800px) {
+  .keyboard-container {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .keyboard-container button {
+    margin: 0.1em;
+    border: none;
+    width: 2.5rem;
+    height: 2.5rem;
+    color: #ec6a32;
+    font-weight: bold;
+    font-size: 1.5rem;
+    background-color: #333333;
+    cursor: pointer;
+    font-family: 'RG-regular';
+  }
 }

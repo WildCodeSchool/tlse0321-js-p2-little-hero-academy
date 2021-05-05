@@ -1,38 +1,119 @@
-.gamepage {
-  width: 100%;
-  margin: auto;
-}
-
-.gamepage-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: grey;
-  padding: 1em;
-}
-
 h2.gamepage-title {
   font-size: 1.3em;
   text-align: center;
-  color: rgb(3, 3, 3);
-  margin-bottom: 10px;
+  color: var(--red);
+  margin: 1em;
 }
-.game-rules {
+.game-rules-container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  height: 250px;
+  position: relative;
 }
 
 .rules-text {
-  padding: 15px;
-  width: 50%;
-  height: 100px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -50px;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 50px 50px 50px 70px;
+  width: 60%;
+  height: 90%;
   text-align: center;
-  background-color: rgb(253, 249, 253);
+  background-image: url('/src/img/bulleinfosgame.png');
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+}
+
+.rules-text p {
+  color: var(--greydark);
+}
+
+.rules-heropicture-container {
+  height: 100%;
 }
 
 .rules-heropicture {
-  width: 150px;
+  height: 100%;
+  object-fit: contain;
+}
+
+.vocal-rules {
+  position: absolute;
+  bottom: -10px;
+  right: 20%;
+}
+.vocal-rules button {
+  background-color: var(--greydark);
+  color: var(--blue);
+  padding: 1em;
+  border: none;
+  font-family: 'Quicksand';
+  font-variant: small-caps;
+}
+
+.vocal-rules button {
+  background-color: var(--greydark);
+  padding: 1em;
+  border: none;
+  transition-duration: 0.3s;
+}
+
+.vocal-rules button:hover {
+  background-color: var(--blue);
+  color: #333;
+}
+
+@media (max-width: 800px) {
+  .game-rules-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    padding: 1em 1em 0px 1em;
+    box-sizing: border-box;
+  }
+
+  .rules-text {
+    width: 100%;
+    margin: 0px;
+    height: 110%;
+    padding: 5% 3% 5% 8%;
+    margin-left: -50px;
+  }
+
+  .vocal-rules {
+    position: absolute;
+    bottom: 25px;
+    left: -50px;
+    display: none;
+  }
+
+  .vocal-rules button {
+    background-color: var(--greydark);
+    padding: 0.3em;
+    border: none;
+    transition-duration: 0.3s;
+  }
+
+  h2.gamepage-title {
+    font-size: 1.8em;
+    text-align: center;
+    color: var(--red);
+    margin: 0px;
+  }
+
+  .letter {
+    width: auto;
+  }
 }

@@ -1,10 +1,19 @@
+.find-word-box {
+  display: flex;
+}
+
 .find-word {
   display: flex;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 4rem;
   padding: 1em;
-  box-sizing: border-box;
   height: 75px;
+  color: var(--blue);
+}
+.find-word h2 {
+  margin: 0.3em;
 }
 
 .letter {

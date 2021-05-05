@@ -16,7 +16,7 @@ const Footer = () => (
       </p>
       <li>
         <a href="https://github.com/WildCodeSchool/tlse0321-js-p2-little-hero-academy">
-          <img src={github} alt="acceuil" />
+          <img src={github} alt="accueil" />
         </a>
       </li>
     </section>

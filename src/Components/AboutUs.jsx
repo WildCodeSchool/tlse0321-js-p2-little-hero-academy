@@ -7,16 +7,15 @@ const AboutUs = () => (
       <h1 className="aboutus-title">A propos de nous</h1>
       <article className="aboutus-description">
         <p>
-          Notre mission, que l&apos;on a du accepter malgré nous, était de créer
-          une appli en partant d&apos;une base de données API. Nous avons fait
-          le choix de l&apos;API des SUPER HERO, tous confondu : marvel, DC,
-          star wars..
+          Notre mission était de créer une appli en partant d&apos;une base de
+          données API. Nous avons fait le choix de l&apos;API des SUPER HEROS,
+          tous confondus : marvel, DC, star wars..
         </p>
         <p>
           Après réflexion, nous avons pris la direction d&apos;une appli de jeu
           pour enfants dans le thème des héros. Notre choix de jeu s&apos;est
-          porté sur des classiques comme le pendu qui sont des jeux accessible à
-          tous, notamment pour des enfants.
+          porté sur des classiques comme le pendu qui sont des jeux accessibles
+          à tous, notamment pour des enfants.
         </p>
       </article>
     </section>
@@ -32,14 +31,14 @@ const AboutUs = () => (
         <div className="aboutus-card-title">
           <h2>
             Jerome,
-            <br /> super dormeur
+            <br /> Super Héros
           </h2>
         </div>
         <div className="aboutus-card-text">
           Son pouvoir est immense ! Il a la capacité de dormir plus de 10h
-          d&apos;affilées à moins qu&apos;on ne le reveille. Et en plus, il
-          n&apos;est pas du tout du matin ! Il est super, c&apos;est un héro,
-          c&apos;est un super hero !!
+          d&apos;affilée à moins qu&apos;on ne le réveille. Et en plus, il
+          n&apos;est pas du tout du matin ! Il est super, c&apos;est un héros,
+          c&apos;est un super héros !!
         </div>
         <div className="aboutus-stats">
           <div className="stats">
@@ -71,14 +70,13 @@ const AboutUs = () => (
         <div className="aboutus-card-title">
           <h2>
             Charlotte,
-            <br /> super Heroine
+            <br /> Super Héroine
           </h2>
         </div>
         <div className="aboutus-card-text">
-          Son pouvoir est immense ! Il a la capacité de dormir plus de 10h
-          d&apos;affilées à moins qu&apos;on ne le reveille. Et en plus, il
-          n&apos;est pas du tout du matin ! Il est super, c&apos;est un héro,
-          c&apos;est un super hero !!
+          Son pouvoir est immense ! Elle a la capacité de se déplacer d&apos;un
+          point à l&apos;autre presque plus vite que la lumière ! Elle est
+          super, c&apos;est une héroïne, c&apos;est une super héroïne !!
         </div>
         <div className="aboutus-stats">
           <div className="stats">
@@ -91,11 +89,11 @@ const AboutUs = () => (
           </div>
           <div className="stats">
             <div>DEX</div>
-            <div>51</div>
+            <div>89</div>
           </div>
           <div className="stats">
-            <div>STATS</div>
-            <div>##</div>
+            <div>VITESSE</div>
+            <div>30</div>
           </div>
         </div>
       </article>
@@ -109,15 +107,15 @@ const AboutUs = () => (
         </div>
         <div className="aboutus-card-title">
           <h2>
-            Kévin,
-            <br /> super hero
+            Kevin,
+            <br /> Super Héros
           </h2>
         </div>
         <div className="aboutus-card-text">
           Son pouvoir est immense ! Il a la capacité de dormir plus de 10h
-          d&apos;affilées à moins qu&apos;on ne le reveille. Et en plus, il
-          n&apos;est pas du tout du matin ! Il est super, c&apos;est un héro,
-          c&apos;est un super hero !!
+          d&apos;affilée à moins qu&apos;on ne le réveille. Et en plus, il
+          n&apos;est pas du tout du matin ! Il est super, c&apos;est un héros,
+          c&apos;est un super héros !
         </div>
         <div className="aboutus-stats">
           <div className="stats">
@@ -148,32 +146,31 @@ const AboutUs = () => (
         </div>
         <div className="aboutus-card-title">
           <h2>
-            Jerome,
-            <br /> super dormeur
+            Simon,
+            <br /> Super Héros
           </h2>
         </div>
         <div className="aboutus-card-text">
-          Son pouvoir est immense ! Il a la capacité de dormir plus de 10h
-          d&apos;affilées à moins qu&apos;on ne le reveille. Et en plus, il
-          n&apos;est pas du tout du matin ! Il est super, c&apos;est un héro,
-          c&apos;est un super hero !!
+          Son pouvoir est immense ! Il a la capacité de coder plus vite que son
+          ombre ! Il est super, c&apos;est un héros , c&apos;est un super héros
+          !
         </div>
         <div className="aboutus-stats">
           <div className="stats">
             <div>STR</div>
-            <div>33</div>
+            <div>80</div>
           </div>
           <div className="stats">
-            <div>STR</div>
-            <div>33</div>
+            <div>INT</div>
+            <div>100</div>
           </div>
           <div className="stats">
-            <div>STR</div>
-            <div>33</div>
+            <div>DEX</div>
+            <div>60</div>
           </div>
           <div className="stats">
-            <div>STR</div>
-            <div>33</div>
+            <div>Réflection</div>
+            <div>100</div>
           </div>
         </div>
       </article>

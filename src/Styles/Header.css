@@ -58,7 +58,7 @@ nav {
   justify-content: center;
 }
 .item-nav a {
-  font-size: 3rem;
+  font-size: 2rem;
   font-family:RG-regular ;
   color: var(--blue);
   text-decoration: none;

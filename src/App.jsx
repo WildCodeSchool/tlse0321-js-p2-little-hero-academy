@@ -11,6 +11,7 @@ import GameOverWindow from './Components/pendu-components/GameOverWindow';
 import GameWinWindow from './Components/pendu-components/GameWinWindow';
 import QuizGame from './Components/QuizGame';
 import HomePage from './Components/HomePage';
+import Codex from './Components/Codex';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/jeux" exact component={Carousel} />
         <Route path="/quiz" exact component={QuizGame} />
         <Route path="/pendu" exact component={pendu} />
+        <Route path="/codex" exact component={Codex} />
         <Route path="/aboutus" exact component={AboutUs} />
         <Route path="/contactform" exact component={ContactForm} />
         <Route path="/gameoverwindow" exact component={GameOverWindow} />

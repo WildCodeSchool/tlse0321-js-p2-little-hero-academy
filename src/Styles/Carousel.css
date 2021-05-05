@@ -7,8 +7,6 @@
   align-items: center;
 }
 .headerCarousel {
-  background-image: url(https://images.unsplash.com/photo-1612036782180-6f0b6cd846fe?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
-  background-position: center;
   width: 100%;
   height: 8rem;
   display: flex;
@@ -19,11 +17,11 @@
   letter-spacing: 2px;
   font-size: 2rem;
   background-color: #282828e7;
-  margin-top: 2rem;
+  margin-top: 4rem;
   width: 20rem;
   height: 2rem;
-  border-radius: 9999px;
-  color: var(--blue);
+  border-radius: 5px;
+  color: var(--red);
   text-align: center;
   padding: 1rem;
 }
@@ -32,6 +30,7 @@
   width: 80%;
   height: 60vh;
   background-color: rgb(90, 89, 87);
+  border-radius: 100px;
 }
 .carouselBox {
   border-radius: 25px;
@@ -39,7 +38,9 @@
 .carousel img {
   width: 100%;
   height: 60vh;
+  border-radius: 100px;
 }
+
 
 .alice-carousel__prev-btn-item,
 .alice-carousel__next-btn-item {
@@ -49,13 +50,15 @@
   font-weight: bold;
   transition: 0.6s ease;
   color: #333;
+  background-color: var(--red);
+  border-radius: 9999px;
 }
 
 .alice-carousel__prev-btn-item:hover,
 .alice-carousel__next-btn-item:hover {
-  background-color: var(--red);
+  background-color: var(--blue);
   opacity: 0.8;
-  color: var(--blue);
+  color: var(--red);
 }
 
 .alice-carousel__dots {

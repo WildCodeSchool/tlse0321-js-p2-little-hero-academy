@@ -1,11 +1,11 @@
 .game-over {
   margin: 2rem auto;
-  width: 90%;
+  width: 50%;
   height: 62vh;
   top: 5rem;
   border: 2px solid;
   border-radius: 20px;
-  background-color: rgba(109, 101, 101, 0.966);
+  background-color: rgba(41, 146, 187, 0.966);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -14,6 +14,8 @@
 }
 .game-over h1 {
   margin: 2rem 0 2rem;
+  color: #ec6a32;
+  text-shadow:0 0 0.2em rgb(18, 21, 233);
 }
 .btn-win {
   margin: 2rem 0 2rem;

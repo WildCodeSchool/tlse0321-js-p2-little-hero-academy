@@ -67,3 +67,47 @@ h2.gamepage-title {
   background-color: var(--blue);
   color: #333;
 }
+
+@media (max-width: 800px) {
+  .game-rules-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    padding: 1em 1em 0px 1em;
+    box-sizing: border-box;
+  }
+
+  .rules-text {
+    width: 100%;
+    margin: 0px;
+    height: 125%;
+    padding: 5% 3% 5% 8%;
+  }
+
+  .vocal-rules {
+    position: absolute;
+    bottom: 25px;
+    left: -50px;
+    display: none;
+  }
+
+  .vocal-rules button {
+    background-color: var(--greydark);
+    padding: 0.3em;
+    border: none;
+    transition-duration: 0.3s;
+  }
+
+  h2.gamepage-title {
+    font-size: 1.3em;
+    text-align: center;
+    color: var(--red);
+    margin: 0px;
+  }
+  .letter {
+    width: auto;
+  }
+}

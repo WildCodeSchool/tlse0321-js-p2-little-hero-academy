@@ -2,15 +2,15 @@
   margin: 2rem auto;
   width: 50%;
   height: 62vh;
-  top: 5rem;
+  margin-top: 4rem;
   border: 2px solid;
   border-radius: 20px;
-  background-color: rgba(41, 146, 187, 0.966);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  background-color: rgba(217, 229, 235, 0.966);
 }
 .game-over h1 {
   margin: 2rem 0 2rem;

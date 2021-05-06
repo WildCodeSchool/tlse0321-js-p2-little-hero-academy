@@ -24,142 +24,152 @@ const AboutUs = () => (
       </article>
     </section>
     <section className="aboutus-cardbloc">
-      <article className="aboutus-card" href="recettespages/recette-page.html">
-        <div className="aboutus-img-container">
-          <img className="aboutus-img" src={jerome} alt="personal-card" />
-        </div>
-        <div className="aboutus-card-title">
-          <h2>
-            Jerome,
-            <br /> Super Héros
-          </h2>
-        </div>
-        <div className="aboutus-card-text">
-          Son pouvoir est immense ! Il a la capacité de dormir plus de 10h
-          d&apos;affilée à moins qu&apos;on ne le réveille. Et en plus, il
-          n&apos;est pas du tout du matin ! Il est super, c&apos;est un héros,
-          c&apos;est un super héros !!
-        </div>
-        <div className="aboutus-stats">
-          <div className="stats">
-            <div>STR</div>
-            <div>33</div>
+      <article className="aboutus-card" href="">
+        <a href="https://www.linkedin.com/in/j%C3%A9rome-borga-7a4973133/">
+          <div className="aboutus-img-container">
+            <img className="aboutus-img" src={jerome} alt="personal-card" />
           </div>
-          <div className="stats">
-            <div>INT</div>
-            <div>65</div>
+          <div className="aboutus-card-title">
+            <h2>
+              Jerome,
+              <br /> Super Héros
+            </h2>
           </div>
-          <div className="stats">
-            <div>DEX</div>
-            <div>51</div>
+          <div className="aboutus-card-text">
+            Son pouvoir est immense ! Il a la capacité de dormir plus de 10h
+            d&apos;affilée à moins qu&apos;on ne le réveille. Et en plus, il
+            n&apos;est pas du tout du matin ! Il est super, c&apos;est un héros,
+            c&apos;est un super héros !!
           </div>
-          <div className="stats">
-            <div>FATIGUE</div>
-            <div>96</div>
+          <div className="aboutus-stats">
+            <div className="stats">
+              <div>STR</div>
+              <div>33</div>
+            </div>
+            <div className="stats">
+              <div>INT</div>
+              <div>65</div>
+            </div>
+            <div className="stats">
+              <div>DEX</div>
+              <div>51</div>
+            </div>
+            <div className="stats">
+              <div>FATIGUE</div>
+              <div>96</div>
+            </div>
           </div>
-        </div>
+        </a>
       </article>
-      <article className="aboutus-card" href="recettespages/recette-page.html">
-        <div className="aboutus-img-container">
-          <img className="aboutus-img" src={charlotte} alt="personal-card" />
-        </div>
-        <div className="aboutus-card-title">
-          <h2>
-            Charlotte,
-            <br /> Super Héroine
-          </h2>
-        </div>
-        <div className="aboutus-card-text">
-          Son pouvoir est immense ! Elle a la capacité de se déplacer d&apos;un
-          point à l&apos;autre presque plus vite que la lumière ! Elle est
-          super, c&apos;est une héroïne, c&apos;est une super héroïne !!
-        </div>
-        <div className="aboutus-stats">
-          <div className="stats">
-            <div>STR</div>
-            <div>23</div>
+      <article className="aboutus-card" href="">
+        <a href="https://www.linkedin.com/in/charlotte-lucciardi-109443211">
+          <div className="aboutus-img-container">
+            <img className="aboutus-img" src={charlotte} alt="personal-card" />
           </div>
-          <div className="stats">
-            <div>INT</div>
-            <div>66</div>
+          <div className="aboutus-card-title">
+            <h2>
+              Charlotte,
+              <br /> Super Héroine
+            </h2>
           </div>
-          <div className="stats">
-            <div>DEX</div>
-            <div>89</div>
+          <div className="aboutus-card-text">
+            Son pouvoir est immense ! Elle a la capacité de se déplacer
+            d&apos;un point à l&apos;autre presque plus vite que la lumière !
+            Elle est super, c&apos;est une héroïne, c&apos;est une super héroïne
+            !!
           </div>
-          <div className="stats">
-            <div>VITESSE</div>
-            <div>30</div>
+          <div className="aboutus-stats">
+            <div className="stats">
+              <div>STR</div>
+              <div>23</div>
+            </div>
+            <div className="stats">
+              <div>INT</div>
+              <div>66</div>
+            </div>
+            <div className="stats">
+              <div>DEX</div>
+              <div>89</div>
+            </div>
+            <div className="stats">
+              <div>VITESSE</div>
+              <div>30</div>
+            </div>
           </div>
-        </div>
+        </a>
       </article>
-      <article className="aboutus-card" href="recettespages/recette-page.html">
-        <div className="aboutus-img-container">
-          <img className="aboutus-img" src={kevin} alt="personal-card" />
-        </div>
-        <div className="aboutus-card-title">
-          <h2>
-            Kevin,
-            <br /> Super Héros
-          </h2>
-        </div>
-        <div className="aboutus-card-text">
-          Grâce à sa guitare magique, Kevin peut reveiller tout son quartier
-          avec seulement 1 accord de rock ! Il combat sans relache les
-          Super-Méchants armés de kazoo !
-        </div>
-        <div className="aboutus-stats">
-          <div className="stats">
-            <div>STR</div>
-            <div>85</div>
+      <article className="aboutus-card" href="">
+        <a href="https://www.linkedin.com/in/kevin-bouaziz-8636b9a7/">
+          <div className="aboutus-img-container">
+            <img className="aboutus-img" src={kevin} alt="personal-card" />
           </div>
-          <div className="stats">
-            <div>INT</div>
-            <div>72</div>
+          <div className="aboutus-card-title">
+            <h2>
+              Kevin,
+              <br /> Super Héros
+            </h2>
           </div>
-          <div className="stats">
-            <div>AGI</div>
-            <div>31</div>
+          <div className="aboutus-card-text">
+            Grâce à sa guitare magique, Kevin peut reveiller tout son quartier
+            avec seulement 1 accord de rock ! Il combat sans relache les
+            Super-Méchants armés de kazoos !
           </div>
-          <div className="stats">
-            <div>DISCRETION</div>
-            <div>4</div>
+          <div className="aboutus-stats">
+            <div className="stats">
+              <div>STR</div>
+              <div>85</div>
+            </div>
+            <div className="stats">
+              <div>INT</div>
+              <div>72</div>
+            </div>
+            <div className="stats">
+              <div>AGI</div>
+              <div>31</div>
+            </div>
+            <div className="stats">
+              <div>DISCRETION</div>
+              <div>4</div>
+            </div>
           </div>
-        </div>
+        </a>
       </article>
+
       <article className="aboutus-card" href="recettespages/recette-page.html">
-        <div className="aboutus-img-container">
-          <img className="aboutus-img" src={simon} alt="personal-card" />
-        </div>
-        <div className="aboutus-card-title">
-          <h2>
-            Simon,
-            <br /> Super Héros
-          </h2>
-        </div>
-        <div className="aboutus-card-text">
-          Son pouvoir est immense ! Il a la capacité de coder plus vite que son
-          ombre ! Il est super, c&apos;est un héros , c&apos;est un super héros
-          !
-        </div>
-        <div className="aboutus-stats">
-          <div className="stats">
-            <div>STR</div>
-            <div>80</div>
+        <a href="https://www.linkedin.com/in/simon-ecoffet-b17b281bb">
+          <div className="aboutus-img-container">
+            <img className="aboutus-img" src={simon} alt="personal-card" />
           </div>
-          <div className="stats">
-            <div>INT</div>
-            <div>100</div>
+          <div className="aboutus-card-title">
+            <h2>
+              Simon,
+              <br /> Super Héros
+            </h2>
           </div>
-          <div className="stats">
-            <div>DEX</div>
-            <div>60</div>
+          <div className="aboutus-card-text">
+            Son pouvoir est immense ! Il a la capacité de coder plus vite que
+            son ombre ! Il est super, c&apos;est un héros , c&apos;est un super
+            héros !
           </div>
-          <div className="stats">
-            <div>Réflection</div>
-            <div>100</div>
+          <div className="aboutus-stats">
+            <div className="stats">
+              <div>STR</div>
+              <div>80</div>
+            </div>
+            <div className="stats">
+              <div>INT</div>
+              <div>100</div>
+            </div>
+            <div className="stats">
+              <div>DEX</div>
+              <div>60</div>
+            </div>
+            <div className="stats">
+              <div>Réflection</div>
+              <div>100</div>
+            </div>
           </div>
-        </div>
+        </a>
       </article>
       {/* *************************************************************** */}
       <article className="aboutus-card" href="recettespages/recette-page.html">

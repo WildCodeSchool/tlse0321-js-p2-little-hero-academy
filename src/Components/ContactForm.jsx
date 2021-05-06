@@ -24,7 +24,11 @@ const ContactForm = () => (
           data-submit="...Sending"
           className="hvr-sweep-to-bottom"
           required
+          onClick={() => {
+            alert('Le formulaire de contact est en maintenance. Veuillez nous contacter via nos profils Linkedin, disponibles dans la rubrique "À Propos".');
+          }}
         >
+          {' '}
           Envoyer
         </button>
       </form>

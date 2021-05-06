@@ -51,16 +51,19 @@
 
 .vocal-rules {
   position: absolute;
+  background-color: var(--greydark);
   bottom: -10px;
   right: 20%;
   box-shadow: 5px 5px 10px 0px #333333;
 }
 .vocal-rules button {
-  background-color: var(--greydark);
+  background: none;
   color: #e8e8e8;
-  border-radius: 2px;
+  cursor: pointer;
+  border-radius: 1px;
   padding: 1em;
   border: none;
+  outline: inherit;
   font-family: 'Quicksand';
   font-size: small;
   font-variant: small-caps;

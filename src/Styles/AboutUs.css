@@ -101,7 +101,15 @@
 .stats div:first-child {
   color: var(--greylight);
 }
-
+.credit {
+  width: 90%;
+  font-weight: 300;
+  margin: 1rem;
+}
+.credit li {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
 @media (min-width: 1024px) {
   .aboutus {
     width: 80%;

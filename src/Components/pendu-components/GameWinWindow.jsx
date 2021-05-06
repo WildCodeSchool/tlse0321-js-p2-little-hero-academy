@@ -1,17 +1,17 @@
 import { Link } from 'react-router-dom';
+import GameResult from '../GameResult';
 import './style/PenduEndGame.css';
 
 const GameWinWindow = () => (
   <section className="game-over">
     <div>
-      <h1>Bravo !!</h1>
-      <p>Tu as réussi à sauver notre héros ! </p>
+      <GameResult victory />
+      <Link to="/pendu">
+        <button className="btn-win" type="button">
+          Recommencer une partie
+        </button>
+      </Link>
     </div>
-    <Link to="/pendu">
-      <button className="btn-win" type="button">
-        Recommencer une partie
-      </button>
-    </Link>
   </section>
 );
 

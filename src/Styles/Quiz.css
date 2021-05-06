@@ -26,6 +26,9 @@
   display: flex;
   font-size: 24px;
   align-items: center;
+  background-color: rgba(217, 229, 235, 0.966);
+  border-radius: 20px;
+  border: 2px solid;
 }
 
 .container {

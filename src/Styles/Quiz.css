@@ -3,9 +3,11 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 83vh;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   color: #e0e0e0;
   position: relative;
@@ -139,9 +141,8 @@
 }
 
 .score {
-  font-size: 32px;
+  font-size: 30px;
   color: #ec6a32;
-  color: #282828e7;
 }
 
 @media screen and (max-width: 800px) {

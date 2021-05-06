@@ -1,3 +1,6 @@
+.contact-form-page {
+  min-height: 83vh;
+}
 .contact-form-container * {
   margin: 0;
   padding: 0;
@@ -10,13 +13,12 @@
   max-width: 1000px;
   height: 450px;
   width: 80%;
-  margin: 0 auto;
   position: relative;
   font-family: 'Quicksand', Helvetica, Arial, sans-serif;
   font-weight: 100;
   font-size: 12px;
   line-height: 30px;
-  margin: -100px auto 100px auto;
+  margin: 0 auto 8rem;
   display: flex;
   justify-content: center;
   align-items: center;

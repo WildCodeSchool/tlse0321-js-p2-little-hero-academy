@@ -11,6 +11,7 @@
   align-items: center;
   text-align: center;
   background-color: rgba(217, 229, 235, 0.966);
+  min-height:75vh;
 }
 .game-over h1 {
   margin: 2rem 0 2rem;

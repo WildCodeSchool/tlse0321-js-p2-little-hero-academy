@@ -56,7 +56,7 @@
 }
 .vocal-rules button {
   background-color: var(--greydark);
-  color: var(--blue);
+  color: #e8e8e8;
   padding: 1em;
   border: none;
   font-family: 'Quicksand';

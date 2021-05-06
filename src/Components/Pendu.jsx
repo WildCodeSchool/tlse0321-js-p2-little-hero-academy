@@ -12,7 +12,7 @@ const Pendu = () => {
   const randomIdHero = getRandomHero(22);
   const randomHero = heros[randomIdHero];
   const urlHero = `https://www.superheroapi.com/api.php/10226046072486283/${randomHero}`;
-  const [word, setWord] = useState('superman');
+  const [word, setWord] = useState('Superman');
 
   useEffect(() => {
     axios

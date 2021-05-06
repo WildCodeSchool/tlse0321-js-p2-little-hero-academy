@@ -27,7 +27,7 @@
 }
 
 .letter-box {
-  font-family: 'RG-regular';
+  font-family: 'TextHero-regular';
   font-size: 2.5em;
-  color: var(--blue);
+  color: var(--red);
 }

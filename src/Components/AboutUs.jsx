@@ -1,5 +1,9 @@
 import React from 'react';
 import '../Styles/AboutUs.css';
+import jerome from '../img/jerome.png';
+import charlotte from '../img/charlotte.png';
+import simon from '../img/simon.png';
+import kevin from '../img/kevin.png';
 
 const AboutUs = () => (
   <article className="aboutus">
@@ -22,11 +26,7 @@ const AboutUs = () => (
     <section className="aboutus-cardbloc">
       <article className="aboutus-card" href="recettespages/recette-page.html">
         <div className="aboutus-img-container">
-          <img
-            className="aboutus-img"
-            src="https://thumbs.dreamstime.com/b/superhero-kid-against-blue-sky-background-girl-power-concept-31740105.jpg"
-            alt="personal-card"
-          />
+          <img className="aboutus-img" src={jerome} alt="personal-card" />
         </div>
         <div className="aboutus-card-title">
           <h2>
@@ -61,11 +61,7 @@ const AboutUs = () => (
       </article>
       <article className="aboutus-card" href="recettespages/recette-page.html">
         <div className="aboutus-img-container">
-          <img
-            className="aboutus-img"
-            src="https://thumbs.dreamstime.com/b/superhero-kid-against-blue-sky-background-girl-power-concept-31740105.jpg"
-            alt="personal-card"
-          />
+          <img className="aboutus-img" src={charlotte} alt="personal-card" />
         </div>
         <div className="aboutus-card-title">
           <h2>
@@ -99,11 +95,7 @@ const AboutUs = () => (
       </article>
       <article className="aboutus-card" href="recettespages/recette-page.html">
         <div className="aboutus-img-container">
-          <img
-            className="aboutus-img"
-            src="https://thumbs.dreamstime.com/b/superhero-kid-against-blue-sky-background-girl-power-concept-31740105.jpg"
-            alt="personal-card"
-          />
+          <img className="aboutus-img" src={kevin} alt="personal-card" />
         </div>
         <div className="aboutus-card-title">
           <h2>
@@ -112,37 +104,32 @@ const AboutUs = () => (
           </h2>
         </div>
         <div className="aboutus-card-text">
-          Son pouvoir est immense ! Il a la capacité de dormir plus de 10h
-          d&apos;affilée à moins qu&apos;on ne le réveille. Et en plus, il
-          n&apos;est pas du tout du matin ! Il est super, c&apos;est un héros,
-          c&apos;est un super héros !
+          Grâce à sa guitare magique, Kevin peut reveiller tout son quartier
+          avec seulement 1 accord de rock ! Il combat sans relache les
+          Super-Méchants armés de kazoo !
         </div>
         <div className="aboutus-stats">
           <div className="stats">
             <div>STR</div>
-            <div>67</div>
+            <div>85</div>
           </div>
           <div className="stats">
             <div>INT</div>
-            <div>66</div>
+            <div>72</div>
           </div>
           <div className="stats">
-            <div>DEX</div>
-            <div>33</div>
+            <div>AGI</div>
+            <div>31</div>
           </div>
           <div className="stats">
-            <div>STR</div>
-            <div>33</div>
+            <div>DISCRETION</div>
+            <div>4</div>
           </div>
         </div>
       </article>
       <article className="aboutus-card" href="recettespages/recette-page.html">
         <div className="aboutus-img-container">
-          <img
-            className="aboutus-img"
-            src="https://thumbs.dreamstime.com/b/superhero-kid-against-blue-sky-background-girl-power-concept-31740105.jpg"
-            alt="personal-card"
-          />
+          <img className="aboutus-img" src={simon} alt="personal-card" />
         </div>
         <div className="aboutus-card-title">
           <h2>

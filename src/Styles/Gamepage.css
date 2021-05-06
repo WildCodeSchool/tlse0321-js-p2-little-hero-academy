@@ -64,15 +64,12 @@
   font-family: 'Quicksand';
   font-size: small;
   font-variant: small-caps;
-
   transition-duration: 0.3s;
-  border-radius: 15px;
 }
 
 .vocal-rules button:hover {
   background-color: var(--red);
   color: #333;
-  font-weight: 500;
 }
 
 @media (max-width: 800px) {

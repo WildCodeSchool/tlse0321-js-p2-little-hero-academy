@@ -14,8 +14,7 @@ const QuizGame = () => {
   const [heroData, setheroData] = useState('');
   const gameInformation = {
     name: 'Quiz',
-    rules:
-      'Bienvenue dans le Quiz! Dans ce jeu tu dois répondre à une serie de 8 questions. Mieux tu réponds aux questions, plus ta note finale sera élevée. Bonne chance! ',
+    rules: 'Dans ce jeu tu dois répondre à une serie de 8 questions. Mieux tu réponds aux questions, plus ta note finale sera élevée. Bonne chance!',
   };
   useEffect(() => {
     questions.forEach((question) => {

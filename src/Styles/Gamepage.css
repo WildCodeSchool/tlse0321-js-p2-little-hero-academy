@@ -1,9 +1,11 @@
-h2.gamepage-title {
+.gamepage-title {
   font-size: 1.3em;
   text-align: center;
   color: var(--red);
-  margin: 1em;
+  margin-bottom: 1em;
+  margin-top: -1em;
 }
+
 .game-rules-container {
   display: flex;
   justify-content: center;
@@ -22,7 +24,7 @@ h2.gamepage-title {
   margin-left: -50px;
   margin-bottom: 30px;
   position: relative;
-  padding: 50px 50px 50px 70px;
+  padding: 50px 50px 50px 100px;
   width: 60%;
   height: 90%;
   text-align: center;

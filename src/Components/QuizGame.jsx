@@ -33,8 +33,6 @@ const QuizGame = () => {
     });
   }, []);
 
-  console.log(heros);
-
   function getRandomHero(max) {
     return Math.floor(Math.random() * max);
   }

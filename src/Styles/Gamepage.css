@@ -1,9 +1,11 @@
-h2.gamepage-title {
+.gamepage-title {
   font-size: 1.3em;
   text-align: center;
   color: var(--red);
-  margin: 0.1em;
+  margin-bottom: 1em;
+  margin-top: -1em;
 }
+
 .game-rules-container {
   display: flex;
   justify-content: center;
@@ -22,7 +24,7 @@ h2.gamepage-title {
   margin-left: -50px;
   margin-bottom: 30px;
   position: relative;
-  padding: 50px 50px 50px 70px;
+  padding: 50px 50px 50px 100px;
   width: 60%;
   height: 90%;
   text-align: center;
@@ -51,22 +53,18 @@ h2.gamepage-title {
   position: absolute;
   bottom: -10px;
   right: 20%;
+  box-shadow: 5px 5px 10px 0px #333333;
 }
 .vocal-rules button {
   background-color: var(--greydark);
-  color: var(--blue);
+  color: #e8e8e8;
+  border-radius: 2px;
   padding: 1em;
   border: none;
   font-family: 'Quicksand';
+  font-size: small;
   font-variant: small-caps;
-}
 
-.vocal-rules button {
-  background-color: var(--greydark);
-  padding: 1em;
-  font-weight: 500;
-  border: none;
-  color: var(--red);
   transition-duration: 0.3s;
   border-radius: 15px;
 }

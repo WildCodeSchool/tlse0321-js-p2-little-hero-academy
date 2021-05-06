@@ -4,6 +4,7 @@
   text-align: center;
   margin-top: -4%;
   margin-bottom: 20px;
+  min-height: 86vh;
 }
 
 .homeText {
@@ -26,7 +27,7 @@
 
 .homeButton {
   font-size: 2vw;
-
+  cursor: pointer;
   background-color: #282828e7;
   width: 25vw;
   height: 10vw;

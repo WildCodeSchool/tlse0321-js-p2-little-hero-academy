@@ -59,7 +59,8 @@ nav {
 .item-nav a {
   font-size: 2rem;
   font-family: RG-regular;
-  color: var(--blue);
+  letter-spacing: 4px;
+  color:rgba(217, 229, 235, 0.966);
   text-decoration: none;
   margin: 1rem;
   text-align: center;

@@ -25,7 +25,7 @@ const AboutUs = () => (
           <img
             className="aboutus-img"
             src="https://thumbs.dreamstime.com/b/superhero-kid-against-blue-sky-background-girl-power-concept-31740105.jpg"
-            alt="recette des cookies chocolat"
+            alt="personal-card"
           />
         </div>
         <div className="aboutus-card-title">
@@ -64,7 +64,7 @@ const AboutUs = () => (
           <img
             className="aboutus-img"
             src="https://thumbs.dreamstime.com/b/superhero-kid-against-blue-sky-background-girl-power-concept-31740105.jpg"
-            alt="recette des cookies chocolat"
+            alt="personal-card"
           />
         </div>
         <div className="aboutus-card-title">
@@ -102,7 +102,7 @@ const AboutUs = () => (
           <img
             className="aboutus-img"
             src="https://thumbs.dreamstime.com/b/superhero-kid-against-blue-sky-background-girl-power-concept-31740105.jpg"
-            alt="recette des cookies chocolat"
+            alt="personal-card"
           />
         </div>
         <div className="aboutus-card-title">
@@ -141,7 +141,7 @@ const AboutUs = () => (
           <img
             className="aboutus-img"
             src="https://thumbs.dreamstime.com/b/superhero-kid-against-blue-sky-background-girl-power-concept-31740105.jpg"
-            alt="recette des cookies chocolat"
+            alt="personal-card"
           />
         </div>
         <div className="aboutus-card-title">

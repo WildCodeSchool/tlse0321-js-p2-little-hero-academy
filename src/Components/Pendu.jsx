@@ -22,7 +22,6 @@ const Pendu = () => {
         setWord(data.name.toLowerCase());
       });
   }, []);
-
   const [count, setCount] = useState(7);
   const [alphabet, setAlphabet] = useState([
     {

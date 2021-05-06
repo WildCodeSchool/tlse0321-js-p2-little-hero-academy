@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  min-height: 83vh;
 }
 .headerCarousel {
   width: 100%;
@@ -40,7 +41,6 @@
   height: 60vh;
   border-radius: 100px;
 }
-
 
 .alice-carousel__prev-btn-item,
 .alice-carousel__next-btn-item {
@@ -92,14 +92,14 @@
   }
 }
 
-.centred h1{
+.centred h1 {
   font-size: 2rem;
   background-color: #282828e7;
   width: 20rem;
   height: 2rem;
   border-radius: 9999px;
   text-align: center;
-  padding:1rem;
+  padding: 1rem;
   color: var(--red);
   position: absolute;
   top: 50%;

@@ -3,8 +3,9 @@
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  min-height: 100vh;
+  min-height: 83vh;
   display: flex;
+  margin: 0 auto;
   flex-direction: column;
   align-items: center;
   color: #e0e0e0;
@@ -18,7 +19,6 @@
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 5rem;
-
 }
 
 .score-section {
@@ -138,7 +138,7 @@
 
 .score {
   font-size: 30px;
-  color:#ec6a32;
+  color: #ec6a32;
 }
 
 @media screen and (max-width: 800px) {

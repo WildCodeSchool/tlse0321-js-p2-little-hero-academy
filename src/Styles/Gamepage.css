@@ -2,7 +2,7 @@ h2.gamepage-title {
   font-size: 1.3em;
   text-align: center;
   color: var(--red);
-  margin: 1em;
+  margin: 0.1em;
 }
 .game-rules-container {
   display: flex;
@@ -64,13 +64,17 @@ h2.gamepage-title {
 .vocal-rules button {
   background-color: var(--greydark);
   padding: 1em;
+  font-weight: 500;
   border: none;
+  color: var(--red);
   transition-duration: 0.3s;
+  border-radius: 15px;
 }
 
 .vocal-rules button:hover {
-  background-color: var(--blue);
+  background-color: var(--red);
   color: #333;
+  font-weight: 500;
 }
 
 @media (max-width: 800px) {
@@ -105,13 +109,6 @@ h2.gamepage-title {
     padding: 0.3em;
     border: none;
     transition-duration: 0.3s;
-  }
-
-  h2.gamepage-title {
-    font-size: 1.8em;
-    text-align: center;
-    color: var(--red);
-    margin: 0px;
   }
 
   .letter {

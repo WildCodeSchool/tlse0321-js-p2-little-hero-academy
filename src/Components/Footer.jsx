@@ -5,9 +5,6 @@ import github from '../img/github.png';
 
 const Footer = () => (
   <article className="site-footer">
-    {/* <section className="footer-container">
-      <article className="footer-quick-links"></article>
-    </section> */}
     <div className="separator">{null}</div>
     <section className="copyrights">
       <p>

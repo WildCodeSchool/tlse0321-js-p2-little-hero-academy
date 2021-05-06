@@ -97,10 +97,10 @@ const QuizGame = () => {
         }
         if (heroData[currentQuestion] === 'bad') {
           newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Mechant';
-          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Hero';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Heros';
         }
         if (heroData[currentQuestion] === 'good') {
-          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Hero';
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Heros';
           newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Mechant';
         }
         if (heroData[currentQuestion] === 'Human') {

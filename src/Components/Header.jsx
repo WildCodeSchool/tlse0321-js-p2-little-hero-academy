@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../Styles/Header.css';
 import hamburger from '../img/menu.svg';
-import logo from '../img/logoHA.png';
+import logo from '../img/logo.png';
 import Link from './headerLink/Links';
 
 const header = () => {

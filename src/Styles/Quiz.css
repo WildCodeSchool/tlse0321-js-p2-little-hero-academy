@@ -18,13 +18,15 @@
   display: flex;
   justify-content: space-evenly;
   margin-bottom: 5rem;
-
 }
 
 .score-section {
   display: flex;
   font-size: 24px;
   align-items: center;
+  background-color: rgba(217, 229, 235, 0.966);
+  border-radius: 20px;
+  border: 2px solid;
 }
 
 .container {
@@ -137,8 +139,9 @@
 }
 
 .score {
-  font-size: 30px;
-  color:#ec6a32;
+  font-size: 32px;
+  color: #ec6a32;
+  color: #282828e7;
 }
 
 @media screen and (max-width: 800px) {

@@ -59,10 +59,10 @@ const questions = [
     ],
   },
   {
-    questionText: 'Où a-t-on pu voir ce personnage pour la première fois?',
+    questionText: 'Où a-t-on vu ce personnage pour la première fois?',
     answerOptions: [
       {
-        answerText: 'Harry Potter à l&apos;école des sorciers',
+        answerText: "Harry Potter à l'école des sorciers",
         isCorrect: false,
       },
       { answerText: 'Birdman and the Galaxy Trio (1967)', isCorrect: false },

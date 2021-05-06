@@ -46,8 +46,7 @@ a {
 
 .footer-credits,
 .footer-social-link,
-.footer-quick-links,
-.footer-credits {
+.footer-quick-links {
   padding: 1em 2em;
   background-color: #282828;
   opacity: 95%;
@@ -61,16 +60,31 @@ a {
 .separator {
   margin-bottom: 5px;
   margin-top: 5px;
-  border-bottom: #282828 2px solid;
+  border-bottom: #282828 3px solid;
   width: 90%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 
 .copyrights {
+  width: 90%;
+  height: auto;
+  margin: 1rem auto 0.5rem;
   background-color: #282828;
-  font-size: 0.7em;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.copyrights p {
+  font-size: 0.8rem;
   text-align: center;
+  margin: 0.5rem;
+}
+.copyrights img {
+  width: 3rem;
+  height: 3rem;
+}
+.copyrights li {
+  list-style-type: none;
 }
 
 @media (min-width: 650px) {
@@ -102,9 +116,5 @@ a {
   .footer-container ul {
     display: inline-block;
     text-align: left;
-  }
-
-  .copyrights {
-    margin: 1em;
   }
 }

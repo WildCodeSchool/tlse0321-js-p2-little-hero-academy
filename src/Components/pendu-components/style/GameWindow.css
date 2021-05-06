@@ -25,6 +25,7 @@
   width: 100%;
   max-width: 1200px;
   position: relative;
+  box-shadow: 5px 5px 10px 0px #333333;
 }
 
 .pendugame-life {

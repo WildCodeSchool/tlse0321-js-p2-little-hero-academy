@@ -7,7 +7,7 @@ function VocalRules({ gameInformation }) {
   return (
     <div className="vocal-rules">
       <button type="button" onClick={() => speechSynthesis.speak(utterance)}>
-        Clic pour connaître les règles
+        Clique pour connaître les règles
       </button>
     </div>
   );

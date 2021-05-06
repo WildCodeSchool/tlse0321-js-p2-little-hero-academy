@@ -12,17 +12,54 @@
   text-align: center;
   background-color: rgba(217, 229, 235, 0.966);
 }
-.game-over h1 {
-  margin: 2rem 0 2rem;
-  color: #ec6a32;
-  text-shadow:0 0 0.2em rgb(18, 21, 233);
-}
+
 .btn-win {
   margin: 2rem 0 2rem;
   border: 1px solid;
   padding: 1rem;
-  width: 100%;
+  width: 30%;
   border-radius: 9999px;
   background-color: #ec6a32;
   cursor: pointer;
+}
+
+.game-over .img-wonder {
+  width: 28rem;
+  height: 28rem;
+  margin-left: 300px;
+}
+
+.game-over .bulle {
+  width: 19%;
+  height: 35%;
+  margin-left: 150px;
+  margin-top: -70px;
+}
+
+.game-win .img-wonder {
+  width: 28rem;
+  height: 28rem;
+  margin-left: 300px;
+}
+
+.game-win .bulle {
+  width: 19%;
+  height: 35%;
+  margin-left: 150px;
+  margin-top: -70px;
+}
+
+.game-win {
+  margin: 2rem auto;
+  width: 50%;
+  height: 62vh;
+  margin-top: 4rem;
+  border: 2px solid;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(217, 229, 235, 0.966);
 }

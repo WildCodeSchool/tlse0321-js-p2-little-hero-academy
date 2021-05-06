@@ -12,6 +12,7 @@
   text-align: center;
   background-color: rgba(217, 229, 235, 0.966);
   position: relative;
+  min-height: 75vh;
 }
 
 .btn-win {

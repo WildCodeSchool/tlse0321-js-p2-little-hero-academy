@@ -5,6 +5,7 @@
   align-items: center;
   margin: 2em auto 2em auto;
   width: 80%;
+  min-height: 78vh;
 }
 
 .pendugame-info {
@@ -25,6 +26,7 @@
   width: 100%;
   max-width: 1200px;
   position: relative;
+  box-shadow: 5px 5px 10px 0px #333333;
 }
 
 .pendugame-life {

@@ -15,7 +15,7 @@ const QuizGame = () => {
   const gameInformation = {
     name: 'Quiz',
     rules:
-      'Bienvenue dans le Quiz! Dans ce jeu tu dois répondre à une serie de 8 questions. Mieux tu réponds aux questions, plus ta note finale sera élevée. Bonne chance! ',
+      'Dans ce jeu tu dois répondre à une serie de 8 questions. Mieux tu réponds aux questions, plus ta note finale sera élevée. Bonne chance!',
   };
   useEffect(() => {
     questions.forEach((question) => {
@@ -32,8 +32,6 @@ const QuizGame = () => {
       }
     });
   }, []);
-
-  console.log(heros);
 
   function getRandomHero(max) {
     return Math.floor(Math.random() * max);
@@ -98,10 +96,10 @@ const QuizGame = () => {
         }
         if (heroData[currentQuestion] === 'bad') {
           newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Mechant';
-          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Hero';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Heros';
         }
         if (heroData[currentQuestion] === 'good') {
-          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Hero';
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Heros';
           newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Mechant';
         }
         if (heroData[currentQuestion] === 'Human') {

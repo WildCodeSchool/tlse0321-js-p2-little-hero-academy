@@ -3,7 +3,7 @@ import GameResult from '../GameResult';
 import './style/PenduEndGame.css';
 
 const GameWinWindow = () => (
-  <section className="game-win">
+  <section className="game-over">
     <div>
       <GameResult victory />
       <Link to="/pendu">

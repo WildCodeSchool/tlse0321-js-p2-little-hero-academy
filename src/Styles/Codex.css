@@ -17,14 +17,16 @@
 }
 .card {
   margin: 2rem;
-  width: 25rem;
-  height: 40rem;
+  width: 15rem;
+  height: 20rem;
   perspective: 1000px;
+  
 }
 .card button {
   all: unset;
 }
 .card__inner button {
+  box-shadow: 0px 5px 20px 10px rgb(17, 17, 17);
   width: 100%;
   height: 100%;
   transition: transform 1s;
@@ -39,7 +41,6 @@
   height: 100%;
   overflow: hidden;
   border-radius: 16px;
-  box-shadow: 0px 3px 18px 3px rgba(0, 0, 0, 0.2);
 }
 
 .card__face--front {
@@ -48,15 +49,17 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  box-shadow: 8px 7px 18px 7px rgba(0, 0, 0, 0.63);
+  cursor: pointer;
 }
 
 .card__face--front h1 {
-  color: white;
-  font-size: 2.5rem;
+  color: rgba(217, 229, 235, 0.966);
+  font-size: 1.5rem;
 }
 .card__face--front img {
-  width: 20rem;
-  height: 25rem;
+  width: 10rem;
+  height: 13rem;
   margin-top: 1rem;
   top: 5rem;
   border-radius: 20px;
@@ -68,15 +71,16 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  box-shadow: 2px 13px 18px 3px rgba(0, 0, 0, 0.63);
+  cursor: pointer;
 }
 .card__face--back h1 {
-  color: #fff;
-  font-size: 2rem;
+  color: rgba(217, 229, 235, 0.966);
+  font-size: 1rem;
 }
 .card__face--back img {
-  width: 15rem;
-  height: 15rem;
-  margin-top: 1rem;
+  width: 7rem;
+  height: 7rem;
   top: 5rem;
   border-radius: 9999px;
 }
@@ -90,34 +94,34 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 30px 30px 40px;
+  padding: 30px 30px 5px;
 }
 
 .card__header h2 {
-  color: #fff;
-  font-size: 2.2rem;
+  color: rgba(217, 229, 235, 0.966);
+  font-size: 1.1rem;
   font-weight: 900;
   text-transform: uppercase;
-  margin-top: 2rem;
+  margin-top: 1rem;
   text-align: center;
 }
 
 .card__body {
   text-align: center;
-  padding: 2rem;
+  margin: 1rem;
 }
 
 .card__body h3 {
   color: var(--dark);
-  font-size: 1.7rem;
+  font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.3rem;
 }
 
 .card__body p {
   color: var(--dark);
   font-size: 1rem;
-  line-height: 1.4;
+  line-height: 1.2;
 }
 @media screen and (max-width: 700px) {
 
@@ -126,7 +130,7 @@
     height: 20rem;
   }
   .card__face--front h1 {
-    color: white;
+    color: rgba(217, 229, 235, 0.966);
     text-align: center;
     font-size: 1.5rem;
   }
@@ -147,11 +151,13 @@
     width: 5rem;
     height: 5rem;
     margin-top: 0.1rem;
+    margin-bottom: 1rem;
     top: 1rem;
     border-radius: 9999px;
   }
   .card__face--back h1 {
     font-size: 1rem;
+    margin-bottom: 3em;
   }
   .card__body h3 {
     font-size: 1rem;

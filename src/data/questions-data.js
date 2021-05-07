@@ -50,7 +50,7 @@ const questions = [
     ],
   },
   {
-    questionText: 'Qui à créé ce personnage?',
+    questionText: 'Qui a créé ce personnage?',
     answerOptions: [
       { answerText: 'J.R.R. Tolkien', isCorrect: false },
       { answerText: 'J.K. Rowling', isCorrect: false },

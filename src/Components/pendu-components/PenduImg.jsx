@@ -18,7 +18,7 @@ const PenduImg = ({ count }) => {
   return (
     <div className="sauvetage-img-container">
       <img src={curentImg} alt="hero tombe" />
-      {oneMore && <h1>Vite sauve moi!!!!</h1>}
+      {oneMore && <h1>Vite sauve moi !!!</h1>}
     </div>
   );
 };

@@ -8,7 +8,7 @@ import kevin from '../img/kevin.png';
 const AboutUs = () => (
   <article className="aboutus">
     <section className="aboutus-intro">
-      <h1 className="aboutus-title">A propos de nous</h1>
+      <h1 className="aboutus-title">À propos de nous</h1>
       <article className="aboutus-description">
         <p>
           L&apos;histoire de la Little Héro Academy débute en Avril 2021,
@@ -180,9 +180,9 @@ const AboutUs = () => (
         </div>
         <div className="aboutus-card-text">
           Ils nous ont aidé à réaliser notre site, nous avons utilisé leur
-          magnifique travail pour embellir le notre.
+          magnifique travail pour embellir le nôtre.
           <br />
-          Nous les remercions ce sont aussi des super-héros , nos super-héros!!
+          Nous les remercions ce sont aussi des super-héros , nos super-héros !
         </div>
         <div className="credit">
           <ul>

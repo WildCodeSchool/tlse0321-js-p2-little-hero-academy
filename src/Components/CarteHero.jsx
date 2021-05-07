@@ -42,10 +42,10 @@ const CarteHero = ({ perso }) => {
                   <h2>{hero.name}</h2>
                 </div>
                 <div className="card__body">
-                  <h3>Ce heros est un {hero.appearance.race}</h3>
+                  <h3>Ce héros est un {hero.appearance.race}</h3>
                   <h3>Son vrai nom est {hero.biography['full-name']}</h3>
                   <h3>
-                    Notre heros est né à {hero.biography['place-of-birth']}
+                    Notre héros est né à {hero.biography['place-of-birth']}
                   </h3>
                 </div>
               </div>

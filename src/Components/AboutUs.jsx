@@ -13,7 +13,7 @@ const AboutUs = () => (
         <p>
           L&apos;histoire de la Little Héro Academy débute en Avril 2021,
           lorsque 4 héros de la WildCodeSchool de Toulouse ont reçu pour mission
-          de créer une application web. Seul contrainte: l&apos;utilisation
+          de créer une application web. Seule contrainte: l&apos;utilisation
           d&apos;une base de données.
         </p>
         <p>

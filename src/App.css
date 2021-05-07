@@ -1,38 +1,83 @@
-.App {
-  text-align: center;
+@import './Styles/reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+
+@font-face {
+  font-family: 'RG-bold';
+  src: url('./fonts/roguehero-bold-webfont.woff2') format('woff2'),
+    url('./fonts/roguehero-bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'RG-italic';
+  src: url('./fonts/roguehero-italic-webfont.woff2') format('woff2'),
+    url('./fonts/roguehero-italic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'RG-regular';
+  src: url('./fonts/roguehero-regular-webfont.woff2') format('woff2'),
+    url('./fonts/roguehero-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
 
-.App-header {
-  background-color: #282c34;
+@font-face {
+  font-family: 'TextHero-regular';
+  src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_1_0.woff2')
+      format('woff2'),
+    url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/306FA6_0_0.woff')
+      format('woff');
+  font-style: normal;
+  font-weight: 900;
+}
+
+:root {
+  --greydark: #333333;
+  --greylight: #e0e0e0;
+  --red: #ec6a32;
+  --blue: #067bc2;
+}
+
+H1 {
+  font-size: 2.5em;
+  font-family: 'RG-regular';
+  letter-spacing: 1px;
+}
+
+H2 {
+  font-size: 2em;
+  font-family: 'RG-regular';
+  letter-spacing: 1px;
+}
+
+H3 {
+  font-weight: 700;
+  font-size: 1.17em;
+  font-family: 'Quicksand', sans-serif;
+}
+
+H4 {
+  font-weight: 700;
+  font-size: 1em;
+  font-family: 'Quicksand', sans-serif;
+}
+.p1 {
+  font-weight: 500;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.p2 {
+  font-weight: 300;
+  font-family: 'Quicksand', sans-serif;
+}
+body {
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-image: url('./img/BackgroundBlue.png');
+  background-size: cover;
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }

@@ -1,0 +1,169 @@
+.Codex {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+
+}
+
+.Hero-card-container {
+  width: 80%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+
+}
+.card {
+  margin: 2rem;
+  width: 15rem;
+  height: 20rem;
+  perspective: 1000px;
+  
+}
+.card button {
+  all: unset;
+}
+.card__inner button {
+  box-shadow: 0px 5px 20px 10px rgb(17, 17, 17);
+  width: 100%;
+  height: 100%;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  position: relative;
+}
+
+.card__face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.card__face--front {
+  background-image: url('../img/BackgroundYellow.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 8px 7px 18px 7px rgba(0, 0, 0, 0.63);
+  cursor: pointer;
+}
+
+.card__face--front h1 {
+  color: rgba(217, 229, 235, 0.966);
+  font-size: 1.5rem;
+}
+.card__face--front img {
+  width: 10rem;
+  height: 13rem;
+  margin-top: 1rem;
+  top: 5rem;
+  border-radius: 20px;
+}
+
+.card__face--back {
+  background-image: url('../img/BackgroundYellow.png');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  box-shadow: 2px 13px 18px 3px rgba(0, 0, 0, 0.63);
+  cursor: pointer;
+}
+.card__face--back h1 {
+  color: rgba(217, 229, 235, 0.966);
+  font-size: 1rem;
+}
+.card__face--back img {
+  width: 7rem;
+  height: 7rem;
+  top: 5rem;
+  border-radius: 9999px;
+}
+
+.card__content {
+  width: 100%;
+  height: 100%;
+}
+
+.card__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 30px 5px;
+}
+
+.card__header h2 {
+  color: rgba(217, 229, 235, 0.966);
+  font-size: 1.1rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.card__body {
+  text-align: center;
+  margin: 1rem;
+}
+
+.card__body h3 {
+  color: var(--dark);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+
+.card__body p {
+  color: var(--dark);
+  font-size: 1rem;
+  line-height: 1.2;
+}
+@media screen and (max-width: 700px) {
+
+  .card{
+    width: 15rem;
+    height: 20rem;
+  }
+  .card__face--front h1 {
+    color: rgba(217, 229, 235, 0.966);
+    text-align: center;
+    font-size: 1.5rem;
+  }
+  .card__header h2 {
+    font-size: 1.5rem;
+    margin-top: 0.2rem;
+
+  }
+  .card__face--front img {
+    width: 8rem;
+    height: 12rem;
+    margin-top: 1rem;
+    top: 5rem;
+    border-radius: 20px;
+  }
+  
+  .card__face--back img {
+    width: 5rem;
+    height: 5rem;
+    margin-top: 0.1rem;
+    margin-bottom: 1rem;
+    top: 1rem;
+    border-radius: 9999px;
+  }
+  .card__face--back h1 {
+    font-size: 1rem;
+    margin-bottom: 3em;
+  }
+  .card__body h3 {
+    font-size: 1rem;
+  }
+  .card__body {
+    padding: 0.5rem;
+    margin: -0.5rem;
+  }
+}

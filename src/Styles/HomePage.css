@@ -1,0 +1,65 @@
+.homePresentation {
+  position: relative;
+  text-align: center;
+  text-align: center;
+  margin-top: -4%;
+  margin-bottom: 20px;
+  min-height: 86vh;
+}
+
+.homeText {
+  position: relative;
+  top: 9vw;
+  color: black;
+  text-align: center;
+  font-size: 3.8vw;
+  font-family: cursive;
+  text-shadow: 1.5px 1.5px #808080;
+}
+
+.imgAcademy {
+  position: static;
+  justify-content: center;
+  top: 100px;
+  width: 75%;
+  box-shadow: 3px 5px 20px 3px rgba(0, 0, 0, 0.7);
+  border-radius: 20px;
+}
+
+.homeButton {
+  font-size: 2vw;
+  cursor: pointer;
+  background-color: #282828e7;
+  width: 25vw;
+  height: 10vw;
+  border-radius: 9999px;
+  text-align: center;
+  padding: 1rem;
+  color: var(--red);
+  position: absolute;
+  top: 85%;
+  opacity: 0.9;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 700px) {
+  .imgAcademy {
+    width: 100%;
+    margin-top: 5px;
+  }
+  .homeText {
+    font-size: 8vw;
+    position: relative;
+    top: 20vw;
+  }
+  .homeButton {
+    width: 30vw;
+    height: 15vw;
+  }
+  .homeTextButton {
+    position: relative;
+    font-size: 3vw;
+    top: -5px;
+  }
+}

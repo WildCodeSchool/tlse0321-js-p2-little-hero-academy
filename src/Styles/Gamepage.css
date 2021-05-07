@@ -1,0 +1,115 @@
+.gamepage-title {
+  font-size: 1.3em;
+  text-align: center;
+  color: var(--red);
+  margin-bottom: 1em;
+  margin-top: -1em;
+}
+
+.game-rules-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 250px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.rules-text {
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: -50px;
+  margin-bottom: 30px;
+  position: relative;
+  padding: 50px 50px 50px 100px;
+  width: 60%;
+  height: 90%;
+  text-align: center;
+  background-image: url('/src/img/bulleinfosgame.png');
+  background-size: 100% 90%;
+  background-repeat: no-repeat;
+  background-position: center;
+  box-sizing: border-box;
+  font-family: 'Quicksand';
+}
+
+.rules-text p {
+  color: var(--greydark);
+}
+
+.rules-heropicture-container {
+  height: 100%;
+}
+
+.rules-heropicture {
+  height: 100%;
+  object-fit: contain;
+}
+
+.vocal-rules {
+  position: absolute;
+  background-color: var(--greydark);
+  bottom: -10px;
+  right: 20%;
+  box-shadow: 5px 5px 10px 0px #333333;
+}
+.vocal-rules button {
+  background: none;
+  color: #e8e8e8;
+  cursor: pointer;
+  border-radius: 1px;
+  padding: 1em;
+  border: none;
+  outline: inherit;
+  font-family: 'Quicksand';
+  font-size: small;
+  font-variant: small-caps;
+  transition-duration: 0.3s;
+}
+
+.vocal-rules button:hover {
+  background-color: var(--red);
+  color: #333;
+}
+
+@media (max-width: 800px) {
+  .game-rules-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 250px;
+    position: relative;
+    padding: 1em 1em 0px 1em;
+    box-sizing: border-box;
+  }
+
+  .rules-text {
+    width: 100%;
+    margin: 0px;
+    height: 110%;
+    padding: 5% 3% 5% 8%;
+    margin-left: -50px;
+  }
+
+  .vocal-rules {
+    position: absolute;
+    bottom: 25px;
+    left: -50px;
+    display: none;
+  }
+
+  .vocal-rules button {
+    background-color: var(--greydark);
+    padding: 0.3em;
+    border: none;
+    transition-duration: 0.3s;
+  }
+
+  .letter {
+    width: auto;
+  }
+}

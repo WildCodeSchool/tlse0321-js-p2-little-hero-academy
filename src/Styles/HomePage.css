@@ -9,11 +9,12 @@
 
 .homeText {
   position: relative;
-  font-size: 1vw;
-  top: 10vw;
+  top: 9vw;
+  color: black;
   text-align: center;
-  font-size: 4vw;
+  font-size: 3.8vw;
   font-family: cursive;
+  text-shadow: 1.5px 1.5px #808080;
 }
 
 .imgAcademy {

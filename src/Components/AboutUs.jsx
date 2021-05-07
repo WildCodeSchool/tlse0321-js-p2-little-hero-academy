@@ -11,15 +11,17 @@ const AboutUs = () => (
       <h1 className="aboutus-title">A propos de nous</h1>
       <article className="aboutus-description">
         <p>
-          Notre mission était de créer une appli en partant d&apos;une base de
-          données API. Nous avons fait le choix de l&apos;API des SUPER HEROS,
-          tous confondus : marvel, DC, star wars..
+          L&apos;histoire de la Little Héro Academy débute en Avril 2021,
+          lorsque 4 héros de la WildCodeSchool de Toulouse ont reçu pour mission
+          de créer une application web. Seule contrainte: l&apos;utilisation
+          d&apos;une base de données.
         </p>
         <p>
-          Après réflexion, nous avons pris la direction d&apos;une appli de jeu
-          pour enfants dans le thème des héros. Notre choix de jeu s&apos;est
-          porté sur des classiques comme le pendu qui sont des jeux accessibles
-          à tous, notamment pour des enfants.
+          Après quelques réunions méthodiques dans leur QG, nos héros sont
+          partie sur l&apos;objectif de créer un site de jeux éducatifs pour
+          enfants, avec des Super-Héros et des Super-Méchants. N&apos;hésitez
+          pas à cliquer sur les cartes ci-dessous pour en savoir plus sur le
+          profil de nos héros.
         </p>
       </article>
     </section>
@@ -177,13 +179,19 @@ const AboutUs = () => (
           <h2>Crédits</h2>
         </div>
         <div className="aboutus-card-text">
-          Ils nous ont aidée à réaliser notre site, nous avons utilisé leur
+          Ils nous ont aidé à réaliser notre site, nous avons utilisé leur
           magnifique travail pour embellir le notre.
           <br />
           Nous les remercions ce sont aussi des super-héros , nos super-héros!!
         </div>
         <div className="credit">
           <ul>
+            <li>
+              Base de données{' '}
+              <a href="https://superheroapi.com/" className="href-footer">
+                SuperHeroAPI
+              </a>
+            </li>
             <li>
               Vecteurs par{' '}
               <a

@@ -14,6 +14,7 @@
 }
 .find-word h2 {
   margin: 0.3em;
+  color:rgba(217, 229, 235, 0.966);
 }
 
 .letter {
@@ -27,7 +28,7 @@
 }
 
 .letter-box {
-  font-family: 'RG-regular';
+  font-family: 'TextHero-regular';
   font-size: 2.5em;
-  color: var(--blue);
+  color: var(--red);
 }

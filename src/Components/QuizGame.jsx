@@ -95,12 +95,12 @@ const QuizGame = () => {
           newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Une Femme';
         }
         if (heroData[currentQuestion] === 'bad') {
-          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Mechant';
-          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Heros';
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Méchant';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Héros';
         }
         if (heroData[currentQuestion] === 'good') {
-          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Heros';
-          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Mechant';
+          newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Super Héros';
+          newQuestion[currentQuestion].answerOptions[index + 1].answerText = 'Un Super Méchant';
         }
         if (heroData[currentQuestion] === 'Human') {
           newQuestion[currentQuestion].answerOptions[index].answerText = 'Un Humain';
